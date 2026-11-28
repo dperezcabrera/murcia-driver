@@ -1,0 +1,6033 @@
+{
+ "format": 1,
+ "about": "Misiones de diario por Murcia. Guion, gramática de disparadores y lo que falta en el motor: docs/dosier/38-misiones.md. 'road' (punto de calle transitable, x/z en metros) y 'gap' los escribe scripts/mission-routes.ts --write.",
+ "businesses": {
+  "pollos": "Pollos Pedro",
+  "espinosa": "Confitería Espinosa",
+  "marmol": "La Gloria de Andrés Mármol",
+  "infanta": "tarta Infanta Doña Leonor",
+  "eci": "El Corte Inglés",
+  "hiper": "Hiper Zarandona",
+  "cola": "Coca-Cola Light",
+  "mentos": "Mentos"
+ },
+ "places": {
+  "pollos_pedro": {
+   "name": "{pollos}",
+   "lat": 37.9796446,
+   "lon": -1.1313249,
+   "source": "Ubicación facilitada por el usuario. No figura en OSM.",
+   "road": [
+    141.2,
+    482.3
+   ],
+   "gap": 6
+  },
+  "espinosa": {
+   "name": "{espinosa}",
+   "lat": 37.97873187053588,
+   "lon": -1.1308342648948015,
+   "source": "Ubicación facilitada por el usuario. Coincide con OSM node/13086449718 'Espinosa' (shop=pastry, Calle Floridablanca 3).",
+   "road": [
+    183.6,
+    589.1
+   ],
+   "gap": 7
+  },
+  "marmol": {
+   "name": "{marmol}",
+   "lat": 37.93803091915715,
+   "lon": -1.1688806086658854,
+   "source": "Ubicación facilitada por el usuario (El Palmar). OSM tiene node/1209343715 'La Gloria' (shop=bakery) a unos 200 m.",
+   "road": [
+    -3160.3,
+    5121.7
+   ],
+   "gap": 13
+  },
+  "estacion_autobuses": {
+   "name": "Estación de Autobuses",
+   "lat": 37.98617,
+   "lon": -1.1395,
+   "source": "OSM node/674720434",
+   "road": [
+    -568.3,
+    -223.4
+   ],
+   "gap": 18
+  },
+  "santo_domingo": {
+   "name": "Plaza de Santo Domingo",
+   "lat": 37.98735,
+   "lon": -1.12897,
+   "source": "OSM relation/1525621. Parada pública: la pasajera baja andando a la pastelería por los pasteles de carne; no se nombra pastelería.",
+   "road": [
+    422.4,
+    -360.1
+   ],
+   "gap": 70
+  },
+  "arrixaca": {
+   "name": "La Arrixaca",
+   "lat": 37.93293,
+   "lon": -1.1628,
+   "source": "OSM way/28456494 'Hospital Clínico Universitario Virgen de la Arrixaca'",
+   "road": [
+    -2613.8,
+    5692.8
+   ],
+   "gap": 8
+  },
+  "estacion_tren": {
+   "name": "Estación del Carmen",
+   "lat": 37.97451,
+   "lon": -1.13059,
+   "source": "OSM node/13017334754 'Murcia del Carmen'",
+   "road": [
+    219.4,
+    995.8
+   ],
+   "gap": 61
+  },
+  "campus_espinardo": {
+   "name": "Campus de Espinardo",
+   "lat": 38.01779,
+   "lon": -1.17017,
+   "source": "murcia-places.json 'Campus de Espinardo'",
+   "road": [
+    -3234.2,
+    -3796
+   ],
+   "gap": 44
+  },
+  "santiago_mayor": {
+   "name": "Santiago el Mayor",
+   "lat": 37.97223,
+   "lon": -1.12389,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    813.4,
+    1298.6
+   ],
+   "gap": 18
+  },
+  "patino": {
+   "name": "Patiño",
+   "lat": 37.964,
+   "lon": -1.1274,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    496.7,
+    2210.5
+   ],
+   "gap": 17
+  },
+  "calle_floridablanca": {
+   "name": "Calle Floridablanca",
+   "lat": 37.97683,
+   "lon": -1.13255,
+   "source": "OSM way/1228273874",
+   "road": [
+    29.2,
+    813.2
+   ],
+   "gap": 18
+  },
+  "jardin_floridablanca": {
+   "name": "Jardín de Floridablanca",
+   "lat": 37.98054,
+   "lon": -1.1299,
+   "source": "OSM way/23145629",
+   "road": [
+    272.9,
+    345.3
+   ],
+   "gap": 40
+  },
+  "puente_tocinos": {
+   "name": "Puente Tocinos",
+   "lat": 37.9929,
+   "lon": -1.10222,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    2693,
+    -984.5
+   ],
+   "gap": 10
+  },
+  "tranvia_infantas": {
+   "name": "Parada de Infantas",
+   "lat": 38.03155,
+   "lon": -1.14581,
+   "source": "OSM node/1448817226 (tram_stop), a 1,2 km del estadio",
+   "road": [
+    -1119.2,
+    -5294.4
+   ],
+   "gap": 5
+  },
+  "nueva_condomina": {
+   "name": "Nueva Condomina",
+   "lat": 38.04225,
+   "lon": -1.14473,
+   "source": "OSM way/446872876 'Estadio Enrique Roca de Murcia'",
+   "road": [
+    -934.4,
+    -6482.7
+   ],
+   "gap": 95
+  },
+  "barriomar": {
+   "name": "Barriomar",
+   "lat": 37.97535,
+   "lon": -1.14321,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -899.9,
+    965.7
+   ],
+   "gap": 5
+  },
+  "los_pujantes": {
+   "name": "Los Pujantes",
+   "lat": 37.9787,
+   "lon": -1.1852,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -4571.3,
+    608
+   ],
+   "gap": 20
+  },
+  "la_raya": {
+   "name": "La Raya",
+   "lat": 37.9772,
+   "lon": -1.178,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -3970.2,
+    798.7
+   ],
+   "gap": 47
+  },
+  "gran_via": {
+   "name": "Gran Vía",
+   "lat": 37.9889,
+   "lon": -1.13216,
+   "source": "murcia-places.json 'La Gran Vía'",
+   "road": [
+    73.9,
+    -545.5
+   ],
+   "gap": 0
+  },
+  "la_sardina": {
+   "name": "La Sardina",
+   "lat": 37.98261,
+   "lon": -1.13067,
+   "source": "OSM node/694641745 (artwork 'La Sardina')",
+   "road": [
+    216.3,
+    109.8
+   ],
+   "gap": 46
+  },
+  "san_anton": {
+   "name": "San Antón",
+   "lat": 37.99074,
+   "lon": -1.14194,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -783.2,
+    -754.5
+   ],
+   "gap": 4
+  },
+  "la_arboleja": {
+   "name": "La Arboleja",
+   "lat": 37.98246,
+   "lon": -1.15347,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -1845.5,
+    177.5
+   ],
+   "gap": 50
+  },
+  "veronicas": {
+   "name": "Mercado de Verónicas",
+   "lat": 37.9838,
+   "lon": -1.13426,
+   "source": "OSM way/626719603",
+   "road": [
+    -117.4,
+    36.1
+   ],
+   "gap": 15
+  },
+  "san_antolin": {
+   "name": "San Antolín",
+   "lat": 37.98406,
+   "lon": -1.13903,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -544.3,
+    0.8
+   ],
+   "gap": 17
+  },
+  "san_nicolas": {
+   "name": "San Nicolás",
+   "lat": 37.98627,
+   "lon": -1.13537,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -180.6,
+    -316.4
+   ],
+   "gap": 69
+  },
+  "san_lorenzo": {
+   "name": "San Lorenzo",
+   "lat": 37.9873,
+   "lon": -1.12767,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    474,
+    -388.8
+   ],
+   "gap": 22
+  },
+  "santa_eulalia": {
+   "name": "Santa Eulalia",
+   "lat": 37.9855,
+   "lon": -1.125,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    704,
+    -174.3
+   ],
+   "gap": 8
+  },
+  "san_juan": {
+   "name": "San Juan",
+   "lat": 37.98396,
+   "lon": -1.12329,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    858.4,
+    22.9
+   ],
+   "gap": 20
+  },
+  "santa_catalina": {
+   "name": "Plaza de Santa Catalina",
+   "lat": 37.98502,
+   "lon": -1.13275,
+   "source": "murcia-places.json",
+   "road": [
+    92.8,
+    -118.8
+   ],
+   "gap": 71
+  },
+  "plaza_flores": {
+   "name": "Plaza de las Flores",
+   "lat": 37.9847,
+   "lon": -1.13323,
+   "source": "OSM node/11737860469",
+   "road": [
+    -41.7,
+    -35.4
+   ],
+   "gap": 48
+  },
+  "barrio_victoria": {
+   "name": "Barrio de la Victoria",
+   "lat": 37.9502,
+   "lon": -1.1525,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -1747.9,
+    3776.2
+   ],
+   "gap": 39
+  },
+  "huerto_pujantes": {
+   "name": "Limonar de Los Pujantes",
+   "lat": 37.97861,
+   "lon": -1.19192,
+   "source": "Parcela de cítricos SIGPAC (murcia-huerta.bin, clase citrus) junto al carril de Los Pujantes",
+   "road": [
+    -5167,
+    623.2
+   ],
+   "gap": 23
+  },
+  "huerto_escudera": {
+   "name": "Bancal del limonar, La Escudera",
+   "lat": 37.97421,
+   "lon": -1.19312,
+   "source": "Parcela de cítricos SIGPAC (murcia-huerta.bin, clase citrus) en los bancales al oeste de La Escudera",
+   "road": [
+    -5265.9,
+    1110.1
+   ],
+   "gap": 22
+  },
+  "catedral": {
+   "name": "Catedral",
+   "lat": 37.98407,
+   "lon": -1.12863,
+   "source": "OSM way/27865525 'Catedral de Murcia'",
+   "road": [
+    448.7,
+    54.9
+   ],
+   "gap": 91
+  },
+  "torre_alcayna": {
+   "name": "Torre Alcayna",
+   "lat": 38.0186,
+   "lon": -1.1403,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -676.9,
+    -3846.6
+   ],
+   "gap": 37
+  },
+  "iglesia_era_alta": {
+   "name": "Iglesia de Nuestra Señora del Rosario, Era Alta",
+   "lat": 37.96752,
+   "lon": -1.16818,
+   "source": "OSM way/563264911 'Nuestra Señora del Rosario' (place_of_worship), Era Alta",
+   "road": [
+    -3080.2,
+    1846.1
+   ],
+   "gap": 13
+  },
+  "concesionario": {
+   "name": "el concesionario de la Avenida Juan Carlos I",
+   "lat": 38.00501,
+   "lon": -1.14428,
+   "source": "OSM way/749626500 (shop=car), Avenida Juan Carlos I, El Puntal; vía Nominatim, 23/11/2026, porque Overpass no respondía. Sin marca ni nombre comercial en el juego.",
+   "road": [
+    -1028.9,
+    -2341.4
+   ],
+   "gap": 39
+  },
+  "reina_sofia": {
+   "name": "Hospital Reina Sofía",
+   "lat": 37.98283,
+   "lon": -1.12092,
+   "source": "OSM way/28445597 'Hospital General Universitario Reina Sofía' (Avenida Intendente Jorge Palacios 1)",
+   "road": [
+    1120.4,
+    144.8
+   ],
+   "gap": 62
+  },
+  "arrixaca_maternidad": {
+   "name": "La Arrixaca",
+   "lat": 37.93293,
+   "lon": -1.1628,
+   "source": "OSM way/28456494 (mismo hospital; la recogida es a la salida de maternidad, sin punto propio en OSM)",
+   "road": [
+    -2613.8,
+    5692.8
+   ],
+   "gap": 8
+  },
+  "juzgados": {
+   "name": "Ciudad de la Justicia",
+   "lat": 37.97852,
+   "lon": -1.11304,
+   "source": "OSM way/542273027 'Ciudad de la Justicia' (amenity=courthouse, Avenida de la Justicia 5). El otro juzgado en OSM es el Palacio de Justicia, way/548197576, Paseo de Garay 7.",
+   "road": [
+    1689.6,
+    637.6
+   ],
+   "gap": 68
+  },
+  "correos": {
+   "name": "Oficina de Correos de Pintor Pedro Flores",
+   "lat": 37.97504,
+   "lon": -1.12758,
+   "source": "OSM node/10095868638 'Oficina de Correos' (Calle Pintor Pedro Flores 8)",
+   "road": [
+    496,
+    973.8
+   ],
+   "gap": 31
+  },
+  "copisteria": {
+   "name": "una copistería de Los Dolores",
+   "lat": 37.97692,
+   "lon": -1.1043,
+   "source": "OSM node/4947482776 (shop=copyshop). En el juego no se nombra el negocio.",
+   "road": [
+    2500.6,
+    803.1
+   ],
+   "gap": 23
+  },
+  "zarandona": {
+   "name": "Zarandona",
+   "lat": 38.0035,
+   "lon": -1.1154,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    1513.3,
+    -2137.9
+   ],
+   "gap": 45
+  },
+  "las_boqueras": {
+   "name": "Las Boqueras",
+   "lat": 38.003,
+   "lon": -1.1198,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    1106.5,
+    -2150.4
+   ],
+   "gap": 63
+  },
+  "auditorio": {
+   "name": "Auditorio Víctor Villegas",
+   "lat": 37.98351,
+   "lon": -1.11359,
+   "source": "OSM way/39968530 'Auditorio y Centro de Congresos Víctor Villegas'",
+   "road": [
+    1635,
+    76.6
+   ],
+   "gap": 72
+  },
+  "el_progreso": {
+   "name": "El Progreso",
+   "lat": 37.9649,
+   "lon": -1.1194,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    1160.2,
+    2107.9
+   ],
+   "gap": 38
+  },
+  "la_flota": {
+   "name": "La Flota",
+   "lat": 37.99424,
+   "lon": -1.12191,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    995.1,
+    -1110.8
+   ],
+   "gap": 37
+  },
+  "el_palmar": {
+   "name": "El Palmar",
+   "lat": 37.93912,
+   "lon": -1.16345,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -2668.9,
+    4966.9
+   ],
+   "gap": 29
+  },
+  "san_antonio_pobre": {
+   "name": "San Antonio el Pobre",
+   "lat": 37.9329,
+   "lon": -1.1318,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    112.2,
+    5668.4
+   ],
+   "gap": 21
+  },
+  "ermita_burgos": {
+   "name": "Ermita de Burgos",
+   "lat": 37.9651,
+   "lon": -1.1835,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -4434.5,
+    2097.2
+   ],
+   "gap": 8
+  },
+  "la_escudera": {
+   "name": "La Escudera",
+   "lat": 37.9759,
+   "lon": -1.1874,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -4776.6,
+    900.9
+   ],
+   "gap": 4
+  },
+  "san_basilio": {
+   "name": "San Basilio",
+   "lat": 37.994,
+   "lon": -1.1449,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -1061.7,
+    -1097.4
+   ],
+   "gap": 24
+  },
+  "mirador_agridulce_2": {
+   "name": "Mirador de Agridulce II",
+   "lat": 38.0194,
+   "lon": -1.1812,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -4242.8,
+    -3963.3
+   ],
+   "gap": 26
+  },
+  "espinardo": {
+   "name": "Espinardo",
+   "lat": 38.00844,
+   "lon": -1.15558,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -1989.9,
+    -2715.8
+   ],
+   "gap": 10
+  },
+  "los_rectores": {
+   "name": "Los Rectores",
+   "lat": 38.0145,
+   "lon": -1.163,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -2619.9,
+    -3414.4
+   ],
+   "gap": 23
+  },
+  "puente_muleta": {
+   "name": "Barrio del Puente de la Muleta",
+   "lat": 38.0158,
+   "lon": -1.1126,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    1746.9,
+    -3549.6
+   ],
+   "gap": 44
+  },
+  "carril_iglesia": {
+   "name": "Casas del Carril de la Iglesia",
+   "lat": 38.0038,
+   "lon": -1.1261,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    588.4,
+    -2190.6
+   ],
+   "gap": 22
+  },
+  "rincon_seca": {
+   "name": "Rincón de Seca",
+   "lat": 37.9791,
+   "lon": -1.1672,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -2982.6,
+    581.2
+   ],
+   "gap": 40
+  },
+  "san_pio": {
+   "name": "San Pío X",
+   "lat": 37.9726,
+   "lon": -1.1353,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -195.6,
+    1277.5
+   ],
+   "gap": 10
+  },
+  "mirador_agridulce": {
+   "name": "Urbanización Mirador de Agridulce",
+   "lat": 38.0155,
+   "lon": -1.1775,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -3896.1,
+    -3540.9
+   ],
+   "gap": 35
+  },
+  "el_ranero": {
+   "name": "El Ranero",
+   "lat": 37.99851,
+   "lon": -1.14688,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -1200.8,
+    -1604.5
+   ],
+   "gap": 20
+  },
+  "rincon_ciegos": {
+   "name": "Rincón de los Ciegos",
+   "lat": 37.9734,
+   "lon": -1.1001,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    2859,
+    1140.2
+   ],
+   "gap": 48
+  },
+  "el_infante": {
+   "name": "El Infante",
+   "lat": 37.97934,
+   "lon": -1.12328,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    855,
+    505.3
+   ],
+   "gap": 14
+  },
+  "maria_auxiliadora": {
+   "name": "María Auxiliadora",
+   "lat": 38.0178,
+   "lon": -1.1232,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    827.4,
+    -3760
+   ],
+   "gap": 33
+  },
+  "residencial_mirador": {
+   "name": "Residencial El Mirador, Algezares",
+   "lat": 37.9471,
+   "lon": -1.1019,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    2759.7,
+    4104.1
+   ],
+   "gap": 31
+  },
+  "cabezo_torres": {
+   "name": "Cabezo de Torres",
+   "lat": 38.02526,
+   "lon": -1.12606,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    595.7,
+    -4600.9
+   ],
+   "gap": 15
+  },
+  "carril_enera": {
+   "name": "Carril de la Enera",
+   "lat": 37.98006,
+   "lon": -1.10045,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    2874.2,
+    444.5
+   ],
+   "gap": 19
+  },
+  "conjunto_residencial": {
+   "name": "Conjunto Residencial",
+   "lat": 38.0295,
+   "lon": -1.1643,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -2759,
+    -5049.5
+   ],
+   "gap": 20
+  },
+  "los_teatinos": {
+   "name": "Los Teatinos",
+   "lat": 37.9359,
+   "lon": -1.1136,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    1659.5,
+    5306
+   ],
+   "gap": 65
+  },
+  "carril_penchos": {
+   "name": "Carril de Los Penchos",
+   "lat": 37.9944,
+   "lon": -1.1595,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -2309.9,
+    -1154.4
+   ],
+   "gap": 16
+  },
+  "carretera_nora": {
+   "name": "Carretera de la Ñora",
+   "lat": 37.9888,
+   "lon": -1.1621,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -2551.6,
+    -519.6
+   ],
+   "gap": 15
+  },
+  "santa_maria_gracia": {
+   "name": "Santa María de Gracia",
+   "lat": 37.9942,
+   "lon": -1.1394,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    -567.6,
+    -1106.8
+   ],
+   "gap": 29
+  },
+  "la_paz": {
+   "name": "La Paz",
+   "lat": 37.9876,
+   "lon": -1.1178,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    1342.5,
+    -423
+   ],
+   "gap": 24
+  },
+  "vista_alegre": {
+   "name": "Vista Alegre",
+   "lat": 37.9956,
+   "lon": -1.1308,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    209.8,
+    -1267.8
+   ],
+   "gap": 29
+  },
+  "buenos_aires": {
+   "name": "Buenos Aires",
+   "lat": 37.97654,
+   "lon": -1.12604,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    630.7,
+    824.4
+   ],
+   "gap": 21
+  },
+  "eci_libertad": {
+   "name": "{eci} de la Avenida de la Libertad",
+   "lat": 37.98959,
+   "lon": -1.13391,
+   "source": "OSM way/553710033 'El Corte Inglés' (shop=department_store, Calle Jerónimo de Roda), vía Nominatim",
+   "road": [
+    -87.1,
+    -559.3
+   ],
+   "gap": 63
+  },
+  "eci_gran_via": {
+   "name": "{eci} de la Gran Vía",
+   "lat": 37.98851,
+   "lon": -1.13195,
+   "source": "OSM node/1531810210 'El Corte Inglés' (shop=department_store, Gran Vía Escultor Francisco Salzillo), vía Nominatim",
+   "road": [
+    73.6,
+    -510.6
+   ],
+   "gap": 20
+  },
+  "ayuntamiento": {
+   "name": "Ayuntamiento, en la Glorieta",
+   "lat": 37.98354,
+   "lon": -1.13021,
+   "source": "OSM relation/7907674 'Ayuntamiento de Murcia' (townhall, Glorieta de España 1)",
+   "road": [
+    244,
+    114.9
+   ],
+   "gap": 64
+  },
+  "hiper_zarandona": {
+   "name": "{hiper}",
+   "lat": 38.0073986,
+   "lon": -1.1160218,
+   "source": "OSM way/1157909615 'Hiper Zarandona' (shop=convenience), Zarandona. Solo se nombra en el texto.",
+   "road": [
+    1476.3,
+    -2557.8
+   ],
+   "gap": 49
+  },
+  "camino_viejo_casillas": {
+   "name": "Camino Viejo de Casillas",
+   "lat": 38.0041132,
+   "lon": -1.1070827,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    2244.4,
+    -2254.9
+   ],
+   "gap": 34
+  },
+  "carril_manresa": {
+   "name": "Carril Manresa",
+   "lat": 38.0011892,
+   "lon": -1.0971785,
+   "source": "OSM way/568800093 (Carril Manresa), entre el Carril Ermita de los Remedios y el Carril Juanete",
+   "way": 568800093,
+   "road": [
+    3143,
+    -1913.4
+   ],
+   "gap": 0
+  },
+  "carril_juanete": {
+   "name": "Carril Juanete",
+   "lat": 38.0054068,
+   "lon": -1.0979113,
+   "source": "OSM way/177665162 (Carril Juanete), su tramo norte, desde el Carril Antonio Molina",
+   "way": 177665162,
+   "road": [
+    3078.7,
+    -2383
+   ],
+   "gap": 0
+  },
+  "casa_santa_ana": {
+   "name": "la casa de Ana, en el Carril Juanete",
+   "lat": 38.0033483,
+   "lon": -1.0968325,
+   "source": "Casa particular, sin nombre ni número en el juego. El usuario dio 38.003396, -1.096508 (la piscina); la parada es el portón sobre el Carril Juanete (OSM way/177665162), estimado en la ortofoto PNOA (dosier 46).",
+   "way": 177665162,
+   "road": [
+    3170,
+    -2152.5
+   ],
+   "gap": 4
+  },
+  "informatica_paja": {
+   "name": "la tienda de informática de la Plaza de la Paja",
+   "lat": 37.9818516,
+   "lon": -1.1317942,
+   "source": "Tienda de informática real en la Plaza de la Paja 5 (ficha de la cadena, 37.98185, -1.13179). OSM no la tiene: la plaza es way/55124466 (highway=pedestrian). No se nombra la cadena.",
+   "road": [
+    102.8,
+    260.7
+   ],
+   "gap": 22
+  },
+  "deportes_atalayas": {
+   "name": "la tienda de deportes de Las Atalayas",
+   "lat": 37.992017,
+   "lon": -1.113066,
+   "source": "OSM node/13905601585 (shop=sports), tienda de deportes del centro comercial de Las Atalayas, a 250 m del Palacio de los Deportes. No se nombra la cadena.",
+   "road": [
+    1730.9,
+    -915
+   ],
+   "gap": 29
+  },
+  "monteagudo": {
+   "name": "la plaza de la iglesia de Monteagudo",
+   "lat": 38.018405,
+   "lon": -1.099184,
+   "source": "Camino Viejo de Monteagudo (way/145622782) junto a Nuestra Señora de la Antigua (way/828184832), bajo el castillo y el Cristo. Monteagudo no lo visitaba ninguna misión.",
+   "road": [
+    2964.4,
+    -3831
+   ],
+   "gap": 3
+  },
+  "palacio_deportes": {
+   "name": "el aparcamiento del Palacio de los Deportes",
+   "lat": 37.995672,
+   "lon": -1.112907,
+   "source": "OSM way/626730605 (service=parking_aisle), el aparcamiento al sur del Palacio de los Deportes de Murcia (node/313140002), por la Avenida del Rocío.",
+   "road": [
+    1803.8,
+    -1316.2
+   ],
+   "gap": 44
+  },
+  "la_fama": {
+   "name": "La Fama",
+   "lat": 37.98891,
+   "lon": -1.12264,
+   "source": "murcia-places.json (OSM place)",
+   "road": [
+    899.8,
+    -540.2
+   ],
+   "gap": 11
+  },
+  "tia_fuensanta": {
+   "name": "la casa de la tía Pili, en La Fuensanta",
+   "lat": 37.97636,
+   "lon": -1.12294,
+   "source": "Casa particular, sin nombre ni número en el juego; el punto es el de La Fuensanta (murcia-places.json, OSM place).",
+   "road": [
+    881.6,
+    836.4
+   ],
+   "gap": 14
+  },
+  "casa_vistabella": {
+   "name": "la casa de Raquel y Samuel, en Vistabella",
+   "lat": 37.98368,
+   "lon": -1.11778,
+   "source": "Casa particular, sin nombre ni número en el juego; el punto es el de Vistabella (murcia-places.json, OSM place).",
+   "road": [
+    1369.4,
+    36.3
+   ],
+   "gap": 34
+  },
+  "iglesia_san_juan_bautista": {
+   "name": "la iglesia de San Juan Bautista",
+   "lat": 37.98319,
+   "lon": -1.12568,
+   "source": "OSM way/354313938 'Iglesia de San Juan Bautista' (building=church). Está modelada en el juego (src/cities/murcia/render/churches.ts). La parada es la calle transitable más cercana: la plaza de delante es peatonal.",
+   "road": [
+    620.8,
+    116.1
+   ],
+   "gap": 34
+  },
+  "terraza_santo_domingo": {
+   "name": "una terraza de la Plaza de Santo Domingo",
+   "lat": 37.98735,
+   "lon": -1.12897,
+   "source": "OSM relation/1525621 (Plaza de Santo Domingo). Terraza de ficción, sin nombre de local; el coche para en la calle abierta más cercana, porque la plaza es peatonal.",
+   "road": [
+    422.4,
+    -360.1
+   ],
+   "gap": 70
+  },
+  "casa_suegra": {
+   "name": "la casa de la suegra de Quico, junto a La Merced",
+   "lat": 37.98775,
+   "lon": -1.12593,
+   "source": "Casa particular, sin nombre ni número en el juego; junto a La Merced (murcia-places.json, spot 'La Merced').",
+   "road": [
+    592.1,
+    -383.2
+   ],
+   "gap": 44
+  },
+  "casa_salva": {
+   "name": "la casa de Salva, en Vista Alegre",
+   "lat": 37.99539,
+   "lon": -1.13062,
+   "source": "Casa particular, sin nombre ni número en el juego; el punto es el de Vista Alegre (murcia-places.json, OSM place).",
+   "road": [
+    209.8,
+    -1267.8
+   ],
+   "gap": 1
+  },
+  "casa_madre_salva": {
+   "name": "la casa de la madre de Salva, en Santa María de Gracia",
+   "lat": 37.9942,
+   "lon": -1.1394,
+   "source": "Casa particular, sin nombre ni número en el juego; el punto es el de Santa María de Gracia (murcia-places.json, OSM place).",
+   "road": [
+    -567.6,
+    -1106.8
+   ],
+   "gap": 29
+  },
+  "iglesia_jesus": {
+   "name": "la iglesia de Jesús, junto al Museo Salzillo",
+   "lat": 37.98671,
+   "lon": -1.13854,
+   "source": "OSM way/274929891 'Museo Salzillo' (landmark 'salzillo' del catálogo). La iglesia de Jesús, de donde sale la procesión del Viernes Santo por la mañana, es parte del conjunto, en la Plaza de San Agustín.",
+   "road": [
+    -500.9,
+    -315.7
+   ],
+   "gap": 20
+  }
+ },
+ "missions": [
+  {
+   "id": "dni",
+   "title": "El examen de Javi",
+   "kind": "RECOGIDA",
+   "minutes": 9,
+   "core": "Elección con reloj: volver a por el DNI o quedar a mitad de camino con alguien que no corre.",
+   "premise": "Llevas a Javi de Espinardo al examen en el campus. A los pocos minutos se acuerda de que el DNI está en la mesa de su casa.",
+   "vehicle": {
+    "type": "utilitario",
+    "seats": 4
+   },
+   "start": "el_ranero",
+   "clock": {
+    "start": "08:36",
+    "limit": 640,
+    "label": "Examen a las 08:45"
+   },
+   "cast": {
+    "javi": {
+     "name": "Javi",
+     "voice": "Estudiante de segundo. Dice «tranqui» cuando no lo está. Habla rápido cuando miente y despacio cuando ha estudiado."
+    },
+    "rober": {
+     "name": "Rober",
+     "voice": "Compañero de piso. Chanclas, calma de jubilado a los veintidós. No corre por principios, y los explica."
+    },
+    "radio": {
+     "name": "Radio",
+     "voice": "Tráfico de primera hora. Tono de quien ya lo ha visto todo."
+    }
+   },
+   "stages": [
+    {
+     "id": "recoger",
+     "do": "pickup",
+     "place": "espinardo",
+     "board": [
+      "javi"
+     ],
+     "objective": "Recoge a Javi en Espinardo",
+     "lines": [
+      {
+       "when": "start",
+       "who": "radio",
+       "text": "Buenos días. Retenciones en la Ronda Norte. Lo normal para un martes de exámenes."
+      },
+      {
+       "when": "arrive",
+       "who": "javi",
+       "text": "Tranqui, que vamos sobradísimos. Lo llevo todo. Boli, boli de repuesto, agua."
+      },
+      {
+       "when": "after:4",
+       "who": "javi",
+       "text": "Si cae el tema cuatro, apruebo. Si cae el cinco, también, pero con menos dignidad."
+      }
+     ],
+     "sound": "car-door"
+    },
+    {
+     "id": "camino",
+     "do": "drive",
+     "place": "los_rectores",
+     "objective": "Hacia el Campus de Espinardo",
+     "lines": [
+      {
+       "when": "after:8",
+       "who": "javi",
+       "text": "Un segundo."
+      },
+      {
+       "when": "after:10",
+       "who": "javi",
+       "text": "El DNI, acho. Está en la mesa. Al lado del cargador. Lo estoy viendo como si estuviera allí."
+      },
+      {
+       "when": "after:13",
+       "who": "javi",
+       "text": "Le escribo a Rober. Rober está despierto. Rober siempre está despierto, no sé cuándo duerme."
+      }
+     ],
+     "choice": {
+      "prompt": "Rober se ofrece a bajar el DNI. Va en chanclas y no piensa correr.",
+      "when": "after:14",
+      "window": 8,
+      "default": 1,
+      "options": [
+       {
+        "label": "Volver a por él",
+        "next": "volver",
+        "flag": "volvimos",
+        "reply": {
+         "who": "javi",
+         "text": "Vale. Sin prisa. Bueno, con prisa. Con una prisa tranquila."
+        }
+       },
+       {
+        "label": "Quedar a mitad de camino",
+        "next": "encuentro",
+        "flag": "quedamos",
+        "reply": {
+         "who": "javi",
+         "text": "Le digo que vaya hacia Los Rectores. Dice que vale, que «si eso»."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "volver",
+     "do": "pickup",
+     "place": "espinardo",
+     "objective": "Vuelve al portal de Javi",
+     "lines": [
+      {
+       "when": "start",
+       "who": "javi",
+       "text": "Dice que está bajando. Eso significa que está buscando la otra chancla."
+      },
+      {
+       "when": "arrive",
+       "who": "rober",
+       "text": "Toma. Y un plátano, que en ayunas no se piensa."
+      },
+      {
+       "when": "arrive",
+       "who": "javi",
+       "text": "Rober, eres lo mejor que me ha pasado este cuatrimestre."
+      }
+     ],
+     "next": "examen"
+    },
+    {
+     "id": "encuentro",
+     "do": "pickup",
+     "place": "los_rectores",
+     "objective": "Encuentra a Rober en Los Rectores",
+     "lines": [
+      {
+       "when": "after:10",
+       "who": "javi",
+       "text": "Ya ha salido. Va por la esquina. La de casa."
+      },
+      {
+       "when": "after:24",
+       "who": "javi",
+       "text": "Me ha mandado una foto de una paloma. No sé si es para ubicarse o porque le ha hecho gracia la paloma."
+      },
+      {
+       "when": "idle:12",
+       "who": "javi",
+       "text": "Lo veo. Ese es. El único ser humano de Murcia que anda más despacio que el semáforo."
+      },
+      {
+       "when": "arrive",
+       "who": "rober",
+       "text": "Aquí lo tienes. No he corrido, que conste. He andado con intención."
+      }
+     ]
+    },
+    {
+     "id": "examen",
+     "do": "dropoff",
+     "place": "campus_espinardo",
+     "leave": [
+      "javi"
+     ],
+     "objective": "Deja a Javi en el Campus de Espinardo",
+     "lines": [
+      {
+       "when": "left:45",
+       "who": "javi",
+       "text": "Si me ves bajar corriendo y se me cae algo, no pares. Es la dignidad, ya la recojo a la salida."
+      },
+      {
+       "when": "left:0",
+       "who": "radio",
+       "text": "Las ocho y cuarenta y cinco. Mucho ánimo a quien tenga examen. Y a quien no, también, que la vida es larga."
+      }
+     ],
+     "sound": "car-door"
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "onTime": true,
+      "flags": [
+       "volvimos"
+      ]
+     },
+     "title": "Con DNI y con plátano",
+     "who": "javi",
+     "text": "He llegado con DNI, con plátano y con tres minutos para repasar el tema cuatro. Hoy mando yo."
+    },
+    {
+     "if": {
+      "onTime": true,
+      "flags": [
+       "quedamos"
+      ]
+     },
+     "title": "Relevo en Los Rectores",
+     "who": "javi",
+     "text": "Rober ha andado medio kilómetro por mí. En su escala eso es una maratón. Le debo una cena."
+    },
+    {
+     "if": {},
+     "title": "Ha entrado por los pelos",
+     "who": "javi",
+     "text": "El profesor me ha dejado entrar porque llevaba un plátano en la mano. No sé por qué ha funcionado, pero no pienso preguntar."
+    }
+   ]
+  },
+  {
+   "id": "pollo",
+   "title": "Pollos asados para la barbacoa",
+   "kind": "RECADO",
+   "minutes": 10,
+   "core": "Plazas: los pollos ocupan dos asientos y suben dos invitados; hay que recolocar a todo el mundo.",
+   "premise": "Recoges a Paco en Patiño, pasáis por {pollos} y vais a la barbacoa de Mari Carmen en Rincón de los Ciegos. En Floridablanca llama la anfitriona: hay dos invitados más esperando.",
+   "vehicle": {
+    "type": "berlina",
+    "seats": 4
+   },
+   "start": "santiago_mayor",
+   "clock": {
+    "start": "13:50",
+    "limit": 740,
+    "label": "Se come a las 14:00"
+   },
+   "cast": {
+    "paco": {
+     "name": "Paco",
+     "voice": "Colega de toda la vida. Lógica propia y ejecución impecable de ideas malas. Defiende todo con datos que se inventa sobre la marcha."
+    },
+    "mari": {
+     "name": "Mari Carmen",
+     "voice": "La anfitriona, al teléfono en altavoz y con la barbacoa ya encendida. Organiza a distancia como una controladora aérea."
+    },
+    "lucia": {
+     "name": "Lucía",
+     "voice": "Invitada. Viene con hambre y con una ensalada que nadie le ha pedido."
+    },
+    "toni": {
+     "name": "Toni",
+     "voice": "Pareja de Lucía. Habla poco y, cuando habla, es del jugo."
+    }
+   },
+   "cargo": [
+    {
+     "id": "pollos",
+     "label": "Pollos asados",
+     "fragility": 0.7,
+     "seats": 2,
+     "grades": {
+      "perfect": "los pollos llegaron con todo el jugo en la bandeja",
+      "damaged": "los pollos llegaron enteros y el jugo, repartido",
+      "ruined": "los pollos llegaron; el jugo se quedó en la tapicería"
+     }
+    }
+   ],
+   "stages": [
+    {
+     "id": "colega",
+     "do": "pickup",
+     "place": "patino",
+     "board": [
+      "paco"
+     ],
+     "objective": "Recoge a Paco en Patiño",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "paco",
+       "text": "Dos pollos. Mari Carmen ha dicho dos. Yo digo tres, pero manda ella."
+      }
+     ],
+     "sound": "car-door"
+    },
+    {
+     "id": "pollos",
+     "do": "pickup",
+     "place": "pollos_pedro",
+     "load": [
+      "pollos"
+     ],
+     "objective": "Pasad por {pollos}",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "paco",
+       "text": "Ya están. Los he puesto atrás, en los asientos, para que vayan planos."
+      },
+      {
+       "when": "after:4",
+       "who": "paco",
+       "text": "En el suelo se inclinan. Eso lo sabe cualquiera que haya llevado pollos alguna vez."
+      },
+      {
+       "when": "after:9",
+       "who": "paco",
+       "text": "Huelen que te mueres, pijo. Lo digo para que conste, no para que corras."
+      }
+     ],
+     "sound": "boot-close"
+    },
+    {
+     "id": "llamada",
+     "do": "drive",
+     "place": "calle_floridablanca",
+     "objective": "Sigue por Floridablanca",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "mari",
+       "text": "¿Estáis por Floridablanca? Pues recogedme a Lucía y a Toni, que están en el jardín. Os pilla de paso, ¿no?",
+       "sound": "phone-ring"
+      },
+      {
+       "when": "arrive",
+       "who": "paco",
+       "text": "Nos pilla de paso. Técnicamente."
+      }
+     ]
+    },
+    {
+     "id": "invitados",
+     "do": "pickup",
+     "place": "jardin_floridablanca",
+     "board": [
+      "lucia",
+      "toni"
+     ],
+     "objective": "Recoge a Lucía y Toni en el Jardín de Floridablanca",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "lucia",
+       "text": "Hola. ¿Por qué hay dos pollos sentados donde me iba a sentar yo?"
+      }
+     ],
+     "choice": {
+      "prompt": "No caben todos. ¿Dónde van los pollos?",
+      "window": 0,
+      "default": 0,
+      "options": [
+       {
+        "label": "Al maletero",
+        "flag": "maletero",
+        "cargoFragility": 0.9,
+        "reply": {
+         "who": "paco",
+         "text": "En el maletero hay curvas. Lo digo y lo dejo dicho."
+        }
+       },
+       {
+        "label": "En las rodillas de Paco",
+        "flag": "rodillas",
+        "cargoFragility": 0.45,
+        "reply": {
+         "who": "paco",
+         "text": "Vale. Pero si frenas, el que sufre soy yo. Y el pollo."
+        }
+       }
+      ]
+     },
+     "sound": "car-door"
+    },
+    {
+     "id": "barbacoa",
+     "do": "dropoff",
+     "place": "rincon_ciegos",
+     "leave": [
+      "paco",
+      "lucia",
+      "toni"
+     ],
+     "unload": [
+      "pollos"
+     ],
+     "objective": "A la barbacoa, en Rincón de los Ciegos",
+     "lines": [
+      {
+       "when": "after:8",
+       "who": "toni",
+       "text": "Qué bien huele. Lo digo por si luego no queda."
+      },
+      {
+       "when": "cargo:brake",
+       "who": "paco",
+       "text": "Eso ha sido un frenazo, ¿eh? El pollo lo ha notado. Yo también."
+      },
+      {
+       "when": "cargo:hit",
+       "who": "lucia",
+       "text": "Algo ha hecho «chof». No me quiero girar."
+      },
+      {
+       "when": "cargo:corner",
+       "who": "toni",
+       "text": "El jugo. El jugo."
+      },
+      {
+       "when": "near:300",
+       "who": "mari",
+       "text": "Os veo desde la puerta. Paco, ¿por qué traes esa cara de pollo?"
+      }
+     ],
+     "sound": "boot-close"
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "cargo": {
+       "pollos": "perfect"
+      }
+     },
+     "title": "Ni una gota",
+     "who": "mari",
+     "text": "Esto es llegar con los pollos como Dios manda. Paco, tú friegas igual."
+    },
+    {
+     "if": {
+      "cargo": {
+       "pollos": "damaged"
+      },
+      "flags": [
+       "rodillas"
+      ]
+     },
+     "title": "Paco huele a pollo",
+     "who": "paco",
+     "text": "El pollo está bien. Yo voy a necesitar otros pantalones y un rato a solas."
+    },
+    {
+     "if": {
+      "cargo": {
+       "pollos": "damaged"
+      }
+     },
+     "title": "El jugo, regular",
+     "who": "toni",
+     "text": "Se puede comer. El jugo está, pero en otro sitio."
+    },
+    {
+     "if": {},
+     "title": "Barbacoa de pan",
+     "who": "mari",
+     "text": "Bueno. Hay pan, hay ensalada y hay un maletero que va a oler a domingo hasta Navidad."
+    }
+   ]
+  },
+  {
+   "id": "condomina",
+   "title": "El partido en la Condomina",
+   "kind": "CONTRARRELOJ",
+   "minutes": 10,
+   "core": "La radio marca la cuenta atrás; en la cola, seguir hasta la puerta o dejarlo andando.",
+   "premise": "Llevas a Pepe desde el Carril de la Iglesia a la Nueva Condomina con la previa sonando en la radio. Al acercaros, cola de coches.",
+   "vehicle": {
+    "type": "deportivo",
+    "seats": 4
+   },
+   "start": "puente_muleta",
+   "clock": {
+    "start": "17:50",
+    "limit": 730,
+    "label": "El partido empieza a las 18:00"
+   },
+   "cast": {
+    "pepe": {
+     "name": "Pepe",
+     "voice": "Socio desde hace treinta años. Bufanda en noviembre y en agosto. Sufre en voz alta y celebra en voz baja."
+    },
+    "narrador": {
+     "name": "El narrador",
+     "voice": "La previa en la radio. Emoción creciente y datos que nadie ha pedido."
+    }
+   },
+   "stages": [
+    {
+     "id": "recoger",
+     "do": "pickup",
+     "place": "carril_iglesia",
+     "board": [
+      "pepe"
+     ],
+     "objective": "Recoge a Pepe en el Carril de la Iglesia",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "pepe",
+       "text": "Pon la radio. Más alta, acho. No, así ya no oigo lo que piensas."
+      },
+      {
+       "when": "after:5",
+       "who": "narrador",
+       "text": "Buenas tardes desde la Nueva Condomina, donde el césped está precioso y la grada, todavía, a medias."
+      }
+     ],
+     "sound": "car-door"
+    },
+    {
+     "id": "cola",
+     "do": "drive",
+     "place": "tranvia_infantas",
+     "objective": "Hacia el estadio",
+     "lines": [
+      {
+       "when": "after:20",
+       "who": "pepe",
+       "text": "Este año subimos. Lo digo todos los años, pero este lo digo más convencido."
+      },
+      {
+       "when": "after:40",
+       "who": "narrador",
+       "text": "El míster repite once. Si funciona no se toca, y si no funciona tampoco, que ya es tarde para tocar."
+      },
+      {
+       "when": "near:350",
+       "who": "pepe",
+       "text": "Mira la cola. Esto es la cola de toda la Región."
+      }
+     ],
+     "choice": {
+      "prompt": "Hay cola hasta el estadio. Pepe quiere ir hasta la puerta.",
+      "when": "near:350",
+      "window": 10,
+      "default": 0,
+      "options": [
+       {
+        "label": "Seguir en la cola",
+        "next": "puerta",
+        "flag": "cola",
+        "reply": {
+         "who": "pepe",
+         "text": "Hasta la puerta. Treinta años entrando por la puerta."
+        }
+       },
+       {
+        "label": "Dejarlo aquí, que llegue andando",
+        "next": "andando",
+        "flag": "andando",
+        "reply": {
+         "who": "pepe",
+         "text": "¿Andando? ¿Desde aquí? Pero si…"
+        }
+       }
+      ]
+     },
+     "ambient": [
+      {
+       "sound": "stadium-crowd-loop",
+       "at": "nueva_condomina"
+      }
+     ]
+    },
+    {
+     "id": "andando",
+     "do": "dropoff",
+     "place": "tranvia_infantas",
+     "leave": [
+      "pepe"
+     ],
+     "objective": "Para en Infantas",
+     "lines": [
+      {
+       "when": "start",
+       "who": "narrador",
+       "text": "¡Atención, que los jugadores ya están saliendo del túnel!"
+      },
+      {
+       "when": "start",
+       "who": "pepe",
+       "text": "Para. Para aquí. Para ya, que salen."
+      },
+      {
+       "when": "arrive",
+       "who": "pepe",
+       "text": "Te debo una. Si ganamos, te debo dos."
+      }
+     ],
+     "end": true,
+     "sound": "car-door",
+     "ambient": [
+      {
+       "sound": "stadium-crowd-loop",
+       "at": "nueva_condomina"
+      }
+     ]
+    },
+    {
+     "id": "puerta",
+     "do": "dropoff",
+     "place": "nueva_condomina",
+     "leave": [
+      "pepe"
+     ],
+     "objective": "A la puerta de la Nueva Condomina",
+     "lines": [
+      {
+       "when": "after:15",
+       "who": "narrador",
+       "text": "¡Atención, que los jugadores ya están saliendo!"
+      },
+      {
+       "when": "after:16",
+       "who": "pepe",
+       "text": "Ya salen. Ya salen y yo aquí, mirando la matrícula del de delante."
+      },
+      {
+       "when": "after:19",
+       "who": "pepe",
+       "text": "Déjame donde puedas. No, en la puerta. No, donde puedas. Elige tú, que yo no estoy para elegir."
+      },
+      {
+       "when": "left:10",
+       "who": "narrador",
+       "text": "El árbitro mira el reloj…"
+      }
+     ],
+     "sound": "car-door",
+     "ambient": [
+      {
+       "sound": "stadium-crowd-loop"
+      }
+     ]
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "flags": [
+       "andando"
+      ],
+      "onTime": true
+     },
+     "title": "Corriendo por Juan de Borbón",
+     "who": "pepe",
+     "text": "He llegado para el pitido. Con la bufanda en una mano y el corazón en la otra, pero he llegado."
+    },
+    {
+     "if": {
+      "flags": [
+       "cola"
+      ],
+      "onTime": true
+     },
+     "title": "Por la puerta, como siempre",
+     "who": "pepe",
+     "text": "Treinta años entrando por la puerta y hoy no iba a ser menos. Gracias, zagal."
+    },
+    {
+     "if": {},
+     "title": "Lo ha oído en el coche",
+     "who": "narrador",
+     "text": "Ya rueda el balón. Un saludo a todos los que nos escuchan desde la cola del aparcamiento, que son muchos."
+    }
+   ]
+  },
+  {
+   "id": "tarta",
+   "title": "La tarta de cumpleaños",
+   "kind": "CARGA FRÁGIL",
+   "minutes": 2,
+   "core": "Carga frágil y elección de ruta: calle corta con badenes o avenida más larga.",
+   "premise": "La tarta de {espinosa} tiene que estar a las seis en Barriomar. Sale de la tienda con las velas puestas y el nombre escrito en chocolate.",
+   "vehicle": {
+    "type": "berlina",
+    "seats": 4
+   },
+   "start": "estacion_tren",
+   "clock": {
+    "start": "17:57",
+    "limit": 180,
+    "label": "La tarta, a las 18:00"
+   },
+   "cast": {
+    "dependienta": {
+     "name": "La dependienta",
+     "voice": "Amable y firme. Ha visto salir muchas tartas por esa puerta y sabe cuáles vuelven."
+    },
+    "conchi": {
+     "name": "Conchi",
+     "voice": "Madre de la cumpleañera. Te manda audios mientras conduces; empiezan todos con «a ver»."
+    },
+    "nuria": {
+     "name": "Nuria",
+     "voice": "La cumpleañera. Abre la caja. La cara lo dice todo antes que ella."
+    }
+   },
+   "cargo": [
+    {
+     "id": "tarta",
+     "label": "Tarta",
+     "fragility": 1,
+     "seats": 1,
+     "grades": {
+      "perfect": "la tarta llegó perfecta",
+      "damaged": "la tarta llegó con el nombre corrido",
+      "ruined": "la tarta llegó hecha un cuadro"
+     }
+    }
+   ],
+   "stages": [
+    {
+     "id": "tienda",
+     "do": "pickup",
+     "place": "espinosa",
+     "load": [
+      "tarta"
+     ],
+     "objective": "Recoge la tarta en {espinosa}",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "dependienta",
+       "text": "Aquí la tiene, bonico, con las velas puestas. Plana, ¿eh? Como si llevara un vaso lleno hasta arriba."
+      },
+      {
+       "when": "after:3",
+       "who": "conchi",
+       "text": "A ver: que ponga NURIA, con mayúsculas, que la última vez pusieron Nuri y estuvo una semana sin hablarnos.",
+       "sound": "message-ping"
+      }
+     ],
+     "choice": {
+      "prompt": "Hasta Barriomar: calle corta con badenes, o la avenida, más larga y lisa.",
+      "window": 0,
+      "default": 1,
+      "options": [
+       {
+        "label": "Calle corta, con badenes",
+        "flag": "badenes",
+        "bumps": 5,
+        "reply": {
+         "who": "conchi",
+         "text": "A ver: por donde tú veas, pero que llegue derecha."
+        }
+       },
+       {
+        "label": "La avenida, más larga",
+        "flag": "avenida",
+        "reply": {
+         "who": "conchi",
+         "text": "A ver: tú tranquilo, zagal, que la niña está en la ducha y en la ducha tarda."
+        }
+       }
+      ]
+     },
+     "sound": "boot-close"
+    },
+    {
+     "id": "casa",
+     "do": "dropoff",
+     "place": "barriomar",
+     "unload": [
+      "tarta"
+     ],
+     "objective": "Lleva la tarta a casa de Conchi, en Barriomar",
+     "lines": [
+      {
+       "when": "cargo:bump",
+       "who": "conchi",
+       "text": "A ver: ¿eso ha sido un badén? Lo he notado desde aquí.",
+       "sound": "message-ping"
+      },
+      {
+       "when": "cargo:brake",
+       "who": "conchi",
+       "text": "A ver: no me digas nada. No quiero saberlo.",
+       "sound": "message-ping"
+      },
+      {
+       "when": "cargo<50",
+       "who": "conchi",
+       "text": "A ver: mientras ponga Nuria, aunque sea en cursiva.",
+       "sound": "message-ping"
+      },
+      {
+       "when": "left:30",
+       "who": "conchi",
+       "text": "A ver: la niña ha salido de la ducha. Repito: la niña ha salido de la ducha.",
+       "sound": "message-ping"
+      }
+     ],
+     "sound": "boot-close"
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "cargo": {
+       "tarta": "perfect"
+      },
+      "onTime": true
+     },
+     "title": "NURIA, con mayúsculas",
+     "who": "nuria",
+     "text": "Pone NURIA. Con mayúsculas. Mamá, esta vez sí."
+    },
+    {
+     "if": {
+      "cargo": {
+       "tarta": "damaged"
+      }
+     },
+     "title": "El nombre corrido",
+     "who": "conchi",
+     "text": "Ahora pone «Nuña». Bueno. Por dentro está igual de buena y la niña se ha reído, que es lo que cuenta."
+    },
+    {
+     "if": {
+      "cargo": {
+       "tarta": "ruined"
+      }
+     },
+     "title": "Hecha un cuadro",
+     "who": "nuria",
+     "text": "Parece que la ha pintado un niño. Me encanta. Es la tarta con más personalidad que he tenido."
+    },
+    {
+     "if": {},
+     "title": "Las seis y pico",
+     "who": "conchi",
+     "text": "Perfecta y cinco minutos tarde. Le hemos cantado el cumpleaños en la puerta del ascensor y ha quedado muy bonito."
+    }
+   ]
+  },
+  {
+   "id": "estaciones",
+   "title": "El tren de Elena",
+   "kind": "VARIAS PARADAS",
+   "minutes": 19,
+   "core": "Varias paradas con hora fija de tren y una carga de hojaldre que se desmiga con los frenazos; cambiar minutos de visita por una vuelta más rápida.",
+   "premise": "Recoges a Elena en la estación de autobuses, paráis en una pastelería de la Plaza de Santo Domingo a por pasteles de carne, pasáis por la Arrixaca a ver a su amigo y acabáis en la estación del Carmen. El tren sale a su hora.",
+   "vehicle": {
+    "type": "taxi",
+    "seats": 4
+   },
+   "start": "estacion_autobuses",
+   "clock": {
+    "start": "18:18",
+    "limit": 1320,
+    "label": "El tren sale a las 18:40"
+   },
+   "cast": {
+    "elena": {
+     "name": "Elena",
+     "voice": "Vive fuera desde hace años. Dice «allí» y «aquí» y ya no sabe cuál es cuál. Ordenada, con el corazón algo menos ordenado."
+    },
+    "fermin": {
+     "name": "Fermín",
+     "voice": "Su amigo, ingresado por una tontería de rodilla. Bata, buen humor; opina de todo desde la cama."
+    }
+   },
+   "cargo": [
+    {
+     "id": "pasteles",
+     "label": "Pasteles de carne",
+     "fragility": 0.8,
+     "seats": 0,
+     "grades": {
+      "perfect": "los pasteles llegaron enteros, con el hojaldre en su sitio",
+      "damaged": "los pasteles llegaron con medio hojaldre en la bolsa",
+      "ruined": "los pasteles llegaron en formato migas"
+     }
+    }
+   ],
+   "stages": [
+    {
+     "id": "bus",
+     "do": "pickup",
+     "place": "estacion_autobuses",
+     "board": [
+      "elena"
+     ],
+     "objective": "Recoge a Elena en la Estación de Autobuses",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "elena",
+       "text": "Qué calor. Allí también hace, pero este de aquí te abraza."
+      }
+     ],
+     "sound": "car-door"
+    },
+    {
+     "id": "pasteleria",
+     "do": "pickup",
+     "place": "santo_domingo",
+     "load": [
+      "pasteles"
+     ],
+     "wait": {
+      "real": 4,
+      "clock": 120
+     },
+     "objective": "Para en Santo Domingo: Elena baja a la pastelería por los pasteles de carne",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "elena",
+       "text": "Espérame aquí, que voy andando a la pastelería. Pasteles de carne. A Fermín le pierden."
+      },
+      {
+       "when": "after:4",
+       "who": "elena",
+       "text": "Los llevo yo en las rodillas, en su caja. Tú conduce como si llevaras a mi abuela. Y el hojaldre, que es muy chivato."
+      }
+     ],
+     "sound": "boot-close"
+    },
+    {
+     "id": "hospital",
+     "do": "dropoff",
+     "place": "arrixaca",
+     "objective": "A la Arrixaca",
+     "lines": [
+      {
+       "when": "after:12",
+       "who": "elena",
+       "text": "¿Sabes cuánto hace que no le veo? Desde antes de la mudanza. Uf. Meses."
+      },
+      {
+       "when": "after:26",
+       "who": "elena",
+       "text": "Siempre decimos «a ver si nos vemos» y luego nos vemos en las fotos de los demás."
+      },
+      {
+       "when": "cargo:brake",
+       "who": "elena",
+       "text": "Los pasteles bien. El hojaldre, regular. Yo también, gracias por preguntar."
+      },
+      {
+       "when": "arrive",
+       "who": "fermin",
+       "text": "Acho, por fin. Tres días a flan de hospital. El flan aquí no es un postre, es un estado de ánimo."
+      }
+     ],
+     "choice": {
+      "prompt": "Elena querría cinco minutos más con Fermín. ¿Te la juegas con la vuelta?",
+      "window": 12,
+      "default": 1,
+      "options": [
+       {
+        "label": "Cinco minutos más",
+        "flag": "cinco_mas",
+        "wait": {
+         "real": 5,
+         "clock": 300
+        },
+        "reply": {
+         "who": "elena",
+         "text": "Gracias. De verdad. Te lo pago en pasteles, que sobran."
+        }
+       },
+       {
+        "label": "Lo justo, que hay tren",
+        "flag": "justo",
+        "wait": {
+         "real": 3,
+         "clock": 60
+        },
+        "reply": {
+         "who": "fermin",
+         "text": "Vete, vete. Y la próxima vez no tardes tanto, que se me cura la rodilla y te quedas sin excusa."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "tren",
+     "do": "dropoff",
+     "place": "estacion_tren",
+     "leave": [
+      "elena"
+     ],
+     "unload": [
+      "pasteles"
+     ],
+     "objective": "A la estación del Carmen",
+     "lines": [
+      {
+       "when": "start",
+       "who": "elena",
+       "text": "Le he dejado la mitad de los pasteles. La otra mitad es para el tren. No me juzgues."
+      },
+      {
+       "when": "left:60",
+       "who": "elena",
+       "text": "Si no llegamos, me quedo. No pasa nada. Bueno, mañana trabajo. Pero no pasa nada."
+      },
+      {
+       "when": "near:250",
+       "who": "elena",
+       "text": "Ya se ve la estación. Qué bonita, nunca me había fijado. Uno se fija en las cosas cuando se va."
+      }
+     ],
+     "sound": "boot-close"
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "flags": [
+       "cinco_mas"
+      ],
+      "onTime": true
+     },
+     "title": "Cinco minutos que valían el viaje",
+     "who": "elena",
+     "text": "Cinco minutos más y he llegado. Así deberían salir las cosas siempre."
+    },
+    {
+     "if": {
+      "flags": [
+       "justo"
+      ],
+      "onTime": true
+     },
+     "title": "A su hora",
+     "who": "elena",
+     "text": "Llego bien. Le he escrito a Fermín que la próxima vez vengo un fin de semana entero. A ver si esta vez lo cumplo."
+    },
+    {
+     "if": {},
+     "title": "El siguiente tren",
+     "who": "elena",
+     "text": "Se ha ido. Bueno. Me vuelvo a la Arrixaca con los pasteles que quedan. Fermín se va a poner contentísimo."
+    }
+   ]
+  },
+  {
+   "id": "sofa",
+   "title": "La mudanza del sofá",
+   "kind": "MUDANZA",
+   "minutes": 8,
+   "core": "Furgoneta con carga voluminosa y destino equivocado: la foto del portal no es la buena y lo descubres al llegar.",
+   "premise": "Dani se ha comprado un sofá de segunda mano en Los Pujantes y te pide ayuda con la furgoneta. Te manda la foto del portal. No es su portal.",
+   "vehicle": {
+    "type": "deportivo",
+    "seats": 2
+   },
+   "start": "rincon_seca",
+   "clock": null,
+   "cast": {
+    "dani": {
+     "name": "Dani",
+     "voice": "Colega optimista. Escribe sin mirar y luego se fía de lo que ha escrito. Pide perdón muy rápido y muy sinceramente."
+    },
+    "vecino": {
+     "name": "El vecino",
+     "voice": "Señor en silla de enea a la puerta de su casa. Lleva toda la mañana viendo pasar sofás y lo está disfrutando."
+    },
+    "vendedora": {
+     "name": "Doña Amparo",
+     "voice": "La que vende el sofá. Le tiene cariño y lo despide como a un hijo que se va a Erasmus."
+    }
+   },
+   "cargo": [
+    {
+     "id": "sofa",
+     "label": "Sofá",
+     "fragility": 0.35,
+     "seats": 0,
+     "grades": {
+      "perfect": "el sofá llegó como salió de Los Pujantes",
+      "damaged": "el sofá llegó con una pata con opinión propia",
+      "ruined": "el sofá llegó convertido en dos sillones"
+     }
+    }
+   ],
+   "stages": [
+    {
+     "id": "furgoneta",
+     "do": "pickup",
+     "place": "la_raya",
+     "vehicle": "furgoneta",
+     "objective": "A por la furgoneta del cuñado de Dani, en La Raya",
+     "lines": [
+      {
+       "when": "start",
+       "who": "dani",
+       "text": "La furgoneta es de mi cuñado, en La Raya. Deja tu coche en su puerta, que él te lo vigila."
+      },
+      {
+       "when": "arrive",
+       "who": "dani",
+       "text": "Las llaves están en la visera. Es grande, pero se conduce como un coche. Un coche grande."
+      }
+     ]
+    },
+    {
+     "id": "cargar",
+     "do": "pickup",
+     "place": "los_pujantes",
+     "board": [
+      "dani"
+     ],
+     "load": [
+      "sofa"
+     ],
+     "objective": "Recoge a Dani y el sofá en Los Pujantes",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "vendedora",
+       "text": "Cuidádmelo, bonico. En este sofá se han visto tres mundiales y una boda por la tele."
+      },
+      {
+       "when": "after:4",
+       "who": "dani",
+       "text": "Es de tres plazas. Bueno, dos y media. La media es para el gato, que no tengo."
+      },
+      {
+       "when": "after:9",
+       "who": "dani",
+       "text": "Te he mandado la foto del portal. Tú pon eso en el navegador y vamos."
+      }
+     ],
+     "sound": "boot-close"
+    },
+    {
+     "id": "portal_malo",
+     "do": "drive",
+     "place": "barriomar",
+     "objective": "Al portal de la foto, en Barriomar",
+     "lines": [
+      {
+       "when": "after:20",
+       "who": "dani",
+       "text": "Cuando lleguemos, lo subimos de canto. De canto entra todo, es física."
+      },
+      {
+       "when": "cargo:hit",
+       "who": "dani",
+       "text": "Ese ruido ha sido el sofá o la furgoneta. Prefiero no saberlo."
+      },
+      {
+       "when": "cargo:corner",
+       "who": "dani",
+       "text": "Se ha movido. No pasa nada. Se ha acomodado."
+      },
+      {
+       "when": "arrive",
+       "who": "vecino",
+       "text": "¿Otro con sofá? Eres el tercero hoy, zagal. Aquí no vive ningún Dani, hijo."
+      },
+      {
+       "when": "arrive",
+       "who": "vecino",
+       "text": "Los otros dos también traían la foto. Esa foto es de este verano. El de la foto soy yo."
+      },
+      {
+       "when": "after:7",
+       "who": "dani",
+       "text": "Ah. Te he mandado la del portal de mi tía. Yo vivo en San Pío X. Perdón, perdón, perdón."
+      },
+      {
+       "when": "after:10",
+       "who": "vecino",
+       "text": "Que vaya bien. Si viene un cuarto, ¿le digo que San Pío X?"
+      }
+     ]
+    },
+    {
+     "id": "portal_bueno",
+     "do": "dropoff",
+     "place": "san_pio",
+     "unload": [
+      "sofa"
+     ],
+     "leave": [
+      "dani"
+     ],
+     "objective": "Ahora sí: San Pío X",
+     "lines": [
+      {
+       "when": "near:200",
+       "who": "dani",
+       "text": "Es aquí. Esta vez lo estoy viendo con mis ojos."
+      },
+      {
+       "when": "arrive",
+       "who": "dani",
+       "text": "Y ahora viene lo bueno: es un cuarto sin ascensor."
+      }
+     ],
+     "sound": "boot-close"
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "cargo": {
+       "sofa": "perfect"
+      }
+     },
+     "title": "Sofá en su sitio",
+     "who": "dani",
+     "text": "Perfecto. Le voy a mandar al vecino una foto del sofá ya puesto, que se ha quedado con la intriga."
+    },
+    {
+     "if": {
+      "cargo": {
+       "sofa": "damaged"
+      }
+     },
+     "title": "Cojea un poco",
+     "who": "dani",
+     "text": "Cojea un poco. Le pongo un libro debajo y queda como de diseño."
+    },
+    {
+     "if": {},
+     "title": "Dos sillones",
+     "who": "dani",
+     "text": "Ahora son dos sillones. Mira, yo siempre quise dos sillones."
+    }
+   ]
+  },
+  {
+   "id": "comparsa",
+   "title": "El Entierro de la Sardina",
+   "kind": "SIN GPS",
+   "minutes": 8,
+   "core": "Sin navegador: la peña te guía y cada uno recuerda un camino distinto; las cajas de juguetes no soportan los golpes.",
+   "premise": "Sábado del Entierro de la Sardina. Andrés, un amigo sardinero, tiene en casa, en La Arboleja, las cajas de juguetes que su peña tira desde la carroza. Recoges las cajas y a Andrés, ya vestido de sardina, y los llevas a la carroza, en la Gran Vía, antes de que empiece el desfile.",
+   "vehicle": {
+    "type": "todoterreno",
+    "seats": 4
+   },
+   "start": "santa_catalina",
+   "clock": null,
+   "noMap": true,
+   "mirrorBlocked": 0.5,
+   "cast": {
+    "chelo": {
+     "name": "Chelo",
+     "voice": "De la peña de la carroza, la única que sabe dónde está. No la oyen, porque habla bajito y los demás no se callan."
+    },
+    "andres": {
+     "name": "Andrés",
+     "voice": "El sardinero, ya vestido de sardina con escamas y todo. Dice «a la derecha» señalando a la izquierda, con total seguridad."
+    },
+    "pili": {
+     "name": "Pili",
+     "voice": "Se sabe la dirección de memoria. La del año pasado."
+    },
+    "juanma": {
+     "name": "Juanma",
+     "voice": "Se ha dormido con la purpurina puesta. Se despierta para opinar y vuelve a dormirse."
+    }
+   },
+   "cargo": [
+    {
+     "id": "cajas",
+     "label": "Cajas de juguetes",
+     "fragility": 0.4,
+     "seats": 0,
+     "grades": {
+      "perfect": "las cajas llegaron cerradas y con todos los juguetes dentro",
+      "damaged": "las cajas llegaron con alguna tapa abierta y un par de juguetes menos",
+      "ruined": "las cajas llegaron medio vacías: los juguetes se fueron repartiendo solos"
+     }
+    }
+   ],
+   "stages": [
+    {
+     "id": "recoger",
+     "do": "pickup",
+     "place": "la_arboleja",
+     "board": [
+      "andres",
+      "chelo",
+      "pili",
+      "juanma"
+     ],
+     "load": [
+      "cajas"
+     ],
+     "objective": "Recoge a Andrés y las cajas de juguetes en La Arboleja",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "andres",
+       "text": "Las cajas, en el maletero. Cerradas, que es todo lo que se tira desde la carroza. Yo voy de sardina, que se note."
+      },
+      {
+       "when": "after:3",
+       "who": "pili",
+       "text": "Una caja es de peluches y la otra, de pelotas. La de las pelotas no la inclines, que luego rueda todo."
+      },
+      {
+       "when": "after:7",
+       "who": "juanma",
+       "text": "Este año tiro yo desde la carroza. Tengo una puntería que no me reconozco."
+      }
+     ],
+     "sound": "boot-close"
+    },
+    {
+     "id": "sardina",
+     "do": "drive",
+     "place": "la_sardina",
+     "optional": true,
+     "objective": "Opcional: saludad a la Sardina",
+     "lines": [
+      {
+       "when": "start",
+       "who": "pili",
+       "text": "Pasa por la Sardina, que hay que saludarla. Es tradición. Bueno, es nuestra tradición desde hace diez minutos."
+      },
+      {
+       "when": "arrive",
+       "who": "chelo",
+       "text": "Adiós, bonica. El año que viene, más."
+      }
+     ],
+     "ambient": [
+      {
+       "sound": "parade-crowd-loop"
+      },
+      {
+       "sound": "charanga-loop"
+      }
+     ]
+    },
+    {
+     "id": "direcciones",
+     "do": "drive",
+     "place": "san_anton",
+     "objective": "Hacia la carroza. Pregunta a la peña.",
+     "lines": [
+      {
+       "when": "start",
+       "who": "andres",
+       "text": "Ahora a la derecha."
+      },
+      {
+       "when": "after:1",
+       "who": "pili",
+       "text": "¿Ande vas, Andrés? Eso es la izquierda."
+      },
+      {
+       "when": "after:3",
+       "who": "andres",
+       "text": "Pues mi derecha."
+      },
+      {
+       "when": "after:10",
+       "who": "pili",
+       "text": "La carroza está en San Antón, en el portal del limonero."
+      },
+      {
+       "when": "after:13",
+       "who": "chelo",
+       "text": "Pili, la carroza sale de la Gran Vía desde hace tres años. La montaste tú."
+      },
+      {
+       "when": "after:16",
+       "who": "juanma",
+       "text": "Es en San Basilio. Lo sé porque el año pasado me monté allí."
+      }
+     ],
+     "choice": {
+      "prompt": "¿A quién haces caso?",
+      "when": "after:17",
+      "window": 10,
+      "default": 0,
+      "options": [
+       {
+        "label": "A Juanma: San Basilio",
+        "next": "merienda",
+        "flag": "juanma",
+        "reply": {
+         "who": "juanma",
+         "text": "Ahí. Lo sé. Me fío de mí."
+        }
+       },
+       {
+        "label": "A Chelo, que es de la peña",
+        "next": "carroza",
+        "flag": "chelo",
+        "reply": {
+         "who": "chelo",
+         "text": "La Gran Vía. Gracias por preguntar a la única que ha montado la carroza."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "merienda",
+     "do": "drive",
+     "place": "san_basilio",
+     "objective": "San Basilio, según Juanma",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "juanma",
+       "text": "Uy. Aquí estaba la carroza, sí. Pero la del año pasado."
+      },
+      {
+       "when": "arrive",
+       "who": "chelo",
+       "text": "La Gran Vía. Lo llevo diciendo desde La Arboleja, pero con las pelotas rodando no se me oye."
+      }
+     ],
+     "next": "carroza"
+    },
+    {
+     "id": "carroza",
+     "do": "dropoff",
+     "place": "gran_via",
+     "leave": [
+      "chelo",
+      "andres",
+      "pili",
+      "juanma"
+     ],
+     "unload": [
+      "cajas"
+     ],
+     "objective": "Lleva las cajas y a Andrés a la carroza, en la Gran Vía",
+     "lines": [
+      {
+       "when": "cargo:hit",
+       "who": "chelo",
+       "text": "¡Los peluches! No, siguen. Siguen. Despacio."
+      },
+      {
+       "when": "cargo:brake",
+       "who": "pili",
+       "text": "Se me ha escapado una pelota. Rueda sola. Ya la cogerá alguien."
+      },
+      {
+       "when": "near:150",
+       "who": "andres",
+       "text": "Ahí está la carroza. A la derecha. La de verdad."
+      }
+     ],
+     "sound": "boot-close",
+     "ambient": [
+      {
+       "sound": "parade-crowd-loop"
+      }
+     ]
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "cargo": {
+       "cajas": "perfect"
+      },
+      "flags": [
+       "chelo"
+      ]
+     },
+     "title": "Llueven juguetes",
+     "who": "chelo",
+     "text": "Ni una caja abierta. Hoy llueve juguete por toda la Gran Vía. El año que viene te guardo un sitio en la carroza."
+    },
+    {
+     "if": {
+      "cargo": {
+       "cajas": "perfect"
+      }
+     },
+     "title": "Ruta turística",
+     "who": "pili",
+     "text": "Hemos tardado, pero hemos visto barrio. Y las cajas, perfectas."
+    },
+    {
+     "if": {
+      "cargo": {
+       "cajas": "damaged"
+      }
+     },
+     "title": "Alguna tapa suelta",
+     "who": "juanma",
+     "text": "Faltan un par de juguetes. Los tengo yo. Me he quedado con un pulpo de goma y la conciencia tranquila."
+    },
+    {
+     "if": {},
+     "title": "Tiramos lo que haya",
+     "who": "andres",
+     "text": "Casi vacías. Pues tiraremos caramelos, confeti y, si insiste, a Juanma."
+    }
+   ]
+  },
+  {
+   "id": "sillas",
+   "title": "La cena en la Plaza de las Flores",
+   "kind": "RECOLECTA",
+   "minutes": 8,
+   "core": "Recolecta en bucle por el centro: cada parada da una silla y un pasajero, hasta llenar el coche; al final hay que volver a la primera.",
+   "premise": "Ramón monta una cena en una terraza de la Plaza de las Flores y te pide que juntes seis sillas plegables por el barrio. En cada parada te dan una silla y alguien que llevar.",
+   "vehicle": {
+    "type": "todoterreno",
+    "seats": 4
+   },
+   "start": "veronicas",
+   "clock": {
+    "start": "21:22",
+    "limit": 730,
+    "label": "Cena a las 21:30"
+   },
+   "cast": {
+    "ramon": {
+     "name": "Ramón",
+     "voice": "Dueño de la terraza. Lo tiene todo controlado salvo lo que se le olvida, que es lo importante."
+    },
+    "encarna": {
+     "name": "Encarna",
+     "voice": "Vecina de San Antolín. Da la silla con manual de instrucciones verbal."
+    },
+    "lolo": {
+     "name": "Lolo",
+     "voice": "Primo de alguien. Siempre está «de camino», incluso sentado en tu coche."
+    },
+    "rosi": {
+     "name": "Rosi",
+     "voice": "Trae su propio cojín. Por si acaso las sillas."
+    },
+    "quiosquero": {
+     "name": "Fulgencio",
+     "voice": "El de la silla de Santa Eulalia. Presta, pero apunta."
+    }
+   },
+   "cargo": [
+    {
+     "id": "sillas",
+     "label": "Sillas plegables",
+     "fragility": 0.2,
+     "seats": 0,
+     "grades": {
+      "perfect": "las seis sillas llegaron plegadas y enteras",
+      "damaged": "llegaron seis sillas y cinco se abren",
+      "ruined": "llegaron seis sillas en formato kit"
+     }
+    }
+   ],
+   "stages": [
+    {
+     "id": "s1",
+     "do": "pickup",
+     "place": "san_antolin",
+     "board": [
+      "ramon"
+     ],
+     "load": [
+      "sillas"
+     ],
+     "objective": "Silla 1 de 6: San Antolín",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "encarna",
+       "text": "Esta silla se abre tirando para arriba, bonico. No para abajo. Para arriba. Mírame a mí, no a la silla."
+      },
+      {
+       "when": "arrive",
+       "who": "ramon",
+       "text": "Me subo, que así voy dirigiendo. Tú tranquilo, que esto lo tengo yo controlado."
+      }
+     ],
+     "sound": "boot-close"
+    },
+    {
+     "id": "s2",
+     "do": "pickup",
+     "place": "san_nicolas",
+     "board": [
+      "lolo"
+     ],
+     "objective": "Silla 2 de 6: San Nicolás",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "lolo",
+       "text": "Traigo silla y me traigo a mí. Dos por uno."
+      }
+     ],
+     "sound": "car-door"
+    },
+    {
+     "id": "s3",
+     "do": "pickup",
+     "place": "san_lorenzo",
+     "board": [
+      "rosi"
+     ],
+     "objective": "Silla 3 de 6: San Lorenzo",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "rosi",
+       "text": "Mi silla y mi cojín. La silla es para la terraza; el cojín, para mí."
+      }
+     ],
+     "sound": "car-door"
+    },
+    {
+     "id": "s4",
+     "do": "pickup",
+     "place": "santa_eulalia",
+     "objective": "Silla 4 de 6: Santa Eulalia",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "quiosquero",
+       "text": "Si me la rompéis, me la pagáis en cervezas, pijo. Y apunto las cervezas."
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "do": "pickup",
+     "place": "san_juan",
+     "objective": "Silla 5 de 6: San Juan",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "lolo",
+       "text": "Esta silla tiene más años que la plaza. Que alguien le pregunte la edad, con respeto."
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "do": "pickup",
+     "place": "santa_catalina",
+     "objective": "Silla 6 de 6: Santa Catalina",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "rosi",
+       "text": "Seis sillas, cuatro personas y un cojín. Cabemos. A la fuerza, pero cabemos."
+      },
+      {
+       "when": "after:4",
+       "who": "ramon",
+       "text": "Las llaves."
+      },
+      {
+       "when": "after:6",
+       "who": "ramon",
+       "text": "Las llaves de la terraza. Están en casa de Encarna. En la mesita, al lado del jarrón."
+      },
+      {
+       "when": "after:9",
+       "who": "lolo",
+       "text": "Lo tenía controlado."
+      }
+     ],
+     "choice": {
+      "prompt": "Las llaves están en San Antolín, en la primera parada.",
+      "when": "after:10",
+      "window": 8,
+      "default": 0,
+      "options": [
+       {
+        "label": "Volver con todos dentro",
+        "next": "llaves",
+        "flag": "todos",
+        "reply": {
+         "who": "rosi",
+         "text": "Vamos todos. Así Encarna nos ve juntos y cree que somos un grupo organizado."
+        }
+       },
+       {
+        "label": "Dejar a la gente en la plaza y volver con Ramón",
+        "next": "dejar",
+        "flag": "dos_viajes",
+        "reply": {
+         "who": "ramon",
+         "text": "Vale. Vosotros id montando. Las sillas se abren para arriba."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "dejar",
+     "do": "dropoff",
+     "place": "plaza_flores",
+     "leave": [
+      "lolo",
+      "rosi"
+     ],
+     "unload": [
+      "sillas"
+     ],
+     "objective": "Deja gente y sillas en la Plaza de las Flores",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "rosi",
+       "text": "Nosotros vamos pidiendo. Bueno, no hay a quién pedirle. Nosotros vamos esperando."
+      }
+     ],
+     "next": "llaves",
+     "sound": "boot-close"
+    },
+    {
+     "id": "llaves",
+     "do": "pickup",
+     "place": "san_antolin",
+     "objective": "Las llaves: vuelta a San Antolín",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "encarna",
+       "text": "Sabía que volvías. Te las tenía en la mano. Cuarenta años conociendo a Ramón."
+      }
+     ]
+    },
+    {
+     "id": "terraza",
+     "do": "dropoff",
+     "place": "plaza_flores",
+     "leave": [
+      "ramon",
+      "lolo",
+      "rosi"
+     ],
+     "unload": [
+      "sillas"
+     ],
+     "objective": "A la Plaza de las Flores",
+     "lines": [
+      {
+       "when": "left:30",
+       "who": "ramon",
+       "text": "La gente ya está en la plaza. De pie. Como en un concierto, pero esperándome a mí."
+      }
+     ],
+     "sound": "boot-close"
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "onTime": true,
+      "cargo": {
+       "sillas": "perfect"
+      }
+     },
+     "title": "Seis sillas, una cena",
+     "who": "ramon",
+     "text": "Seis sillas, todo el mundo sentado y las llaves en mi bolsillo. Lo tenía controlado."
+    },
+    {
+     "if": {
+      "onTime": true
+     },
+     "title": "Alguna silla coja",
+     "who": "rosi",
+     "text": "Mi silla cojea, pero con el cojín no se nota. Por eso lo traigo."
+    },
+    {
+     "if": {},
+     "title": "Cena de pie",
+     "who": "lolo",
+     "text": "Hemos cenado de pie y luego hemos tenido seis sillas para la sobremesa. Ha salido una noche redonda."
+    }
+   ]
+  },
+  {
+   "id": "infanta",
+   "title": "La comunión: la tarta Infanta",
+   "kind": "CARGA DELICADA",
+   "minutes": 15,
+   "core": "Una tarta de crema cruzando la ciudad entera: autovía rápida con curvas largas o calles por dentro con badenes y semáforos.",
+   "premise": "Tarde de junio. Recoges en {marmol}, en El Palmar, una {infanta} para la comunión de tu sobrina en María Auxiliadora, junto a Cabezo de Torres. Hay que cruzar la ciudad entera sin que la crema se mueva.",
+   "vehicle": {
+    "type": "deportivo",
+    "seats": 4
+   },
+   "start": "el_palmar",
+   "clock": {
+    "start": "17:42",
+    "limit": 1030,
+    "label": "Merienda a las 18:00"
+   },
+   "cast": {
+    "pastelero": {
+     "name": "El pastelero",
+     "voice": "Habla de la tarta con orgullo tranquilo, sin presumir. Da un consejo y no lo repite."
+    },
+    "hermana": {
+     "name": "Inma",
+     "voice": "Tu hermana, madre de la niña. Audios cortos, cada vez más cortos."
+    },
+    "sobrina": {
+     "name": "Carmen",
+     "voice": "La niña de la comunión. Nueve años, vestido blanco y una pregunta por minuto."
+    }
+   },
+   "cargo": [
+    {
+     "id": "tarta",
+     "label": "Tarta Infanta",
+     "fragility": 0.8,
+     "seats": 0,
+     "grades": {
+      "perfect": "la tarta llegó como salió del obrador",
+      "damaged": "la tarta llegó con la crema algo movida",
+      "ruined": "la tarta llegó con la crema en la tapa"
+     }
+    }
+   ],
+   "stages": [
+    {
+     "id": "obrador",
+     "do": "pickup",
+     "place": "marmol",
+     "load": [
+      "tarta"
+     ],
+     "objective": "Recoge la tarta en {marmol}",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "pastelero",
+       "text": "Aquí la tienes, pijo. Esta es la que premiaron, la Infanta. Recta en el asiento y nada de frenazos, que la crema tiene memoria."
+      },
+      {
+       "when": "after:5",
+       "who": "hermana",
+       "text": "¿La tienes? Vale. No corras. Bueno, corre un poco.",
+       "sound": "message-ping"
+      }
+     ],
+     "sound": "boot-close"
+    },
+    {
+     "id": "ronda",
+     "do": "drive",
+     "place": "barrio_victoria",
+     "objective": "Sal de El Palmar hacia el norte",
+     "lines": [
+      {
+       "when": "cargo:corner",
+       "who": "hermana",
+       "text": "¿Va bien la tarta? No me mandes foto, que me pongo nerviosa. Bueno, mándamela.",
+       "sound": "message-ping"
+      },
+      {
+       "when": "after:25",
+       "who": "sobrina",
+       "text": "Tío, ¿la tarta es de una princesa? Dice la abuela que es de una princesa."
+      }
+     ],
+     "choice": {
+      "prompt": "Por la autovía, más rápido y con curvas largas, o por dentro, con badenes y semáforos.",
+      "when": "after:4",
+      "window": 10,
+      "default": 0,
+      "options": [
+       {
+        "label": "Autovía: rápido, con curvas",
+        "flag": "autovia",
+        "reply": {
+         "who": "sobrina",
+         "text": "Vale. Pero no corras, que mi madre dice que corres."
+        }
+       },
+       {
+        "label": "Por dentro: badenes y semáforos",
+        "flag": "dentro",
+        "bumps": 4,
+        "reply": {
+         "who": "hermana",
+         "text": "Por dentro. Despacito por los badenes, que te conozco."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "comunion",
+     "do": "dropoff",
+     "place": "maria_auxiliadora",
+     "unload": [
+      "tarta"
+     ],
+     "objective": "A María Auxiliadora, a la merienda",
+     "lines": [
+      {
+       "when": "after:15",
+       "who": "hermana",
+       "text": "La abuela ya ha puesto el mantel de las ocasiones. Ese que no se puede manchar nunca.",
+       "sound": "message-ping"
+      },
+      {
+       "when": "cargo:brake",
+       "who": "hermana",
+       "text": "Eso ha sonado a frenazo. Por audio, pero ha sonado.",
+       "sound": "message-ping"
+      },
+      {
+       "when": "left:60",
+       "who": "sobrina",
+       "text": "Tío, ya han venido todos. Hasta el primo de Alicante, que nunca viene."
+      },
+      {
+       "when": "near:300",
+       "who": "hermana",
+       "text": "Te veo desde el balcón. Sube con la tarta por delante, que la vean todos.",
+       "sound": "message-ping"
+      }
+     ],
+     "sound": "boot-close"
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "cargo": {
+       "tarta": "perfect"
+      },
+      "onTime": true
+     },
+     "title": "Como salió del obrador",
+     "who": "sobrina",
+     "text": "Es de princesa. Lo sabía. Ahora que alguien me haga la foto con ella antes de que se la coman los mayores."
+    },
+    {
+     "if": {
+      "cargo": {
+       "tarta": "damaged"
+      }
+     },
+     "title": "Cansada del viaje",
+     "who": "hermana",
+     "text": "Ha llegado un poco cansada, como todos en junio. Sigue estando buenísima, y eso que la abuela no quería opinar."
+    },
+    {
+     "if": {
+      "cargo": {
+       "tarta": "ruined"
+      }
+     },
+     "title": "La siesta de la tarta",
+     "who": "sobrina",
+     "text": "Se ha puesto blandita. Mejor. Así no hay que cortarla, se sirve con cuchara."
+    },
+    {
+     "if": {},
+     "title": "Primero las fotos",
+     "who": "hermana",
+     "text": "Has llegado tarde, pero ha sido justo después de las fotos, así que en todas sales tú no. Algo es algo."
+    }
+   ]
+  },
+  {
+   "id": "paparajotes",
+   "title": "El Bando de la Huerta: los paparajotes",
+   "kind": "HUERTA",
+   "minutes": 8,
+   "core": "Búsqueda en la huerta con tramo corto en tractor por bancales: llegas en tu coche al primer limonar, cambias al tractor del abuelo y atajas entre limoneros hasta el bancal bueno y casa de la abuela.",
+   "premise": "Martes del Bando de la Huerta. La abuela Fuensanta fríe paparajotes en La Escudera y se ha quedado sin hojas de limonero. Baja en tu coche hasta el limonar de Los Pujantes y coge el tractor del abuelo para cruzar campo a través por los bancales.",
+   "vehicle": {
+    "type": "utilitario",
+    "seats": 1
+   },
+   "start": "ermita_burgos",
+   "clock": {
+    "start": "10:49",
+    "limit": 660,
+    "label": "El aceite, caliente a las 11:00"
+   },
+   "cast": {
+    "abuela": {
+     "name": "La abuela Fuensanta",
+     "voice": "Ochenta y tantos. Por teléfono, con la sartén al fuego. Sabe de cada bancal quién era el dueño y de quién es ahora."
+    },
+    "tio_pencho": {
+     "name": "El tío Pencho",
+     "voice": "Huertano de Los Pujantes. Habla despacio, señala lejos y da direcciones por árboles y acequias."
+    },
+    "chloe": {
+     "name": "Chloé",
+     "voice": "Amiga de la nieta, de fuera, de Erasmus. Entusiasta con todo lo murciano. Viene en el asiento del acompañante."
+    }
+   },
+   "stages": [
+    {
+     "id": "pujantes",
+     "do": "pickup",
+     "place": "huerto_pujantes",
+     "board": [
+      "chloe"
+     ],
+     "objective": "Al limonar de Los Pujantes: allí te espera el tractor",
+     "lines": [
+      {
+       "when": "start",
+       "who": "abuela",
+       "text": "Ve al bancal del tío Pencho, en Los Pujantes. Las hojas grandes, que las pequeñas se rompen al rebozar.",
+       "sound": "phone-ring"
+      },
+      {
+       "when": "after:5",
+       "who": "abuela",
+       "text": "Deja el coche en el lindero y coge el tractor del abuelo, que luego tendrás que atajar por mitad de los bancales."
+      },
+      {
+       "when": "after:12",
+       "who": "chloe",
+       "text": "¿Paparajote es un dulce? ¿Y la hoja se come? En mi país comemos hojas en ensalada."
+      },
+      {
+       "when": "arrive",
+       "who": "tio_pencho",
+       "text": "El tractor está ahí, con la llave puesta. Hojas buenas no me quedan, zagal: vino ayer la peña de mi cuñado y me dejó el limonero pelao como un ajo."
+      },
+      {
+       "when": "arrive",
+       "who": "tio_pencho",
+       "text": "Ataja derecho por los bancales hacia el sur, hasta el limonar gordo de La Escudera. Con el tractor pasas entre las filas sin rodear."
+      }
+     ],
+     "vehicle": "tractor",
+     "sound": "car-door",
+     "ambient": [
+      {
+       "sound": "orchard-loop"
+      }
+     ]
+    },
+    {
+     "id": "bancales",
+     "do": "pickup",
+     "place": "huerto_escudera",
+     "offroad": true,
+     "objective": "Atraviesa los bancales hasta el limonar de La Escudera",
+     "lines": [
+      {
+       "when": "after:15",
+       "who": "abuela",
+       "text": "¿Ya las tienes? El aceite se calienta, zagal. El aceite no espera a nadie."
+      },
+      {
+       "when": "arrive",
+       "who": "chloe",
+       "text": "Huelen a… a limón. Claro. Perdón, estoy emocionada."
+      },
+      {
+       "when": "after:6",
+       "who": "chloe",
+       "text": "Las llevo yo, en la falda, como un ramo. Es muy bonito esto."
+      }
+     ],
+     "sound": "boot-close",
+     "ambient": [
+      {
+       "sound": "orchard-loop"
+      }
+     ]
+    },
+    {
+     "id": "freidora",
+     "do": "dropoff",
+     "place": "la_escudera",
+     "offroad": true,
+     "leave": [
+      "chloe"
+     ],
+     "objective": "Cruza los bancales hasta casa de la abuela, en La Escudera",
+     "lines": [
+      {
+       "when": "near:220",
+       "who": "abuela",
+       "text": "Te oigo el tractor cruzar los bancales desde la cocina. Entra por detrás, que delante está tu tío con la mesa."
+      },
+      {
+       "when": "arrive",
+       "who": "chloe",
+       "text": "Entonces la hoja no se come, ¿verdad? Lo he leído en el tractor. Menos mal que no la he probado. Bueno, una."
+      }
+     ],
+     "sound": "boot-close"
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "onTime": true
+     },
+     "title": "Paparajotes de Bando",
+     "who": "abuela",
+     "text": "Hojas como las de antes. Ahora siéntate, que el primero es tuyo. Y la hoja se deja en el plato, que ya me ha dicho la muchacha."
+    },
+    {
+     "if": {},
+     "title": "El aceite esperó",
+     "who": "abuela",
+     "text": "Has tardado, pero el aceite es más paciente de lo que digo. Siéntate, que se enfrían."
+    }
+   ]
+  },
+  {
+   "id": "boda",
+   "title": "La boda: busca al novio",
+   "kind": "BÚSQUEDA",
+   "minutes": 16,
+   "core": "Encontrar a un pasajero que no sabe dónde está: solo describe lo que ve; luego, carrera contra el coche de la novia.",
+   "premise": "Sales de la Catedral para recoger al novio, que amaneció tras la despedida «por Torre Alcayna, o por ahí». La boda es en la iglesia de Era Alta, al otro lado de la ciudad.",
+   "vehicle": {
+    "type": "deportivo",
+    "seats": 4
+   },
+   "start": "catedral",
+   "clock": {
+    "start": "11:44",
+    "limit": 1080,
+    "label": "La novia llega a las 12:00",
+    "tiers": [
+     {
+      "at": 960,
+      "id": "antes",
+      "label": "Antes que la novia"
+     },
+     {
+      "at": 990,
+      "id": "a_la_vez",
+      "label": "A la vez que la novia"
+     }
+    ]
+   },
+   "cast": {
+    "nacho": {
+     "name": "Nacho",
+     "voice": "El novio. Resacoso y feliz. Describe su ubicación como un poema: «hay una palmera, una rotonda y un señor»."
+    },
+    "quique": {
+     "name": "Quique",
+     "voice": "El padrino. Ya está en la iglesia y llama cada dos minutos para preguntar lo mismo con palabras distintas. Tiene los anillos."
+    },
+    "suegra": {
+     "name": "Doña Remedios",
+     "voice": "La madre de la novia. Educadísima por teléfono, y eso es lo que da miedo."
+    }
+   },
+   "cargo": [
+    {
+     "id": "traje",
+     "label": "Traje del novio",
+     "fragility": 0.55,
+     "seats": 0,
+     "grades": {
+      "perfect": "el traje llegó sin una arruga",
+      "damaged": "el traje llegó con alguna arruga de carácter",
+      "ruined": "el traje llegó como si hubiera dormido en él, que es lo que pasó"
+     }
+    }
+   ],
+   "stages": [
+    {
+     "id": "buscar",
+     "do": "find",
+     "place": "torre_alcayna",
+     "radius": 300,
+     "board": [
+      "nacho"
+     ],
+     "load": [
+      "traje"
+     ],
+     "objective": "Encuentra a Nacho por Torre Alcayna",
+     "lines": [
+      {
+       "when": "start",
+       "who": "nacho",
+       "text": "Estoy… a ver. Hay una palmera. Una rotonda. Y un señor paseando un perro que me mira mal.",
+       "sound": "phone-ring"
+      },
+      {
+       "when": "after:20",
+       "who": "nacho",
+       "text": "El señor se ha ido. La palmera sigue. Eso ayuda, ¿no?"
+      },
+      {
+       "when": "after:40",
+       "who": "quique",
+       "text": "Acho, ¿lo tienes ya? ¿No? ¿Y ahora? Vale, cuelgo. ¿Lo tienes?",
+       "sound": "phone-ring"
+      },
+      {
+       "when": "near:120",
+       "who": "nacho",
+       "text": "¡Te veo! Bueno, veo un coche. ¿Eres tú? Toco el claxon. Ah, no, eso tienes que hacerlo tú."
+      },
+      {
+       "when": "arrive",
+       "who": "nacho",
+       "text": "El traje lo tengo en la funda, en la mano, desde anoche. No lo he soltado. Es lo único que he hecho bien."
+      }
+     ]
+    },
+    {
+     "id": "iglesia",
+     "do": "dropoff",
+     "place": "iglesia_era_alta",
+     "leave": [
+      "nacho"
+     ],
+     "unload": [
+      "traje"
+     ],
+     "objective": "A la iglesia de Era Alta",
+     "lines": [
+      {
+       "when": "after:10",
+       "who": "suegra",
+       "text": "Hola, bonico. Solo llamaba para saber si estáis bien. Y dónde estáis. Exactamente.",
+       "sound": "phone-ring"
+      },
+      {
+       "when": "cargo:corner",
+       "who": "nacho",
+       "text": "El traje. Que se arruga. Que me caso arrugado."
+      },
+      {
+       "when": "after:30",
+       "who": "quique",
+       "text": "Los anillos los tengo yo, aquí en la iglesia. Los he contado tres veces. Son dos."
+      },
+      {
+       "when": "after:8",
+       "who": "nacho",
+       "text": "Me cambio aquí detrás. No mires. Bueno, mira la carretera, que es lo tuyo."
+      },
+      {
+       "when": "cargo:brake",
+       "who": "nacho",
+       "text": "Se me ha metido el pie en la manga. Sigue, sigue."
+      },
+      {
+       "when": "left:90",
+       "who": "suegra",
+       "text": "La niña ya ha salido de casa. Lo digo sin presión ninguna."
+      },
+      {
+       "when": "left:30",
+       "who": "quique",
+       "text": "Veo el coche de la novia por el espejo. Viene con lazos. Corre. No, no corras. Sí, corre."
+      },
+      {
+       "when": "near:200",
+       "who": "nacho",
+       "text": "Ya se ve el campanario. Qué bonito. Me voy a casar ahí. Hoy."
+      }
+     ],
+     "sound": "church-bells"
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "arrival": "antes",
+      "cargo": {
+       "traje": "perfect"
+      }
+     },
+     "title": "Esperándola en el altar",
+     "who": "nacho",
+     "text": "He llegado antes que ella, sin una arruga y con los anillos. Nadie se va a creer cómo ha empezado este día."
+    },
+    {
+     "if": {
+      "arrival": "antes"
+     },
+     "title": "Arrugado pero primero",
+     "who": "quique",
+     "text": "Arrugado, pero ha llegado antes. En las fotos lo arreglan. Lo que no se arregla es llegar tarde."
+    },
+    {
+     "if": {
+      "arrival": "a_la_vez"
+     },
+     "title": "Entrada a dúo",
+     "who": "suegra",
+     "text": "Habéis aparcado a la vez que la novia. Ha quedado muy original. Lo vamos a contar en todas las bodas."
+    },
+    {
+     "if": {},
+     "title": "La novia esperó",
+     "who": "nacho",
+     "text": "Ha esperado ella. Le he dicho que me perdí por Torre Alcayna. Me ha dicho que eso ya lo sabía todo el mundo."
+    }
+   ]
+  },
+  {
+   "id": "reina_sofia",
+   "title": "Urgencias en la Reina Sofía",
+   "kind": "URGENTE",
+   "minutes": 12,
+   "core": "Prisa pura y cambio de coche a mitad: el tuyo se calienta y sigues en el coche de prueba de un concesionario, con el vendedor dentro.",
+   "premise": "A don Ginés le duele el pecho «un poquito, nada». Su hija quiere que lo lleves al Hospital Reina Sofía. Él quiere un café. A mitad de camino tu coche empieza a echar humo junto a un concesionario.",
+   "vehicle": {
+    "type": "deportivo",
+    "seats": 4
+   },
+   "start": "mirador_agridulce",
+   "clock": {
+    "start": "10:18",
+    "limit": 820,
+    "label": "Urgencias: cuanto antes"
+   },
+   "cast": {
+    "gines": {
+     "name": "Don Ginés",
+     "voice": "Setenta y ocho años, quita importancia a todo. Lo grave le parece «una tontería» y lo trivial, un escándalo."
+    },
+    "hija": {
+     "name": "Mari Ángeles",
+     "voice": "Su hija, por teléfono. Se ha leído media enciclopedia de síntomas en el móvil y te la va resumiendo."
+    },
+    "vendedor": {
+     "name": "El vendedor",
+     "voice": "No para de hablar. Convierte la emergencia en una prueba de conducción, con argumentos de venta incluidos."
+    }
+   },
+   "stages": [
+    {
+     "id": "recoger",
+     "do": "pickup",
+     "place": "mirador_agridulce_2",
+     "board": [
+      "gines"
+     ],
+     "objective": "Recoge a don Ginés en el Mirador de Agridulce",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "gines",
+       "text": "Que no es nada, zagal. Mi hija, que es muy exagerada. Ya que vamos, ¿paramos a tomar un café?"
+      },
+      {
+       "when": "after:6",
+       "who": "hija",
+       "text": "No le dejes tomar café. He leído que el café en estos casos… no sé qué, pero no.",
+       "sound": "phone-ring"
+      },
+      {
+       "when": "after:20",
+       "who": "gines",
+       "text": "En mis tiempos esto se curaba con una siesta. Y nadie se moría. Bueno, alguno."
+      }
+     ],
+     "sound": "car-door"
+    },
+    {
+     "id": "humo",
+     "do": "swap",
+     "place": "concesionario",
+     "vehicle": "prueba",
+     "objective": "Tu coche echa humo: para en el concesionario de la Avenida Juan Carlos I",
+     "lines": [
+      {
+       "when": "start",
+       "who": "gines",
+       "text": "¿Eso que sale del capó es humo? Pues ahora sí que me tomo el café."
+      },
+      {
+       "when": "arrive",
+       "who": "vendedor",
+       "text": "¿Una urgencia? Perfecto, la mejor prueba de conducción es la real. Llévese este, yo voy detrás. Bueno, voy dentro."
+      },
+      {
+       "when": "after:4",
+       "who": "vendedor",
+       "text": "Fíjese en la aceleración. Y el maletero, que no se ve, pero es enorme."
+      }
+     ]
+    },
+    {
+     "id": "hospital",
+     "do": "dropoff",
+     "place": "reina_sofia",
+     "leave": [
+      "gines"
+     ],
+     "objective": "Urgencias del Hospital Reina Sofía",
+     "lines": [
+      {
+       "when": "after:10",
+       "who": "hija",
+       "text": "Dice internet que si le duele el brazo izquierdo es una cosa y el derecho otra. Pregúntale qué brazo."
+      },
+      {
+       "when": "after:13",
+       "who": "gines",
+       "text": "Me duelen los dos, de llevar las bolsas de la compra. Que no es nada."
+      },
+      {
+       "when": "after:25",
+       "who": "vendedor",
+       "text": "Si este coche le lleva a urgencias, le lleva a cualquier sitio. Eso lo pongo yo en el anuncio."
+      },
+      {
+       "when": "speed>90",
+       "who": "vendedor",
+       "text": "Bien. Muy bien. No me diga la velocidad, que tengo que firmar yo la prueba."
+      },
+      {
+       "when": "cargo:hit",
+       "who": "vendedor",
+       "text": "Eso lo cubre el seguro. Creo. Luego lo miramos con un café."
+      },
+      {
+       "when": "near:300",
+       "who": "gines",
+       "text": "Ya se ve el hospital. Qué grande lo han hecho. Cuando nació mi Mari Ángeles esto era otra cosa."
+      }
+     ],
+     "sound": "car-door",
+     "ambient": [
+      {
+       "sound": "hospital-bay-loop"
+      }
+     ]
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "onTime": true
+     },
+     "title": "Nada, una tontería",
+     "who": "gines",
+     "text": "Dice la doctora que menos mal que he venido. Y que ni café ni siesta. Mi hija tenía razón, pero eso no se lo digáis."
+    },
+    {
+     "if": {},
+     "title": "Prueba de conducción larga",
+     "who": "vendedor",
+     "text": "Han tardado, pero don Ginés está bien. Y yo le he vendido el coche a la hija en la sala de espera, así que todos contentos."
+    }
+   ]
+  },
+  {
+   "id": "bebe",
+   "title": "El bebé vuelve a casa",
+   "kind": "SUAVIDAD",
+   "minutes": 11,
+   "core": "Lo contrario de la prisa: límite de velocidad con aviso y un medidor de comodidad del bebé que bajan los badenes, frenazos, bordillos y curvas cerradas.",
+   "premise": "Recoges en la Arrixaca a Rocío y a su hija recién nacida, Valeria, y las llevas a casa, en Algezares. La abuela se sube en San Antonio el Pobre. Valeria duerme. Que siga durmiendo.",
+   "vehicle": {
+    "type": "utilitario",
+    "seats": 4
+   },
+   "start": "el_palmar",
+   "clock": null,
+   "limits": {
+    "speed": 40,
+    "comfort": "Valeria duerme"
+   },
+   "cast": {
+    "rocio": {
+     "name": "Rocío",
+     "voice": "Madre de tres días. Agotada, dulce, y con un oído capaz de oír un badén antes de que llegue."
+    },
+    "abuela": {
+     "name": "Doña Josefa",
+     "voice": "La abuela. Ha criado a cinco y opina de todo, en voz muy bajita para no despertar a la niña."
+    },
+    "valeria": {
+     "name": "Valeria",
+     "voice": "Tres días. Se expresa por medios no verbales."
+    }
+   },
+   "cargo": [
+    {
+     "id": "sueno",
+     "label": "Sueño de Valeria",
+     "fragility": 1,
+     "seats": 1,
+     "grades": {
+      "perfect": "Valeria llegó dormida como un ángel",
+      "damaged": "Valeria llegó despierta pero de buen humor",
+      "ruined": "Valeria llegó cantando por bulerías"
+     }
+    }
+   ],
+   "stages": [
+    {
+     "id": "maternidad",
+     "do": "pickup",
+     "place": "arrixaca_maternidad",
+     "board": [
+      "rocio",
+      "valeria"
+     ],
+     "load": [
+      "sueno"
+     ],
+     "objective": "Recoge a Rocío y Valeria en la Arrixaca",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "rocio",
+       "text": "Despacito, ¿vale? Se ha dormido hace diez minutos y es lo más bonito que me ha pasado esta semana."
+      },
+      {
+       "when": "speed>40",
+       "who": "rocio",
+       "text": "Más despacio. Por favor. Te lo pido con todo el cariño del mundo."
+      },
+      {
+       "when": "cargo:bump",
+       "who": "valeria",
+       "text": "(Se mueve. Frunce el ceño. Se lo piensa.)",
+       "sound": "baby-coo"
+      }
+     ],
+     "sound": "boot-close"
+    },
+    {
+     "id": "abuela",
+     "do": "pickup",
+     "place": "san_antonio_pobre",
+     "board": [
+      "abuela"
+     ],
+     "objective": "La abuela espera en San Antonio el Pobre",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "abuela",
+       "text": "Déjame verla. Ay. Es igualita a su abuelo. Pobrecica."
+      },
+      {
+       "when": "after:8",
+       "who": "abuela",
+       "text": "Por aquí no, que hay un badén que parece una montaña. Por la otra."
+      },
+      {
+       "when": "cargo:brake",
+       "who": "abuela",
+       "text": "Zagal, frena como si llevaras huevos. Bueno, mejor que huevos."
+      },
+      {
+       "when": "speed>40",
+       "who": "abuela",
+       "text": "Que no es una ambulancia, que es una niña dormida."
+      }
+     ],
+     "sound": "car-door"
+    },
+    {
+     "id": "casa",
+     "do": "dropoff",
+     "place": "residencial_mirador",
+     "leave": [
+      "rocio",
+      "abuela",
+      "valeria"
+     ],
+     "unload": [
+      "sueno"
+     ],
+     "objective": "A casa, en Residencial El Mirador (Algezares)",
+     "lines": [
+      {
+       "when": "cargo:corner",
+       "who": "valeria",
+       "text": "(Abre un ojo. Lo cierra. Te ha perdonado, de momento.)",
+       "sound": "baby-coo"
+      },
+      {
+       "when": "cargo<40",
+       "who": "valeria",
+       "text": "(Llora. Con ganas. Con muchísimas ganas.)",
+       "sound": "baby-cry"
+      },
+      {
+       "when": "cargo<40",
+       "who": "rocio",
+       "text": "No pasa nada. Sí pasa. Pero no pasa nada."
+      },
+      {
+       "when": "near:200",
+       "who": "abuela",
+       "text": "Ya estamos. Aparca sin maniobras, que las maniobras despiertan."
+      }
+     ],
+     "sound": "boot-close"
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "cargo": {
+       "sueno": "perfect"
+      }
+     },
+     "title": "Ni se ha enterado",
+     "who": "rocio",
+     "text": "No se ha despertado. En todo el viaje. Eres oficialmente el mejor conductor de esta familia, y mira que el abuelo era taxista."
+    },
+    {
+     "if": {
+      "cargo": {
+       "sueno": "damaged"
+      }
+     },
+     "title": "Despierta y tranquila",
+     "who": "abuela",
+     "text": "Se ha despertado, pero sin llorar. Como su madre, que de pequeña se despertaba para mirar."
+    },
+    {
+     "if": {},
+     "title": "Concierto en el asiento de atrás",
+     "who": "rocio",
+     "text": "Ha llorado todo el camino. Bueno, ya sabemos que tiene buenos pulmones. Gracias por traernos, de verdad."
+    }
+   ]
+  },
+  {
+   "id": "juzgados",
+   "title": "El escrito a los juzgados",
+   "kind": "PAPELEO",
+   "minutes": 10,
+   "core": "Maratón de recados contra el horario de oficina: las paradas dependen de lo que falte (un sello, una copia, un certificado) y los papeles vuelan con los frenazos.",
+   "premise": "Tu prima Lola, abogada, necesita que un escrito llegue firmado al registro de los juzgados antes de las tres. Falta la firma del cliente, falta un sello y, como siempre, falta una copia.",
+   "vehicle": {
+    "type": "utilitario",
+    "seats": 4
+   },
+   "start": "el_infante",
+   "clock": {
+    "start": "14:48",
+    "limit": 720,
+    "label": "El registro cierra a las 15:00"
+   },
+   "cast": {
+    "lola": {
+     "name": "Lola",
+     "voice": "Abogada. Habla por teléfono con tres personas a la vez y a todas les dice «perfecto»."
+    },
+    "cliente": {
+     "name": "Don Salvador",
+     "voice": "El cliente. Firma con calma de notario, aunque no lo es. Lee todo antes de firmar, todo."
+    },
+    "funcionaria": {
+     "name": "La funcionaria",
+     "voice": "Registro. A las tres en punto, ni un minuto más. Sin maldad, con un reloj."
+    },
+    "copista": {
+     "name": "El de la copistería",
+     "voice": "Ha visto mil prisas. Ninguna le cambia la velocidad de la fotocopiadora."
+    }
+   },
+   "cargo": [
+    {
+     "id": "papeles",
+     "label": "Escrito y copias",
+     "fragility": 0.4,
+     "seats": 0,
+     "grades": {
+      "perfect": "los papeles llegaron en orden y sin una esquina doblada",
+      "damaged": "los papeles llegaron, la página tres algo pisada",
+      "ruined": "los papeles llegaron por orden alfabético inverso"
+     }
+    }
+   ],
+   "stages": [
+    {
+     "id": "cliente",
+     "do": "pickup",
+     "place": "el_progreso",
+     "board": [
+      "cliente"
+     ],
+     "load": [
+      "papeles"
+     ],
+     "objective": "Recoge a don Salvador y el escrito en El Progreso",
+     "lines": [
+      {
+       "when": "start",
+       "who": "lola",
+       "text": "Perfecto. Recoge a don Salvador, que tiene el escrito. Firma en el coche, que no da tiempo a nada.",
+       "sound": "phone-ring"
+      },
+      {
+       "when": "arrive",
+       "who": "cliente",
+       "text": "Buenas tardes. ¿Le importa que lo lea antes de firmar? Son solo once páginas."
+      },
+      {
+       "when": "after:20",
+       "who": "cliente",
+       "text": "Página cuatro. Aquí pone «el que suscribe». ¿Ese soy yo? Vale. Sigo."
+      },
+      {
+       "when": "cargo:brake",
+       "who": "cliente",
+       "text": "Se me ha ido la página siete debajo del asiento. Ya la cojo. No la cojo. Ya la cojo."
+      }
+     ],
+     "choice": {
+      "prompt": "Lola avisa: falta una copia. ¿Copistería ahora o te la juegas a que en el registro hacen la copia?",
+      "when": "after:30",
+      "window": 10,
+      "default": 0,
+      "options": [
+       {
+        "label": "A la copistería",
+        "flag": "copia",
+        "reply": {
+         "who": "lola",
+         "text": "Perfecto. Dos copias. Bueno, tres, que nunca se sabe."
+        }
+       },
+       {
+        "label": "Directo al registro",
+        "flag": "sin_copia",
+        "reply": {
+         "who": "lola",
+         "text": "Perfecto. Bueno, perfecto no. Pero vale."
+        }
+       }
+      ]
+     },
+     "sound": "boot-close"
+    },
+    {
+     "id": "copias",
+     "do": "pickup",
+     "place": "copisteria",
+     "requires": "copia",
+     "wait": {
+      "real": 4,
+      "clock": 90
+     },
+     "objective": "Copias en la copistería",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "copista",
+       "text": "¿Tres copias? Tengo a uno delante con una tesis doctoral. Tú tranquilo, pijo, que voy rápido."
+      },
+      {
+       "when": "after:3",
+       "who": "copista",
+       "text": "Ya está. Te he grapado las tres, que con prisa se pierde todo."
+      }
+     ]
+    },
+    {
+     "id": "sello",
+     "do": "pickup",
+     "place": "correos",
+     "objective": "Correos: el certificado con acuse de recibo",
+     "lines": [
+      {
+       "when": "start",
+       "who": "lola",
+       "text": "Perfecto. Antes de registrar, pasa por Correos y que manden el certificado. Así queda todo atado."
+      },
+      {
+       "when": "arrive",
+       "who": "cliente",
+       "text": "He cogido número. El 47. Van por el 39. Pero el 40, 41 y 42 se han ido. Hay esperanza."
+      },
+      {
+       "when": "after:6",
+       "who": "cliente",
+       "text": "Ya está. Me han sellado hasta la mano, por si acaso."
+      }
+     ]
+    },
+    {
+     "id": "registro",
+     "do": "dropoff",
+     "place": "juzgados",
+     "leave": [
+      "cliente"
+     ],
+     "unload": [
+      "papeles"
+     ],
+     "objective": "Al registro de la Ciudad de la Justicia",
+     "lines": [
+      {
+       "when": "left:90",
+       "who": "lola",
+       "text": "Perfecto. Dice la funcionaria que cierra a las tres. Lo ha dicho como quien dice la hora, sin rencor."
+      },
+      {
+       "when": "cargo:corner",
+       "who": "cliente",
+       "text": "Las copias van a la izquierda y yo a la derecha. Estamos todos bien."
+      },
+      {
+       "when": "left:20",
+       "who": "funcionaria",
+       "text": "Me estoy poniendo la chaqueta. Despacio, pero me la estoy poniendo."
+      },
+      {
+       "when": "arrive",
+       "who": "funcionaria",
+       "text": "Sello aquí, fecha aquí. ¿Y la copia para el interesado?"
+      }
+     ],
+     "sound": "boot-close"
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "onTime": true,
+      "flags": [
+       "copia"
+      ],
+      "cargo": {
+       "papeles": "perfect"
+      }
+     },
+     "title": "Registrado",
+     "who": "funcionaria",
+     "text": "Registrado a las tres menos un minuto. Con copia y todo. Así da gusto cerrar."
+    },
+    {
+     "if": {
+      "onTime": true,
+      "flags": [
+       "sin_copia"
+      ]
+     },
+     "title": "La copia, mañana",
+     "who": "funcionaria",
+     "text": "Sin copia para el interesado. Se la registro igual y la copia me la trae mañana, que hoy ya no hay fotocopiadora para nadie."
+    },
+    {
+     "if": {
+      "onTime": true
+     },
+     "title": "Página siete, pisada",
+     "who": "lola",
+     "text": "Perfecto. La página siete tiene la huella de un zapato, pero en el derecho cuenta el contenido."
+    },
+    {
+     "if": {},
+     "title": "A las tres y un minuto",
+     "who": "funcionaria",
+     "text": "Son las tres y un minuto. Mañana a las nueve estoy aquí. Con el mismo reloj."
+    }
+   ]
+  },
+  {
+   "id": "auditorio",
+   "title": "El concierto de violonchelo",
+   "kind": "CONCIERTO",
+   "minutes": 9,
+   "core": "Hora de inicio con escalones: si llegas tarde no se acaba la misión, pero se entra en otro momento; carga voluminosa que viaja en un asiento y una parada opcional por flores que cuesta tiempo.",
+   "premise": "Marta toca esta noche como solista de violonchelo en el Auditorio Víctor Villegas. Su violonchelo se ha quedado en casa de sus padres, en Zarandona. Lo llevas tú, con su padre y con Rubén, que nunca ha ido a un concierto.",
+   "vehicle": {
+    "type": "berlina",
+    "seats": 4
+   },
+   "start": "la_flota",
+   "clock": {
+    "start": "19:51",
+    "limit": 600,
+    "label": "El concierto empieza a las 20:00",
+    "tiers": [
+     {
+      "at": 540,
+      "id": "a_tiempo",
+      "label": "Antes de la obertura"
+     },
+     {
+      "at": 780,
+      "id": "concierto",
+      "label": "Antes del concierto de violonchelo"
+     }
+    ]
+   },
+   "cast": {
+    "gines": {
+     "name": "Ginés",
+     "voice": "Padre de Marta. Tararea la sinfonía entera y dirige con un lápiz desde el asiento del copiloto."
+    },
+    "ruben": {
+     "name": "Rubén",
+     "voice": "Novio de Marta. Primera vez en un concierto. Pregunta lo que todos pensamos y nadie pregunta."
+    },
+    "marta": {
+     "name": "Marta",
+     "voice": "La solista. Por teléfono desde el camerino. Tranquila por fuera; por dentro, menos."
+    }
+   },
+   "cargo": [
+    {
+     "id": "chelo",
+     "label": "Violonchelo",
+     "fragility": 0.7,
+     "seats": 1,
+     "grades": {
+      "perfect": "el violonchelo llegó afinado",
+      "damaged": "el violonchelo llegó con una cuerda pidiendo atención",
+      "ruined": "el violonchelo llegó con un sonido nuevo, muy contemporáneo"
+     }
+    }
+   ],
+   "stages": [
+    {
+     "id": "chelo",
+     "do": "pickup",
+     "place": "zarandona",
+     "board": [
+      "gines"
+     ],
+     "load": [
+      "chelo"
+     ],
+     "objective": "Recoge a Ginés y el violonchelo en Zarandona",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "gines",
+       "text": "En el maletero no cabe. Va detrás, con cinturón. Es de la familia."
+      },
+      {
+       "when": "after:6",
+       "who": "gines",
+       "text": "Tara, tara, taaa… Esto es el principio. Fíjate en las trompas. Bueno, aquí no hay trompas. Imagínatelas."
+      }
+     ],
+     "sound": "boot-close"
+    },
+    {
+     "id": "ruben",
+     "do": "pickup",
+     "place": "las_boqueras",
+     "board": [
+      "ruben"
+     ],
+     "objective": "Recoge a Rubén en Las Boqueras",
+     "lines": [
+      {
+       "when": "arrive",
+       "who": "ruben",
+       "text": "Acho, ¿hay que ir de traje? Me he puesto la camisa de las bodas. Es lo más formal que tengo, aparte del DNI."
+      },
+      {
+       "when": "after:8",
+       "who": "ruben",
+       "text": "Una pregunta. ¿Cuándo se aplaude? Porque yo veo que se para y aplaudo."
+      },
+      {
+       "when": "after:11",
+       "who": "gines",
+       "text": "Entre movimientos, no. Cuando el director baja los brazos y se da la vuelta. Si dudas, me miras a mí."
+      }
+     ],
+     "sound": "car-door"
+    },
+    {
+     "id": "flores",
+     "do": "pickup",
+     "place": "puente_tocinos",
+     "optional": true,
+     "wait": {
+      "real": 3,
+      "clock": 90
+     },
+     "objective": "Opcional: flores para Marta",
+     "lines": [
+      {
+       "when": "start",
+       "who": "ruben",
+       "text": "¿Paramos a por flores? A los solistas se les dan flores, ¿no? Lo he visto en una película."
+      },
+      {
+       "when": "arrive",
+       "who": "ruben",
+       "text": "Han dicho que estas son «para ocasiones». No sé qué ocasiones, pero esta lo es."
+      }
+     ]
+    },
+    {
+     "id": "auditorio",
+     "do": "dropoff",
+     "place": "auditorio",
+     "leave": [
+      "gines",
+      "ruben"
+     ],
+     "unload": [
+      "chelo"
+     ],
+     "objective": "Al Auditorio Víctor Villegas",
+     "lines": [
+      {
+       "when": "after:5",
+       "who": "marta",
+       "text": "¿Lo traéis? Vale. Respiro. Papá, no dirijas desde el coche, que distraes al conductor.",
+       "sound": "phone-ring"
+      },
+      {
+       "when": "after:9",
+       "who": "gines",
+       "text": "No dirijo. Marco el tempo. Es distinto."
+      },
+      {
+       "when": "cargo:brake",
+       "who": "gines",
+       "text": "Ese frenazo ha sonado en re. Bueno, en algo."
+      },
+      {
+       "when": "cargo:bump",
+       "who": "ruben",
+       "text": "El violonchelo ha hecho un ruido. ¿Eso es bueno? ¿Es parte de la obra?"
+      },
+      {
+       "when": "left:60",
+       "who": "marta",
+       "text": "Están afinando. Si no llegáis, me dejan uno prestado. Pero no es el mío. No suena a mí."
+      },
+      {
+       "when": "near:300",
+       "who": "gines",
+       "text": "Ahí está. Entra por la puerta de artistas, bonica, que yo te guío. Tara, tara…"
+      }
+     ],
+     "sound": "orchestra-tuning"
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "arrival": "a_tiempo",
+      "cargo": {
+       "chelo": "perfect"
+      }
+     },
+     "title": "Afinado y a tiempo",
+     "who": "marta",
+     "text": "Ha llegado mi chelo, afinado y a tiempo. Y Rubén ha aplaudido en su sitio. Esta noche ya ha salido bien."
+    },
+    {
+     "if": {
+      "arrival": "a_tiempo"
+     },
+     "title": "A tiempo, con una cuerda floja",
+     "who": "marta",
+     "text": "Una cuerda se ha soltado un poco. La afino en dos minutos. Peor sería no tenerlo."
+    },
+    {
+     "if": {
+      "arrival": "concierto"
+     },
+     "title": "Durante la obertura",
+     "who": "ruben",
+     "text": "Nos hemos perdido la obertura, pero hemos entrado para lo de Marta. He aplaudido entre movimientos. Solo una vez. Bueno, dos."
+    },
+    {
+     "if": {},
+     "title": "Hasta el descanso",
+     "who": "gines",
+     "text": "Hemos esperado al descanso en el vestíbulo. Marta ha tocado con uno prestado y ha sonado a ella igual. Eso es lo que es ser buena."
+    }
+   ]
+  },
+  {
+   "id": "despedida",
+   "title": "La comida de empresa de Fran",
+   "kind": "AL AZAR",
+   "minutes": 12,
+   "core": "Salida y recogida sorteadas en cada partida; adivinar en cuál de los dos {eci} está el traje; el pasajero se marea con las curvas y se recupera si conduces tranquilo.",
+   "premise": "La mañana después de una noche de las largas. Recoges a Fran, que tiene la comida de empresa a mediodía, pasáis por {eci} a por el traje y lo llevas al restaurante, junto al Mercado de Verónicas. No recuerda en cuál de los dos dejó el traje. Recuerda poco, en general.",
+   "vehicle": {
+    "type": "taxi",
+    "seats": 4
+   },
+   "start": "?salida",
+   "draws": {
+    "?salida": [
+     "cabezo_torres",
+     "carril_enera",
+     "conjunto_residencial",
+     "los_teatinos",
+     "carril_penchos"
+    ],
+    "?casa_amigo": [
+     "carretera_nora",
+     "santa_maria_gracia",
+     "la_paz",
+     "vista_alegre",
+     "buenos_aires"
+    ],
+    "?traje": [
+     "eci_libertad",
+     "eci_gran_via"
+    ]
+   },
+   "clock": {
+    "start": "11:39",
+    "limit": 1270,
+    "label": "La comida de empresa, a las 12:00",
+    "fromRoute": 14
+   },
+   "cast": {
+    "fran": {
+     "name": "Fran",
+     "voice": "Resaca alegre: canta trozos de canciones del verano de hace quince años, da direcciones de sitios que ya no existen y pide perdón con mucho cariño."
+    },
+    "sandra": {
+     "name": "Sandra",
+     "voice": "Su compañera de piso. Por mensajes. Tranquila y divertida; conoce a Fran desde el instituto y nada la sorprende."
+    },
+    "fulgen": {
+     "name": "Fulgen",
+     "voice": "Compañero de oficina. Ya está en el restaurante con todo el equipo y lleva la cuenta de los minutos en voz alta."
+    },
+    "dependienta": {
+     "name": "La dependienta de arreglos",
+     "voice": "Amabilidad profesional de quien ha visto llegar a muchos novios de resaca. Les da el traje como quien da un consejo."
+    }
+   },
+   "cargo": [
+    {
+     "id": "estomago",
+     "label": "Estómago de Fran",
+     "fragility": 0.9,
+     "seats": 0,
+     "recover": 1.5,
+     "grades": {
+      "perfect": "Fran llegó entero",
+      "damaged": "Fran llegó pálido pero digno",
+      "ruined": "Fran llegó con la ventanilla como mejor amiga"
+     }
+    },
+    {
+     "id": "traje",
+     "label": "Traje",
+     "fragility": 0.4,
+     "seats": 0,
+     "grades": {
+      "perfect": "el traje llegó sin una mancha",
+      "damaged": "el traje llegó con una mancha discreta en la solapa",
+      "ruined": "el traje llegó con el café con leche por la pechera"
+     }
+    }
+   ],
+   "stages": [
+    {
+     "id": "recoger",
+     "do": "pickup",
+     "place": "?casa_amigo",
+     "board": [
+      "fran"
+     ],
+     "load": [
+      "estomago"
+     ],
+     "objective": "Recoge a Fran en su casa",
+     "lines": [
+      {
+       "when": "start",
+       "who": "sandra",
+       "text": "Buenos días. ¿Está vivo? No me contestes, ve a buscarlo, que conmigo no se pone.",
+       "sound": "message-ping"
+      },
+      {
+       "when": "arrive",
+       "who": "fran",
+       "text": "No grites, acho. Nadie grite. Hola. Qué bien hueles. ¿Eso es el ambientador? Quítalo."
+      },
+      {
+       "when": "after:5",
+       "who": "fran",
+       "text": "El traje está en El Corte Inglés. En el grande. Bueno, los dos son grandes. En uno de los dos."
+      },
+      {
+       "when": "after:11",
+       "who": "fran",
+       "text": "(Canta.) «Y la noche se hizo…» No sé cómo sigue. Ayer me la sabía entera."
+      },
+      {
+       "when": "cargo:corner",
+       "who": "fran",
+       "text": "Esa curva no la he votado yo."
+      },
+      {
+       "when": "cargo:brake",
+       "who": "fran",
+       "text": "Despacito, que el desayuno se lo está pensando."
+      }
+     ],
+     "choice": {
+      "prompt": "Fran pide parar a por un café y un churro. Dice que le asienta el cuerpo.",
+      "when": "after:14",
+      "window": 8,
+      "default": 1,
+      "options": [
+       {
+        "label": "Café y churro",
+        "flag": "churro",
+        "wait": {
+         "real": 4,
+         "clock": 180
+        },
+        "cargo": {
+         "estomago": {
+          "heal": 25
+         },
+         "traje": {
+          "fragility": 0.8
+         }
+        },
+        "reply": {
+         "who": "fran",
+         "text": "Gracias. Te quiero. No se lo digas a Sandra, que se pone celosa del churro."
+        }
+       },
+       {
+        "label": "Ni café ni churro, que no llegamos",
+        "flag": "sin_churro",
+        "reply": {
+         "who": "fran",
+         "text": "Vale. Tienes razón. Pero que conste que el churro me lo debes."
+        }
+       }
+      ]
+     },
+     "sound": "boot-close"
+    },
+    {
+     "id": "traje",
+     "do": "guess",
+     "place": "?traje",
+     "candidates": [
+      "eci_libertad",
+      "eci_gran_via"
+     ],
+     "load": [
+      "traje"
+     ],
+     "objective": "A por el traje: ¿qué {eci}?",
+     "lines": [
+      {
+       "when": "after:6",
+       "who": "fran",
+       "text": "Gira aquí. No, aquí no. Donde estaba la fuente. Ya no hay fuente. Sigue recto, por si acaso."
+      },
+      {
+       "when": "wrong",
+       "who": "dependienta",
+       "text": "Aquí no tenemos ningún traje a ese nombre. Pruebe en el otro, que está a dos calles. Le pasa a mucha gente, no se apure."
+      },
+      {
+       "when": "wrong",
+       "who": "fran",
+       "text": "Era el otro. Lo sabía. Lo sabía el Fran de anoche, que era muy listo."
+      },
+      {
+       "when": "arrive",
+       "who": "dependienta",
+       "text": "Aquí lo tiene, con el bajo arreglado. Sin una mancha, que así se lo damos y así tiene que llegar."
+      },
+      {
+       "when": "arrive",
+       "who": "fran",
+       "text": "Lo llevo yo en las rodillas. Como si fuera un bebé. Un bebé muy elegante."
+      }
+     ],
+     "choice": {
+      "prompt": "¿A cuál vas primero?",
+      "when": "start",
+      "window": 8,
+      "default": 0,
+      "options": [
+       {
+        "label": "El de la Avenida de la Libertad",
+        "target": "eci_libertad",
+        "reply": {
+         "who": "fran",
+         "text": "El de la Libertad. Creo. Había una escalera mecánica. Bueno, en los dos hay."
+        }
+       },
+       {
+        "label": "El de la Gran Vía",
+        "target": "eci_gran_via",
+        "reply": {
+         "who": "fran",
+         "text": "Gran Vía. Me suena porque fuimos andando. Y yo andando no voy lejos."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "comida",
+     "do": "dropoff",
+     "place": "veronicas",
+     "leave": [
+      "fran"
+     ],
+     "unload": [
+      "estomago",
+      "traje"
+     ],
+     "objective": "Al restaurante de la comida, junto al Mercado de Verónicas",
+     "lines": [
+      {
+       "when": "after:5",
+       "who": "fulgen",
+       "text": "Ya estamos todos en la mesa. El jefe ha traído discurso; yo, hambre. Los dos los estamos usando.",
+       "sound": "phone-ring"
+      },
+      {
+       "when": "cargo:corner",
+       "who": "fran",
+       "text": "Ay. El traje bien. Yo regular."
+      },
+      {
+       "when": "cargo<50",
+       "who": "fran",
+       "text": "Para. No, no pares. Sigue. Pero sin curvas. Sin ninguna curva más en la vida."
+      },
+      {
+       "when": "left:60",
+       "who": "fulgen",
+       "text": "El jefe ha mirado el reloj dos veces. La segunda, con cariño, pero la ha mirado."
+      },
+      {
+       "when": "near:300",
+       "who": "fulgen",
+       "text": "Os veo. Fran, saluda, pijo. Eso no es saludar, eso es asomarse."
+      },
+      {
+       "when": "arrive",
+       "who": "fran",
+       "text": "Qué bonito el restaurante. Comida con todo el equipo. Es hoy, ¿no? Vale. Es hoy."
+      }
+     ],
+     "choice": {
+      "prompt": "Fran pide bajar la ventanilla.",
+      "when": "after:10",
+      "window": 8,
+      "default": 0,
+      "options": [
+       {
+        "label": "Ventanilla abajo",
+        "flag": "ventanilla",
+        "cargo": {
+         "estomago": {
+          "recover": 3
+         }
+        },
+        "reply": {
+         "who": "fran",
+         "text": "Gracias. Lo justo para que entre Murcia. Así. Huele a azahar. O a autobús. Huele a algo bueno."
+        }
+       },
+       {
+        "label": "Aire acondicionado, que el pelo",
+        "flag": "aire",
+        "reply": {
+         "who": "fran",
+         "text": "Tienes razón. El tupé es lo único que tengo bien hoy."
+        }
+       }
+      ]
+     },
+     "sound": "boot-close"
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "onTime": true,
+      "cargo": {
+       "estomago": "perfect",
+       "traje": "perfect"
+      }
+     },
+     "title": "Fresco como una lechuga",
+     "who": "fulgen",
+     "text": "Ha llegado a su hora, con el traje impecable y con buena cara. El jefe le ha dado la mano antes de preguntar nada. Quiero que me enseñes cómo lo has hecho."
+    },
+    {
+     "if": {
+      "onTime": true,
+      "flags": [
+       "churro"
+      ],
+      "cargo": {
+       "traje": "damaged"
+      }
+     },
+     "title": "Un churro en la solapa",
+     "who": "fulgen",
+     "text": "Lleva una mancha de churro en la solapa. Se ha puesto la servilleta encima. Ni se nota. Bueno, se nota un poco."
+    },
+    {
+     "if": {
+      "onTime": true,
+      "cargo": {
+       "estomago": "ruined"
+      }
+     },
+     "title": "Pálido pero puntual",
+     "who": "fran",
+     "text": "He llegado. Verde, pero he llegado. He saludado al jefe con mucha convicción y luego me he sentado un ratito."
+    },
+    {
+     "if": {
+      "onTime": true
+     },
+     "title": "A tiempo para el aperitivo",
+     "who": "fulgen",
+     "text": "Ha llegado a su hora, que ya es mucho. En la foto del equipo lo ponemos de lado, por la mancha."
+    },
+    {
+     "if": {
+      "flags": [
+       "churro"
+      ]
+     },
+     "title": "El churro más caro",
+     "who": "sandra",
+     "text": "Ha entrado diez minutos tarde a la comida por un churro. Lo voy a contar en todas las cenas. Y a él le va a encantar."
+    },
+    {
+     "if": {},
+     "title": "El jefe esperó",
+     "who": "fulgen",
+     "text": "Hemos esperado con el aperitivo enfriándose y el jefe mirando el reloj. Pero ha llegado cantando. Mal, pero cantando."
+    }
+   ]
+  },
+  {
+   "id": "santa_ana",
+   "title": "El santo de Ana",
+   "kind": "FIESTA",
+   "minutes": 10,
+   "core": "Dos cargas que piden lo contrario: el hielo se derrite si tardas y la {cola} no se puede agitar; y por qué carril se entra a la casa.",
+   "premise": "Hoy es el santo de Ana, una amiga, y lo celebra en su casa, con piscina, en la huerta del Carril Juanete. Te quedas a dormir: pasa por tu casa a por el bañador, compra hielo, {mentos} y {cola} en {hiper} y recoge a Juan.",
+   "vehicle": {
+    "type": "deportivo",
+    "seats": 4
+   },
+   "start": "gran_via",
+   "clock": {
+    "start": "20:49",
+    "limit": 637,
+    "label": "A la piscina a las 21:00"
+   },
+   "cast": {
+    "ana": {
+     "name": "Ana",
+     "voice": "La anfitriona: es su santo y lo celebra en la piscina. Llama en manos libres, con música detrás. Habla del experimento con el rigor de una científica que lo ha visto en vídeos."
+    },
+    "madre": {
+     "name": "Tu madre",
+     "voice": "Te espera en la puerta con el bañador doblado y una opinión sobre el bañador."
+    },
+    "tendera": {
+     "name": "La de la tienda",
+     "voice": "Despacha en {hiper}. Ha visto pasar media huerta con {mentos} y botellas de dos litros: sabe para qué son."
+    },
+    "juan": {
+     "name": "Juan",
+     "voice": "Amigo de Ana, con la toalla al cuello y hambre. Todo lo que va en el coche le parece de picar: «¿esto se come?»."
+    }
+   },
+   "cargo": [
+    {
+     "id": "hielo",
+     "label": "Hielo",
+     "fragility": 0.4,
+     "seats": 0,
+     "heat": 1.2,
+     "grades": {
+      "perfect": "el hielo llegó en cubitos, como tiene que llegar",
+      "damaged": "el hielo llegó hecho un bloque, pero llegó",
+      "ruined": "el hielo llegó en forma de agua fresquita"
+     }
+    },
+    {
+     "id": "cola",
+     "label": "{cola}",
+     "fragility": 1.1,
+     "seats": 0,
+     "grades": {
+      "perfect": "la {cola} llegó tranquila, sin una burbuja de más",
+      "damaged": "la {cola} llegó algo nerviosa",
+      "ruined": "la {cola} llegó agitada como una maraca"
+     }
+    }
+   ],
+   "stages": [
+    {
+     "id": "banador",
+     "do": "pickup",
+     "place": "vista_alegre",
+     "objective": "Pasa por casa, en Vista Alegre, a por el bañador",
+     "lines": [
+      {
+       "when": "start",
+       "who": "ana",
+       "text": "¡Hoy es mi santo! Feliz Santa Ana a mí. Lo celebro esta noche en mi casa, en la piscina, y te quedas a dormir.",
+       "sound": "phone-ring"
+      },
+      {
+       "when": "after:6",
+       "who": "ana",
+       "text": "Trae el bañador, hielo, {mentos} y {cola}. Light, que tiene que ser light."
+      },
+      {
+       "when": "after:13",
+       "who": "ana",
+       "text": "¿Que para qué los {mentos}? Para nada. Bueno, para un experimento. Tú tráelos."
+      },
+      {
+       "when": "arrive",
+       "who": "madre",
+       "text": "El bañador está en la terraza. El de rayas no, que da pena. El azul, bonico."
+      },
+      {
+       "when": "after:4",
+       "who": "madre",
+       "text": "Y llévate una toalla. Ana tendrá, pero las suyas son de adorno."
+      }
+     ]
+    },
+    {
+     "id": "compra",
+     "do": "pickup",
+     "place": "hiper_zarandona",
+     "load": [
+      "hielo",
+      "cola"
+     ],
+     "objective": "Compra hielo, {mentos} y {cola} en {hiper}",
+     "lines": [
+      {
+       "when": "start",
+       "who": "ana",
+       "text": "El hielo, de bolsa, del grande. El de mi congelador sabe a croqueta."
+      },
+      {
+       "when": "arrive",
+       "who": "tendera",
+       "text": "Hielo, {mentos} y {cola}. Esta noche eres el cuarto. Que salga bien el experimento."
+      },
+      {
+       "when": "after:5",
+       "who": "ana",
+       "text": "¿Lo tienes? La botella de pie y quieta. Si la agitas, el experimento lo hacemos en tu coche."
+      }
+     ],
+     "choice": {
+      "prompt": "¿Cuántos paquetes de {mentos}?",
+      "window": 0,
+      "default": 0,
+      "options": [
+       {
+        "label": "Uno, lo que ha dicho Ana",
+        "flag": "un_paquete",
+        "reply": {
+         "who": "tendera",
+         "text": "Uno da para un experimento. Si nadie se lo come antes."
+        }
+       },
+       {
+        "label": "Dos, por si acaso",
+        "flag": "dos_paquetes",
+        "reply": {
+         "who": "tendera",
+         "text": "Bien pensado. La ciencia se repite. Y siempre hay alguien que se come uno."
+        }
+       }
+      ]
+     },
+     "sound": "boot-close"
+    },
+    {
+     "id": "juan",
+     "do": "pickup",
+     "place": "camino_viejo_casillas",
+     "board": [
+      "juan"
+     ],
+     "objective": "Recoge a Juan en el Camino Viejo de Casillas",
+     "lines": [
+      {
+       "when": "cargo:bump",
+       "who": "ana",
+       "text": "Eso ha sonado a bache. No oigo la botella, pero me la imagino."
+      },
+      {
+       "when": "cargo:heat",
+       "who": "ana",
+       "text": "Te noto lento. El hielo lo nota más que yo."
+      },
+      {
+       "when": "arrive",
+       "who": "juan",
+       "text": "Hola. ¿Esto son {mentos}? ¿Se pueden comer o son de ciencia?"
+      }
+     ],
+     "choice": {
+      "prompt": "Juan: «¿Por dónde entramos, por el Juanete o por el Manresa?»",
+      "window": 0,
+      "default": 0,
+      "options": [
+       {
+        "label": "Por el Carril Juanete",
+        "flag": "juanete",
+        "next": "juanete",
+        "bumps": 3,
+        "reply": {
+         "who": "juan",
+         "text": "Por el Juanete, que es todo recto. Con algún bache, pero recto."
+        }
+       },
+       {
+        "label": "Por el Carril Manresa",
+        "flag": "manresa",
+        "next": "manresa",
+        "reply": {
+         "who": "juan",
+         "text": "Por el Manresa. Es más vuelta, pero yo voy picando y no se nota."
+        }
+       }
+      ]
+     },
+     "sound": "car-door"
+    },
+    {
+     "id": "juanete",
+     "do": "drive",
+     "place": "carril_juanete",
+     "next": "casa",
+     "objective": "Entra por el Carril Juanete",
+     "lines": [
+      {
+       "when": "after:8",
+       "who": "juan",
+       "text": "Si la botella se mueve, yo no he sido. Yo estoy con los {mentos}."
+      },
+      {
+       "when": "cargo:bump",
+       "who": "juan",
+       "text": "Bache. La {cola} ha hecho un ruido raro. Como de querer salir."
+      }
+     ]
+    },
+    {
+     "id": "manresa",
+     "do": "drive",
+     "place": "carril_manresa",
+     "next": "casa",
+     "objective": "Entra por el Carril Manresa",
+     "lines": [
+      {
+       "when": "after:8",
+       "who": "juan",
+       "text": "¿Tú sabías que un {mentos} tiene mil agujeritos? Lo he leído. O lo he soñado."
+      },
+      {
+       "when": "arrive",
+       "who": "juan",
+       "text": "Ahora el Juanete, hasta el portón. Ana dice que se ve la piscina desde la puerta."
+      }
+     ]
+    },
+    {
+     "id": "casa",
+     "do": "dropoff",
+     "place": "casa_santa_ana",
+     "leave": [
+      "juan"
+     ],
+     "unload": [
+      "hielo",
+      "cola"
+     ],
+     "end": true,
+     "objective": "Aparca en la puerta de la casa de Ana",
+     "lines": [
+      {
+       "when": "cargo:brake",
+       "who": "juan",
+       "text": "¡Frenazo! La botella ha hecho «fsss». Yo hoy no la abría."
+      },
+      {
+       "when": "cargo:corner",
+       "who": "juan",
+       "text": "La curva. Las bolsas. El hielo se ha venido a mi lado."
+      },
+      {
+       "when": "left:60",
+       "who": "ana",
+       "text": "Que ya están todos en el agua, en mi casa, pijo. Hasta mi tía, que no se mete nunca."
+      },
+      {
+       "when": "near:300",
+       "who": "ana",
+       "text": "¡Os oigo el coche! Aparca en la puerta, que esta noche aquí ya no conduce nadie."
+      },
+      {
+       "when": "arrive",
+       "who": "ana",
+       "text": "Por fin. Feliz santo a mí otra vez. El coche se queda ahí hasta mañana. Las llaves, en el cuenco de la entrada."
+      }
+     ],
+     "sound": "boot-close"
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "cargo": {
+       "cola": "perfect",
+       "hielo": "perfect"
+      },
+      "onTime": true,
+      "flags": [
+       "dos_paquetes"
+      ]
+     },
+     "title": "La fuente de Santa Ana",
+     "who": "ana",
+     "text": "Tres, dos, uno… ¡{mentos}! Ha llegado hasta el tejado del porche. Y con el otro paquete, otra vez. Esto es ciencia."
+    },
+    {
+     "if": {
+      "cargo": {
+       "cola": "ruined"
+      }
+     },
+     "title": "El experimento, en la puerta",
+     "who": "juan",
+     "text": "Ana ha abierto la botella en la puerta y ha salido sola. Sin {mentos} ni nada. La ciencia avanza sin avisar."
+    },
+    {
+     "if": {
+      "flags": [
+       "un_paquete"
+      ]
+     },
+     "title": "Juan y los Mentos",
+     "who": "ana",
+     "text": "¿Y los {mentos}? Juan, abre la boca. Juan. Huele a menta. El experimento te lo has hecho tú por dentro."
+    },
+    {
+     "if": {
+      "cargo": {
+       "hielo": "ruined"
+      }
+     },
+     "title": "Hielo del tiempo",
+     "who": "ana",
+     "text": "Esto es agua. Muy rica, pero agua. Hoy los cubatas van a temperatura de julio, que es la de un horno."
+    },
+    {
+     "if": {
+      "onTime": true
+     },
+     "title": "Feliz santo",
+     "who": "ana",
+     "text": "Justo a tiempo. Bañador, hielo en la nevera y la botella esperando su momento. Ahora, felicítame otra vez."
+    },
+    {
+     "if": {},
+     "title": "Al agua igualmente",
+     "who": "ana",
+     "text": "Has llegado tarde, pero la piscina no cierra. El coche se queda ahí hasta mañana y tú, al agua."
+    }
+   ]
+  },
+  {
+   "id": "lan_party",
+   "title": "Murcia LAN Party",
+   "kind": "VARIAS PARADAS",
+   "minutes": 14,
+   "core": "Carga frágil y cara: el PC no perdona frenazos ni golpes. Envolverlo en el saco cuesta un minuto; los carriles de la huerta acortan, con baches.",
+   "premise": "Primera tarde de la Murcia LAN Party, en el Palacio de los Deportes. Te vas tres días con Quique: recoge el PC en la tienda de informática de la Plaza de la Paja, compra un saco de dormir en Las Atalayas y pasa a por Quique a Monteagudo.",
+   "vehicle": {
+    "type": "todoterreno",
+    "seats": 4
+   },
+   "start": "el_infante",
+   "clock": {
+    "start": "16:44",
+    "limit": 914,
+    "label": "Las mesas, a las cinco"
+   },
+   "cast": {
+    "quique": {
+     "name": "Quique",
+     "voice": "Tu compañero de LAN. Lo mide todo en ping y en fotogramas, también el tráfico. Lleva una semana con la lista de lo que hay que llevar y solo lleva la regleta."
+    },
+    "tecnico": {
+     "name": "El técnico",
+     "voice": "Te ha montado el PC y le cuesta soltarlo. Habla de la gráfica como de un sobrino que se va de Erasmus."
+    },
+    "dependienta": {
+     "name": "La de deportes",
+     "voice": "Vende sacos para el Pirineo y sabe que este va a un pabellón con calefacción. No lo dice, pero lo sabe."
+    }
+   },
+   "cargo": [
+    {
+     "id": "pc",
+     "label": "El PC",
+     "fragility": 1,
+     "seats": 1,
+     "grades": {
+      "perfect": "el PC llegó arrancando a la primera",
+      "damaged": "el PC llegó con la gráfica algo suelta, pero enciende",
+      "ruined": "el PC llegó sonando a maracas por dentro"
+     }
+    },
+    {
+     "id": "saco",
+     "label": "Saco de dormir",
+     "fragility": 0.05,
+     "seats": 0,
+     "grades": {
+      "perfect": "el saco llegó enrollado como en la tienda",
+      "damaged": "el saco llegó medio desenrollado",
+      "ruined": "el saco llegó hecho un ovillo"
+     }
+    }
+   ],
+   "stages": [
+    {
+     "id": "pc",
+     "do": "pickup",
+     "place": "informatica_paja",
+     "load": [
+      "pc"
+     ],
+     "objective": "Recoge el PC en la tienda de informática de la Plaza de la Paja",
+     "lines": [
+      {
+       "when": "start",
+       "who": "quique",
+       "text": "Hoy empieza la LAN Party, acho. Tres días en el Palacio de los Deportes y luego ya, si eso, dormimos."
+      },
+      {
+       "when": "after:7",
+       "who": "quique",
+       "text": "Tú traes el PC, el saco y a mí. Yo llevo la regleta, que es lo importante."
+      },
+      {
+       "when": "after:15",
+       "who": "quique",
+       "text": "La tienda acaba de abrir. El técnico lleva desde el lunes mirando tu PC como quien mira un acuario."
+      },
+      {
+       "when": "arrive",
+       "who": "tecnico",
+       "text": "Aquí lo tienes. Gráfica nueva y pasta térmica nueva. Lleva más cariño dentro que cables."
+      },
+      {
+       "when": "after:5",
+       "who": "tecnico",
+       "text": "Con el cinturón puesto y sin frenazos. Los golpes, para el juego."
+      }
+     ],
+     "sound": "boot-close"
+    },
+    {
+     "id": "saco",
+     "do": "pickup",
+     "place": "deportes_atalayas",
+     "load": [
+      "saco"
+     ],
+     "objective": "Compra el saco de dormir en la tienda de deportes de Las Atalayas",
+     "lines": [
+      {
+       "when": "start",
+       "who": "quique",
+       "text": "¿Lo llevas? Ahora el saco, en Las Atalayas. Sí, al lado del Palacio. No, todavía no se entra."
+      },
+      {
+       "when": "after:9",
+       "who": "quique",
+       "text": "Yo tengo saco, pero huele a campamento del noventa y ocho. Mejor uno nuevo."
+      },
+      {
+       "when": "cargo:brake",
+       "who": "quique",
+       "text": "Ese frenazo lo he oído por el teléfono. Y la gráfica también."
+      },
+      {
+       "when": "cargo:bump",
+       "who": "quique",
+       "text": "Bache. Un PC no es un bizcocho, pero casi."
+      },
+      {
+       "when": "cargo:hit",
+       "who": "quique",
+       "text": "¿Eso ha sido un golpe? No me lo cuentes. Dime solo si enciende."
+      },
+      {
+       "when": "arrive",
+       "who": "dependienta",
+       "text": "Un saco. ¿Para montaña o para pabellón? Pabellón. Se nota en la cara de sueño adelantado."
+      }
+     ],
+     "choice": {
+      "prompt": "¿Cómo va el PC el resto del camino?",
+      "window": 0,
+      "default": 0,
+      "options": [
+       {
+        "label": "Envuelto en el saco",
+        "flag": "envuelto",
+        "wait": {
+         "real": 4,
+         "clock": 60
+        },
+        "cargo": {
+         "pc": {
+          "fragility": 0.55
+         }
+        },
+        "reply": {
+         "who": "dependienta",
+         "text": "Buena idea. El saco aguanta cinco bajo cero; el PC, que yo sepa, ni uno."
+        }
+       },
+       {
+        "label": "Tal cual, que vamos justos",
+        "flag": "tal_cual",
+        "reply": {
+         "who": "dependienta",
+         "text": "El saco, al maletero. Y al PC no le digas que vais justos."
+        }
+       }
+      ]
+     },
+     "sound": "boot-close"
+    },
+    {
+     "id": "quique",
+     "do": "pickup",
+     "place": "monteagudo",
+     "board": [
+      "quique"
+     ],
+     "objective": "Recoge a Quique en la plaza de la iglesia de Monteagudo",
+     "lines": [
+      {
+       "when": "start",
+       "who": "quique",
+       "text": "Estoy en la plaza de Monteagudo, debajo del castillo. Si ves el Cristo, ya casi."
+      },
+      {
+       "when": "after:10",
+       "who": "quique",
+       "text": "¿Has pasado por delante del Palacio y no has entrado? Qué fuerza de voluntad."
+      },
+      {
+       "when": "cargo:brake",
+       "who": "quique",
+       "text": "Ese frenazo ha tenido más lag que mi router."
+      },
+      {
+       "when": "near:400",
+       "who": "quique",
+       "text": "Te veo. Bueno, veo un coche que frena con cuidado. Supongo que eres tú."
+      },
+      {
+       "when": "arrive",
+       "who": "quique",
+       "text": "Hola. ¿Ese del cinturón es el PC? Qué bonito. No lo mires mucho, que se pone nervioso."
+      }
+     ],
+     "choice": {
+      "prompt": "Quique: «¿Por los carriles de la huerta o por la avenida?»",
+      "window": 0,
+      "default": 1,
+      "options": [
+       {
+        "label": "Por los carriles, más cortos",
+        "flag": "carriles",
+        "bumps": 4,
+        "reply": {
+         "who": "quique",
+         "text": "Por los carriles. Menos distancia y más baches. Como jugar por wifi."
+        }
+       },
+       {
+        "label": "Por la avenida, más lisa",
+        "flag": "avenida",
+        "reply": {
+         "who": "quique",
+         "text": "Por la avenida. Más vuelta, pero sin lag."
+        }
+       }
+      ]
+     },
+     "sound": "car-door"
+    },
+    {
+     "id": "palacio",
+     "do": "dropoff",
+     "place": "palacio_deportes",
+     "leave": [
+      "quique"
+     ],
+     "unload": [
+      "pc",
+      "saco"
+     ],
+     "end": true,
+     "objective": "Aparca en el aparcamiento del Palacio de los Deportes",
+     "lines": [
+      {
+       "when": "after:8",
+       "who": "quique",
+       "text": "Visto desde aquí, el castillo parece un servidor. A mí todo me lo parece, pero ese más."
+      },
+      {
+       "when": "cargo:bump",
+       "who": "quique",
+       "text": "Bache. Eso le ha quitado al PC diez fotogramas por segundo. Mínimo."
+      },
+      {
+       "when": "cargo:brake",
+       "who": "quique",
+       "text": "¡Frenazo! El PC ha hecho «tac». Los PC no hacen «tac»."
+      },
+      {
+       "when": "cargo:corner",
+       "who": "quique",
+       "text": "Esa curva la ha cogido el PC antes que tú."
+      },
+      {
+       "when": "left:60",
+       "who": "quique",
+       "text": "Que ya están montando las mesas. La nuestra es la del enchufe que funciona. Era."
+      },
+      {
+       "when": "near:300",
+       "who": "quique",
+       "text": "Ahí está el Palacio. Tres días sin ver el sol. Qué ilusión."
+      },
+      {
+       "when": "arrive",
+       "who": "quique",
+       "text": "Aparcado. Tú el PC, yo la regleta. El saco lo lleva el que pierda la primera partida."
+      }
+     ],
+     "sound": "boot-close",
+     "ambient": [
+      {
+       "sound": "lan-hall-loop"
+      }
+     ]
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "cargo": {
+       "pc": "perfect"
+      },
+      "onTime": true,
+      "flags": [
+       "envuelto"
+      ]
+     },
+     "title": "Ping cero",
+     "who": "quique",
+     "text": "Ha arrancado a la primera, tenemos la mesa del enchufe y el saco huele a PC nuevo. Esto es ping cero en la vida real."
+    },
+    {
+     "if": {
+      "cargo": {
+       "pc": "perfect"
+      },
+      "onTime": true
+     },
+     "title": "A la primera",
+     "who": "quique",
+     "text": "Enciende a la primera y la mesa es nuestra. El saco ha ido en el maletero de adorno, como debe ser."
+    },
+    {
+     "if": {
+      "cargo": {
+       "pc": "ruined"
+      }
+     },
+     "title": "Reinicio en el pabellón",
+     "who": "quique",
+     "text": "No enciende. Pero aquí hay doscientas personas con destornillador. A las diez está jugando, seguro."
+    },
+    {
+     "if": {
+      "cargo": {
+       "pc": "damaged"
+      }
+     },
+     "title": "La gráfica, bailando",
+     "who": "quique",
+     "text": "Enciende, aunque la gráfica suena a ventilador de agosto. Un tornillo y a jugar."
+    },
+    {
+     "if": {},
+     "title": "La mesa del fondo",
+     "who": "quique",
+     "text": "Hemos llegado tarde y nos toca la mesa del fondo. Mejor: ahí no llega la luz y se duerme de maravilla."
+    }
+   ]
+  },
+  {
+   "id": "bautizo",
+   "title": "El bautizo: el padrino al volante",
+   "kind": "CARGA FRÁGIL",
+   "minutes": 8,
+   "core": "Conducir con un bebé en la sillita: el medidor de cuidado manda. Instalar el maxicosi cuesta un rato y decide cómo va sujeto Hugo; al volante, la berlina de lujo del cuñado.",
+   "premise": "Eres el padrino de Hugo y te han prestado el coche bueno del cuñado: berlina negra, reluciente y sin un rasguño, que así debe seguir. Pasa por La Fuensanta, a casa de la tía Pili, a por el maxicosi e instálalo. Recoge a Raquel, a Samuel y al niño en Vistabella y llévalos a la iglesia de San Juan Bautista antes de las doce.",
+   "vehicle": {
+    "type": "berlina_lujo",
+    "seats": 4
+   },
+   "start": "la_fama",
+   "clock": {
+    "start": "11:51",
+    "limit": 515,
+    "label": "El bautizo, a las doce"
+   },
+   "cast": {
+    "tia": {
+     "name": "La tía Pili",
+     "voice": "La tía de Raquel. Ha criado a tres sobrinos y conserva el maxicosi de todos, con las instrucciones plastificadas y subrayadas."
+    },
+    "raquel": {
+     "name": "Raquel",
+     "voice": "La madre. Lleva tres semanas ensayando el vestido y dos noches sin dormir. Va agarrada a todo lo que se agarra."
+    },
+    "samuel": {
+     "name": "Samuel",
+     "voice": "El padre. Lleva el traje de Hugo en una bolsa de tintorería y la fe en que lo demás saldrá bien."
+    },
+    "hugo": {
+     "name": "Hugo",
+     "voice": "Dos meses. Se expresa por medios no verbales; hoy, sobre todo, por medios muy verbales."
+    },
+    "cura": {
+     "name": "Don Ramón",
+     "voice": "El párroco. Ha bautizado a media Murcia y todavía se emociona. Si llegáis a su hora, más."
+    }
+   },
+   "cargo": [
+    {
+     "id": "hugo",
+     "label": "Hugo, en el maxicosi",
+     "fragility": 0.8,
+     "seats": 1,
+     "grades": {
+      "perfect": "Hugo llegó dormido, con el gorro sin torcer",
+      "damaged": "Hugo llegó despierto y mirándolo todo",
+      "ruined": "Hugo llegó cantando con todo el repertorio"
+     }
+    }
+   ],
+   "stages": [
+    {
+     "id": "maxicosi",
+     "do": "pickup",
+     "place": "tia_fuensanta",
+     "objective": "Pasa por casa de la tía Pili, en La Fuensanta, a por el maxicosi",
+     "lines": [
+      {
+       "when": "start",
+       "who": "samuel",
+       "text": "Padrino, te han dejado el coche del cuñado. Dice que tiene seguro, pero que le duele igual."
+      },
+      {
+       "when": "after:8",
+       "who": "samuel",
+       "text": "La tía Pili tiene el maxicosi. Instalarlo es fácil: lo dice ella, no lo dice el manual."
+      },
+      {
+       "when": "arrive",
+       "who": "tia",
+       "text": "Aquí está, lavadito. Tres sobrinos y ni un rasguño. Ahora, la instalación: con calma o a ojo."
+      }
+     ],
+     "choice": {
+      "prompt": "La tía Pili: «¿Lo instalas con el manual o a ojo?»",
+      "window": 0,
+      "default": 0,
+      "options": [
+       {
+        "label": "Con el manual, paso a paso",
+        "flag": "manual",
+        "wait": {
+         "real": 5,
+         "clock": 120
+        },
+        "cargo": {
+         "hugo": {
+          "fragility": 0.55
+         }
+        },
+        "reply": {
+         "who": "tia",
+         "text": "Eso es. El manual tiene cuarenta y ocho páginas y cuarenta y siete dicen lo mismo: que lo aprietes."
+        }
+       },
+       {
+        "label": "A ojo, que vamos justos",
+        "flag": "a_ojo",
+        "wait": {
+         "real": 2,
+         "clock": 30
+        },
+        "cargo": {
+         "hugo": {
+          "fragility": 1.1
+         }
+        },
+        "reply": {
+         "who": "tia",
+         "text": "A ojo. Tú aprieta hasta que chille y luego una vuelta más. Y reza, que no viene en el manual."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "familia",
+     "do": "pickup",
+     "place": "casa_vistabella",
+     "board": [
+      "raquel",
+      "samuel"
+     ],
+     "load": [
+      "hugo"
+     ],
+     "objective": "Recoge a Raquel, a Samuel y a Hugo en su casa de Vistabella",
+     "lines": [
+      {
+       "when": "start",
+       "who": "raquel",
+       "text": "Estamos en el portal con el niño y el gorro. El gorro tiene su importancia."
+      },
+      {
+       "when": "arrive",
+       "who": "raquel",
+       "text": "Mira qué bonico duerme. Despacito, por favor. Que no lo oiga ni el motor."
+      },
+      {
+       "when": "arrive",
+       "who": "samuel",
+       "text": "Qué coche, padrino. Hoy se conduce como con un huevo de avestruz en el regazo."
+      },
+      {
+       "when": "speed>50",
+       "who": "raquel",
+       "text": "Que vamos a un bautizo, no a un incendio."
+      },
+      {
+       "when": "cargo:brake",
+       "who": "raquel",
+       "text": "Ese frenazo se lo ha oído hasta el cuñado. Que sea el último."
+      },
+      {
+       "when": "cargo:bump",
+       "who": "samuel",
+       "text": "Badén. Raquel ha cogido aire. Yo también, por si acaso."
+      },
+      {
+       "when": "cargo:corner",
+       "who": "raquel",
+       "text": "Las curvas, como en misa: despacio y con respeto."
+      },
+      {
+       "when": "cargo:hit",
+       "who": "samuel",
+       "text": "Eso ha sido un golpe. Dime que ha sido el coche de al lado."
+      },
+      {
+       "when": "cargo<40",
+       "who": "hugo",
+       "text": "(Llora con todo el repertorio. Hay arias.)",
+       "sound": "baby-cry"
+      }
+     ],
+     "sound": "boot-close"
+    },
+    {
+     "id": "iglesia",
+     "do": "dropoff",
+     "place": "iglesia_san_juan_bautista",
+     "leave": [
+      "raquel",
+      "samuel"
+     ],
+     "unload": [
+      "hugo"
+     ],
+     "end": true,
+     "objective": "Llega a la iglesia de San Juan Bautista",
+     "lines": [
+      {
+       "when": "after:8",
+       "who": "samuel",
+       "text": "Míralo, ni se ha enterado de que va en el coche más caro de la familia."
+      },
+      {
+       "when": "cargo:brake",
+       "who": "raquel",
+       "text": "Frena como si fuera un paso de Semana Santa: poco a poco y sin sacudidas."
+      },
+      {
+       "when": "cargo:corner",
+       "who": "samuel",
+       "text": "Esa curva la ha cogido Hugo antes que tú."
+      },
+      {
+       "when": "cargo:bump",
+       "who": "raquel",
+       "text": "Otro badén. Los cuento y llevo cinco. Que sepas que los cuento."
+      },
+      {
+       "when": "near:300",
+       "who": "raquel",
+       "text": "Ya se ve la iglesia. Tranquila yo, que él duerme."
+      },
+      {
+       "when": "left:60",
+       "who": "cura",
+       "text": "Padrino, falta un minuto. Yo sin el niño no empiezo, pero el agua se enfría."
+      },
+      {
+       "when": "arrive",
+       "who": "cura",
+       "text": "Bienvenidos. Al padrino lo veo bien, a la madre, emocionada, y al niño, sin queja. Pasad."
+      }
+     ],
+     "sound": "church-bells"
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "cargo": {
+       "hugo": "perfect"
+      },
+      "onTime": true,
+      "flags": [
+       "a_ojo"
+      ]
+     },
+     "title": "Sin manual y sin una queja",
+     "who": "samuel",
+     "text": "Instalado a ojo y llega dormido. Yo con el manual tardé una hora y media. Esto no se lo cuentes a la tía."
+    },
+    {
+     "if": {
+      "cargo": {
+       "hugo": "perfect"
+      },
+      "onTime": true
+     },
+     "title": "Ni una lágrima en la pila",
+     "who": "cura",
+     "text": "El niño duerme, los padres respiran y el padrino llega a su hora. Hoy hay bautizo de los de antes: tranquilo."
+    },
+    {
+     "if": {
+      "cargo": {
+       "hugo": "damaged"
+      },
+      "onTime": true
+     },
+     "title": "A tiempo y con hipo",
+     "who": "raquel",
+     "text": "Ha llegado despierto, con hipo y mirándolo todo. Con eso se bautiza igual. Gracias por no correr, padrino."
+    },
+    {
+     "if": {
+      "cargo": {
+       "hugo": "ruined"
+      }
+     },
+     "title": "Bautizo con orquesta",
+     "who": "cura",
+     "text": "Hugo viene cantando desde el coche. No pasa nada: ha tenido mucho público bautizando a su manera."
+    },
+    {
+     "if": {},
+     "title": "Don Ramón mira el reloj",
+     "who": "cura",
+     "text": "Tarde, pero con niño. Empezamos ya, que el agua no espera. Y el cuñado, que se espere con el coche."
+    }
+   ]
+  },
+  {
+   "id": "vermu",
+   "title": "El vermú con marineras",
+   "kind": "VARIAS PARADAS",
+   "minutes": 11,
+   "core": "Recoger a cuatro amigos, cada uno tarde a su manera, para llegar al vermú antes de que se acaben las marineras. Después, todos juntos a comer a casa de la suegra de Quico.",
+   "premise": "Domingo. Has quedado a la una con la cuadrilla para el vermú con marineras en una terraza de la Plaza de Santo Domingo. Pasa a por Lola, Toni, Quico y Nuria, cada uno de su barrio y cada uno con su disculpa. Luego, todos a comer a casa de la suegra de Quico, junto a La Merced. Tu primo el taxista te presta el taxi, que es el único que cabe a todos.",
+   "vehicle": {
+    "type": "taxi",
+    "seats": 4
+   },
+   "start": "la_flota",
+   "clock": {
+    "start": "12:43",
+    "limit": 995,
+    "label": "Las marineras, a la una",
+    "tiers": [
+     {
+      "at": 995,
+      "id": "marineras",
+      "label": "Marineras calentitas"
+     },
+     {
+      "at": 1145,
+      "id": "ultimas",
+      "label": "Las últimas marineras"
+     }
+    ]
+   },
+   "cast": {
+    "lola": {
+     "name": "Lola",
+     "voice": "Siempre baja dentro de dos minutos. Los dos minutos de Lola son una unidad de tiempo propia."
+    },
+    "toni": {
+     "name": "Toni",
+     "voice": "El más puntual de la cuadrilla en teoría. En la práctica, el que más llaves se deja dentro."
+    },
+    "quico": {
+     "name": "Quico",
+     "voice": "El yerno de doña Pura. Nunca llega con las manos vacías y casi nunca a su hora."
+    },
+    "nuria": {
+     "name": "Nuria",
+     "voice": "Habla por teléfono con su hermana desde 1998. Ha prometido colgar, pero esa palabra no suele cumplirla."
+    },
+    "camarero": {
+     "name": "El camarero",
+     "voice": "Sirve el vermú con la calma de quien sabe que las marineras vuelan. Y que él no las cobra más caras."
+    },
+    "suegra": {
+     "name": "Doña Pura",
+     "voice": "La suegra de Quico. Cocina para veinte aunque seáis cinco y no admite un «no, gracias» con la boca llena."
+    }
+   },
+   "stages": [
+    {
+     "id": "lola",
+     "do": "pickup",
+     "place": "vista_alegre",
+     "board": [
+      "lola"
+     ],
+     "wait": {
+      "real": 4,
+      "clock": 180
+     },
+     "objective": "Pasa a por Lola, en Vista Alegre",
+     "lines": [
+      {
+       "when": "start",
+       "who": "lola",
+       "text": "Ya bajo. Dos minutos, que me falta un pendiente."
+      },
+      {
+       "when": "arrive",
+       "who": "lola",
+       "text": "Perdona, han sido tres. Me puse el otro pendiente y ya no pegaba con el primero."
+      },
+      {
+       "when": "after:3",
+       "who": "lola",
+       "text": "Pero mira, ya estoy. Y bien guapa. Que esto es un vermú, no una urgencia."
+      }
+     ],
+     "sound": "car-door"
+    },
+    {
+     "id": "toni",
+     "do": "pickup",
+     "place": "santa_maria_gracia",
+     "board": [
+      "toni"
+     ],
+     "wait": {
+      "real": 3,
+      "clock": 60
+     },
+     "objective": "Pasa a por Toni, en Santa María de Gracia",
+     "lines": [
+      {
+       "when": "start",
+       "who": "toni",
+       "text": "Estoy en el portal. Bueno, ahora bajo al portal. ¡Acho, las llaves!"
+      },
+      {
+       "when": "arrive",
+       "who": "toni",
+       "text": "Perdona, las llaves estaban dentro. Luego el móvil, dentro también. Ahora sí, todo fuera."
+      },
+      {
+       "when": "after:2",
+       "who": "lola",
+       "text": "Toni, llevas la camisa del revés. Pero el vermú no se entera."
+      }
+     ],
+     "sound": "car-door"
+    },
+    {
+     "id": "quico",
+     "do": "pickup",
+     "place": "san_anton",
+     "board": [
+      "quico"
+     ],
+     "objective": "Pasa a por Quico, en San Antón",
+     "lines": [
+      {
+       "when": "start",
+       "who": "quico",
+       "text": "Ya bajo. Me falta el pan para la suegra y el flan, que lo hizo ella y no puedo dejarlo."
+      },
+      {
+       "when": "arrive",
+       "who": "quico",
+       "text": "Un momento. ¿Voy con el flan o salimos ya y el pan lo compramos allí?"
+      }
+     ],
+     "choice": {
+      "prompt": "Quico: «¿Espero a bajar el pan y el flan?»",
+      "window": 0,
+      "default": 0,
+      "options": [
+       {
+        "label": "Esperar a que baje con todo",
+        "flag": "flan",
+        "wait": {
+         "real": 3,
+         "clock": 120
+        },
+        "reply": {
+         "who": "quico",
+         "text": "Pan y flan, y ya está. Mi suegra dirá que el flan es poco y yo diré que es perfecto."
+        }
+       },
+       {
+        "label": "Salir ya, que el pan se compra allí",
+        "flag": "sin_flan",
+        "reply": {
+         "who": "quico",
+         "text": "Vale. Pero la suegra se enterará de que no hay flan. Siempre se entera."
+        }
+       }
+      ]
+     },
+     "sound": "car-door"
+    },
+    {
+     "id": "nuria",
+     "do": "pickup",
+     "place": "san_antolin",
+     "board": [
+      "nuria"
+     ],
+     "objective": "Pasa a por Nuria, en San Antolín",
+     "lines": [
+      {
+       "when": "start",
+       "who": "nuria",
+       "text": "Estoy bajando. Mi hermana me ha llamado y no puedo colgar. Ya sabes cómo es.",
+       "sound": "phone-ring"
+      },
+      {
+       "when": "after:12",
+       "who": "nuria",
+       "text": "Te lo juro, estoy en el ascensor. En el de arriba. Bueno, en el rellano."
+      },
+      {
+       "when": "arrive",
+       "who": "nuria",
+       "text": "Perdona. Mi hermana tenía muchas cosas que contar. ¿Hay marineras? ¡Dime que hay marineras!"
+      }
+     ],
+     "sound": "car-door"
+    },
+    {
+     "id": "terraza",
+     "do": "wait",
+     "place": "terraza_santo_domingo",
+     "wait": {
+      "real": 8,
+      "clock": 0
+     },
+     "objective": "Llega a la terraza de la Plaza de Santo Domingo: el vermú, con marineras",
+     "lines": [
+      {
+       "when": "after:10",
+       "who": "toni",
+       "text": "A esta hora las marineras salen de la cocina y ya no vuelven. Es ley de vermú."
+      },
+      {
+       "when": "left:90",
+       "who": "nuria",
+       "text": "Faltan noventa segundos y ya noto las marineras en la boca. ¡Corre, que se acaban!"
+      },
+      {
+       "when": "near:250",
+       "who": "lola",
+       "text": "Ahí está la plaza. Y la terraza llena. Esto huele a vermú."
+      },
+      {
+       "when": "arrive",
+       "who": "camarero",
+       "text": "Buenas tardes. ¿Cinco? Os pongo cinco vermús. Marineras, las que queden."
+      },
+      {
+       "when": "after:3",
+       "who": "quico",
+       "text": "Un vermú, una marinera y el rato de conversación. Esto es vida."
+      }
+     ]
+    },
+    {
+     "id": "comida",
+     "do": "dropoff",
+     "place": "casa_suegra",
+     "leave": [
+      "lola",
+      "toni",
+      "quico",
+      "nuria"
+     ],
+     "end": true,
+     "objective": "Todos a comer a casa de la suegra de Quico, junto a La Merced",
+     "lines": [
+      {
+       "when": "start",
+       "who": "quico",
+       "text": "Ahora, a casa de mi suegra. Que nadie diga «solo un poquito». Hay arroz con conejo."
+      },
+      {
+       "when": "near:200",
+       "who": "suegra",
+       "text": "Os veo por la ventana. Subid, que se enfría el arroz."
+      },
+      {
+       "when": "arrive",
+       "who": "suegra",
+       "text": "Pasad, pasad. Hay arroz para todos, y para los que no hayan venido."
+      }
+     ],
+     "sound": "car-door"
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "arrival": "marineras",
+      "flags": [
+       "flan"
+      ]
+     },
+     "title": "Marineras y flan",
+     "who": "quico",
+     "text": "Marineras crujientes, vermú frío y, en la mesa de mi suegra, el flan. Hoy todo ha llegado a su hora. Casi todo."
+    },
+    {
+     "if": {
+      "arrival": "marineras"
+     },
+     "title": "Marineras calentitas",
+     "who": "toni",
+     "text": "Las marineras estaban crujientes y nos han tocado dos cada uno. Mañana lo cuento como un milagro."
+    },
+    {
+     "if": {
+      "arrival": "ultimas"
+     },
+     "title": "Las últimas marineras",
+     "who": "camarero",
+     "text": "Quedaban dos y las he guardado para vosotros. Ya no queda ni una. Os pongo un poco de pan, de cortesía."
+    },
+    {
+     "if": {},
+     "title": "Sin marineras, con suegra",
+     "who": "suegra",
+     "text": "¿Marineras? Se acabaron hace una hora. Pero tengo arroz y flan, y el que pregunte por las marineras, que repita."
+    }
+   ]
+  },
+  {
+   "id": "semana_santa",
+   "title": "Semana Santa: el nazareno llega tarde",
+   "kind": "CALLES CORTADAS",
+   "minutes": 6,
+   "core": "La procesión corta las calles de alrededor de la iglesia: vallas y policía a cada lado, y el GPS da la vuelta. La túnica y la bolsa de caramelos y habas piden poca prisa y menos frenazos.",
+   "premise": "Viernes Santo, a primera hora. Salva sale de nazareno en la procesión de Jesús, desde la iglesia del Museo Salzillo, y ni la túnica ni la bolsa de caramelos y habas están con él: se las dejó en casa de su madre. Recógelo en Vista Alegre, pasa a por todo y llévalo a la iglesia antes de que se forme el cortejo. Las calles que rodean el templo ya están cortadas: el GPS irá por donde pueda.",
+   "vehicle": {
+    "type": "utilitario",
+    "seats": 4
+   },
+   "start": "la_paz",
+   "clock": {
+    "start": "07:39",
+    "limit": 348,
+    "label": "El cortejo se forma a las 7:45"
+   },
+   "closures": [
+    {
+     "street": "Calle de García Alix",
+     "note": "Recorrido de la procesión de Jesús, Viernes Santo por la mañana: cortada de punta a punta"
+    }
+   ],
+   "cast": {
+    "salva": {
+     "name": "Salva",
+     "voice": "Nazareno desde los dieciséis. Lleva la fe en el bolsillo y la hora en todas las bocas ajenas."
+    },
+    "madre": {
+     "name": "Carmen",
+     "voice": "La madre de Salva. Tiene la túnica planchada, la bolsa preparada y la certeza de que llegará tarde. Siempre acierta."
+    },
+    "municipal": {
+     "name": "El municipal",
+     "voice": "Con las vallas, el silbato y todos los desvíos de la mañana en la cabeza. Amable, pero no abre."
+    }
+   },
+   "cargo": [
+    {
+     "id": "tunica",
+     "label": "La túnica",
+     "fragility": 0.35,
+     "seats": 0,
+     "grades": {
+      "perfect": "la túnica llegó planchada como un cuadro",
+      "damaged": "la túnica llegó con el pliegue del cinturón de más",
+      "ruined": "la túnica llegó hecha un gurruño: a planchar en la sacristía"
+     }
+    },
+    {
+     "id": "bolsa",
+     "label": "Caramelos y habas",
+     "fragility": 0.15,
+     "seats": 0,
+     "grades": {
+      "perfect": "la bolsa llegó llena hasta la boca",
+      "damaged": "la bolsa llegó con menos caramelos de los que salió",
+      "ruined": "la bolsa llegó con migas y la mitad de las habas"
+     }
+    }
+   ],
+   "stages": [
+    {
+     "id": "salva",
+     "do": "pickup",
+     "place": "casa_salva",
+     "board": [
+      "salva"
+     ],
+     "objective": "Pasa a por Salva, en Vista Alegre",
+     "lines": [
+      {
+       "when": "start",
+       "who": "salva",
+       "text": "Acho, que voy tarde. La procesión sale pronto y yo sigo en camiseta."
+      },
+      {
+       "when": "arrive",
+       "who": "salva",
+       "text": "Llevo capuz en el bolsillo y la prisa en la espalda. La túnica la tengo en casa de mi madre."
+      },
+      {
+       "when": "after:8",
+       "who": "salva",
+       "text": "Y los caramelos y las habas, también en casa de mi madre. Siempre me pasa algo, pero nunca lo mismo."
+      }
+     ],
+     "sound": "car-door",
+     "ambient": [
+      {
+       "sound": "procession-drums-loop",
+       "at": "iglesia_jesus"
+      }
+     ]
+    },
+    {
+     "id": "madre",
+     "do": "pickup",
+     "place": "casa_madre_salva",
+     "load": [
+      "tunica",
+      "bolsa"
+     ],
+     "objective": "Recoge la túnica y la bolsa de caramelos y habas en casa de la madre de Salva",
+     "lines": [
+      {
+       "when": "after:8",
+       "who": "salva",
+       "text": "Mi madre me tiene la túnica planchada desde el Domingo de Ramos. Es la única de la familia que va con tiempo."
+      },
+      {
+       "when": "arrive",
+       "who": "madre",
+       "text": "Aquí tienes: la túnica planchada y la bolsa de caramelos de limón y habas. No las arrugues, que lo noto."
+      },
+      {
+       "when": "cargo:brake",
+       "who": "salva",
+       "text": "Ese frenazo ha sido de capataz. Y la túnica ha hecho: «uf»."
+      },
+      {
+       "when": "cargo:bump",
+       "who": "salva",
+       "text": "Un badén. Los caramelos se han ido para arriba y han vuelto para abajo."
+      }
+     ],
+     "sound": "boot-close",
+     "ambient": [
+      {
+       "sound": "procession-drums-loop",
+       "at": "iglesia_jesus"
+      }
+     ]
+    },
+    {
+     "id": "iglesia",
+     "do": "dropoff",
+     "place": "iglesia_jesus",
+     "leave": [
+      "salva"
+     ],
+     "unload": [
+      "tunica",
+      "bolsa"
+     ],
+     "end": true,
+     "objective": "Llega a la iglesia de Jesús, junto al Museo Salzillo: hay calles cortadas",
+     "closures": [
+      {
+       "street": "Plaza de San Agustín",
+       "note": "La plaza delante de la iglesia: sale la procesión"
+      },
+      {
+       "street": "Calle San Andrés",
+       "from": [
+        37.98692,
+        -1.13816
+       ],
+       "to": [
+        37.98841,
+        -1.13848
+       ],
+       "note": "Bajada hacia la plaza desde el norte"
+      }
+     ],
+     "lines": [
+      {
+       "when": "start",
+       "who": "municipal",
+       "text": "Por la plaza no se pasa, zagal. Procesión. Dé la vuelta."
+      },
+      {
+       "when": "near:350",
+       "who": "municipal",
+       "text": "Vallas hasta la esquina, y un coche patrulla a cada extremo. Rodee, rodee."
+      },
+      {
+       "when": "cargo:corner",
+       "who": "salva",
+       "text": "Esa curva se la ha llevado la túnica. Con respeto, tú."
+      },
+      {
+       "when": "left:60",
+       "who": "salva",
+       "text": "El cortejo se está formando. Si no llego, que me guarden un capuz, aunque sea por la cola."
+      },
+      {
+       "when": "arrive",
+       "who": "salva",
+       "text": "Aquí. Gracias. Ahora, a ponerse el hábito y a repartir caramelos. A los niños, de limón."
+      }
+     ],
+     "sound": "church-bells",
+     "ambient": [
+      {
+       "sound": "procession-drums-loop"
+      },
+      {
+       "sound": "procession-band-loop"
+      }
+     ]
+    }
+   ],
+   "endings": [
+    {
+     "if": {
+      "onTime": true,
+      "cargo": {
+       "tunica": "perfect",
+       "bolsa": "perfect"
+      }
+     },
+     "title": "Planchada y a su hora",
+     "who": "salva",
+     "text": "Túnica sin una arruga, caramelos para todos y a la cabeza del cortejo. Mi madre dirá que ya lo sabía."
+    },
+    {
+     "if": {
+      "onTime": true
+     },
+     "title": "A su hora, con un pliegue",
+     "who": "salva",
+     "text": "He llegado a tiempo. La túnica lleva un pliegue de más, pero con el capuz no se ve."
+    },
+    {
+     "if": {
+      "cargo": {
+       "bolsa": "ruined"
+      }
+     },
+     "title": "Migas para la procesión",
+     "who": "salva",
+     "text": "La bolsa tiene más migas que caramelos. Repartiré migas con mucho cariño. Y alguna haba que quedó."
+    },
+    {
+     "if": {},
+     "title": "Por la cola",
+     "who": "salva",
+     "text": "Llegué cuando ya se formaban. Me ponen el último, que es el que mejor ve a los niños. Gracias."
+    }
+   ]
+  }
+ ]
+}

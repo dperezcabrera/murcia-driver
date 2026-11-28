@@ -1,0 +1,309 @@
+{
+  "source": "docs/dosier/17-rotondas-y-mobiliario.md (inventario y lista P0). Puntos en metros de juego con fromGeo y origen [37.984, -1.133]. 'estimación' marca medidas tomadas de foto u ortofoto; 'sin verificar', datos sin fuente. 'island' es el suelo de la isleta según las fotos (lawn: césped, gravel: grava, slab: losa gris, brick: ladrillo o losa rojiza); las piezas sin 'kind' no tienen modelo todavía y solo llevan su isleta. 'gardens': los parques de OSM de la isleta son sus jardines (conservan césped y árboles). 'plants': palmeras (palm) y cicas (cycad) de la foto, con 'bed' si llevan parterre de flores (dosier 23). 'parts': puntos de cada cuerpo de una pieza de varios (los seis cactus, los seis marcos de la Estructura del tiempo), con 'point' en el centro de la isleta. 'base': radio de la basa de una pieza sin 'kind' que se dibuja en otro sitio; solo para el coche.",
+  "pieces": [
+    {
+      "id": "mantis",
+      "name": "Mantis",
+      "author": "Miquel Navarro",
+      "year": 2007,
+      "point": [-1021, -2520],
+      "height": 30,
+      "kind": "mantis",
+      "source": "Altura 30 m y 52 t: prensa municipal (Europa Press, 10-05-2007) y folleto Murcia Museo Abierto. Punto: lat 38.006634, lon -1.144638; anillo OSM way 27754208 (+4), 82 m. Acero pintado de azul; color actual azul grisáceo claro, sin verificar (foto de Commons de 2023). Orientación secundaria (pieza de perfil múltiple). Isleta: Isleta de grava con gramíneas (foto de Commons de 2023). Palmeras: 7 washingtonias altas en la isleta (foto de Commons de 2023 del dosier 17); puntos en anillo de 13 y 22 m alrededor de la pieza, fuera de la vía del tranvía; número y sitio aproximados (dosier 23).",
+      "island": "gravel",
+      "plants": [
+        {
+          "species": "palm",
+          "height": 15,
+          "points": [
+            [-1018.4, -2507.3],
+            [-1010.2, -2512.8],
+            [-1008.3, -2522.6],
+            [-1013.8, -2530.8],
+            [-1023.6, -2532.7],
+            [-1031.8, -2527.2],
+            [-1010.5, -2500.7]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plaza-circular-fuente",
+      "name": "Fuente de la Plaza Circular",
+      "author": "Ayuntamiento de Murcia",
+      "year": 2011,
+      "point": [216, -922],
+      "height": 4,
+      "kind": "fountain",
+      "source": "Vaso circular de 25 m: OSM way 27889533 (centro 37.992282, -1.130541); anillo OSM way 1106138390, 145 m. Año: reforma de la plaza de 2011 (Construible, 22-07-2011). Altura de los chorros 4 m: estimación, sin verificar. Piedra clara y agua. Isleta: Isleta de losa gris, sin césped (foto de Commons de 2021; reforma de 2011). Jardines: los parques de OSM de la isleta conservan su césped y sus árboles, y la losa los rodea (regresión R1 del dosier 21). Plantas: 12 palmeras en anillo de 22 m sobre la losa y 6 cicas con parterre de flores a 16,5 m del centro (fotos 13/circular-ref1 y 17-calle-plaza-circular-fuente, PNOA); número y sitio aproximados (dosier 23).",
+      "island": "slab",
+      "gardens": true,
+      "plants": [
+        {
+          "species": "palm",
+          "points": [
+            [221.7, -900.7],
+            [231.6, -906.4],
+            [237.3, -916.3],
+            [237.3, -927.7],
+            [231.6, -937.6],
+            [221.7, -943.3],
+            [210.3, -943.3],
+            [200.4, -937.6],
+            [194.7, -927.7],
+            [194.7, -916.3],
+            [200.4, -906.4],
+            [210.3, -900.7]
+          ]
+        },
+        {
+          "species": "cycad",
+          "bed": true,
+          "points": [
+            [216, -905.5],
+            [230.3, -913.7],
+            [230.3, -930.2],
+            [216, -938.5],
+            [201.7, -930.2],
+            [201.7, -913.7]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "los-cubos",
+      "name": "Los Cubos (Plaza de los Cubos)",
+      "author": "Juan Antonio Blanco",
+      "year": 2006,
+      "point": [187, -3031],
+      "heading": 0.6,
+      "height": 10,
+      "kind": "cubes",
+      "source": "Altura 10 m y 20 t, año 2006: folleto Murcia Museo Abierto (Wikidata da 1998). Punto: nodo OSM 9651314950; anillo OSM way 27744751 (+7), 87 m. Acero oscuro. Inclinación y orientación: estimación a partir de la foto de Commons de 2023. Isleta: Isleta de césped con un murete de mampostería (foto de Commons de 2023).",
+      "island": "lawn",
+      "wall": true
+    },
+    {
+      "id": "oratholos",
+      "name": "Oratholos («Escalera al cielo»)",
+      "author": "Alfonso Albacete",
+      "year": 2007,
+      "point": [-580, -4076],
+      "heading": 2.4,
+      "height": 20,
+      "kind": "oratholos",
+      "source": "Escalera de más de 20 m: prensa (La Verdad, 09-11-2007) y folleto Murcia Museo Abierto; Wikidata da 29 m. Punto: lat 38.020611, lon -1.139611; anillo OSM way 27745136 (+4), 96 m, isleta de 80 m según la prensa. Montículo de 28 m, templete de 15 m y columnas de 7 m: estimación (dosier 17, receta P0). Orientación de la escalera: sin verificar. Isleta: Isleta de césped (artificial según la prensa) con un anillo de piedras (foto de Commons de 2023).",
+      "island": "lawn"
+    },
+    {
+      "id": "frouida",
+      "name": "Frouida (homenaje a los 25 años del Trasvase Tajo-Segura)",
+      "author": "Cristóbal Gabarrón",
+      "year": 2007,
+      "point": [-990.5, -4544.3],
+      "height": 9,
+      "island": "lawn",
+      "source": "Altura 9 m y 30 m de largo: folleto Murcia Museo Abierto y Wikidata. Planta en cruz: el cuerpo de 31 m de E a O (OSM way 193796233, cuerda de 30,8 m a 92°) y los miembros de N a S, de 24 m, con el cruce en el punto (ortofoto PNOA, estimación). Perfil y manchas de color: foto de Commons de 2023 (dosier 17); el lado de la joroba, estimación. Anillo OSM way 27745317 (+5), 105 m. Isleta: césped, sin árboles (misma foto).",
+      "kind": "frouida",
+      "heading": 0
+    },
+    {
+      "id": "personaje",
+      "name": "Personaje",
+      "author": "Rafael Canogar",
+      "year": 2007,
+      "point": [1474, 942],
+      "height": 9,
+      "island": "lawn",
+      "source": "Altura 9 m: prensa municipal (Europa Press, 22-03-2007). Punto y orientación del disco (≈ 22° al sur del eje E–O): ortofoto PNOA, estimación; la isleta, de 60 m según la prensa, anillo OSM way 305942937 (+6), 76 m. Disco de corten con muesca y segundo disco detrás: foto de Commons de 2023 (dosier 17). Isleta: césped y especies mediterráneas (misma foto).",
+      "kind": "personaje",
+      "heading": -0.39
+    },
+    {
+      "id": "bosque-de-cactus",
+      "name": "Bosque de cactus (Cactus garden)",
+      "author": "Dennis Oppenheim",
+      "year": 2007,
+      "point": [-738.8, -999.2],
+      "height": 8,
+      "kind": "cactus",
+      "island": "brick",
+      "parts": [
+        [-734.4, -994.8],
+        [-747.8, -995.8],
+        [-741.6, -996.1],
+        [-737.2, -1007.0],
+        [-747.8, -1007.6],
+        [-729.9, -1010.3]
+      ],
+      "source": "Seis cactus de 8 m: folleto Murcia Museo Abierto y Wikidata (Q123337827). Cada cactus en su nodo OSM (3187101270–3187101275, relación 16657406). Siluetas de acero perforado con palas de acrílico rojo, naranja o verde: fotos de Commons de 2023 (dosier 17); forma y giro de cada uno, estimación. Retirado el 28-01-2026 para restaurarlo y anunciado su regreso (La Opinión de Murcia): se modela como estaba. Punto: centro del anillo OSM way 26376225 (+8), 58 m; Ronda Norte pasa en túnel debajo. Isleta: ladrillo rojizo con seto en el borde (foto y ortofoto)."
+    },
+    {
+      "id": "homenaje-a-los-poetas",
+      "name": "Homenaje a los poetas",
+      "author": "José Lucas",
+      "year": 2008,
+      "point": [1739.2, -1631.8],
+      "heading": 0.66,
+      "height": 20,
+      "kind": "poets",
+      "island": "lawn",
+      "source": "Altura 20 m y 35 t: prensa municipal (Europa Press, 15-07-2008); Wikidata da 23 m. Punto: nodo OSM 4942053778, en el lóbulo SO de la isleta ovalada (anillo OSM way 266927471, 68 m). Dos pilares de corten, aro dentado, varillas de acero inoxidable y esfera amarilla: foto de Commons de 2023 (dosier 17); medidas de cada parte, estimación. Orientación: eje largo de la pieza en la ortofoto PNOA (NE–SO), estimación. Isleta: césped con arbustos y un círculo pavimentado al pie (ortofoto)."
+    },
+    {
+      "id": "monumento-al-dentista",
+      "name": "Monumento al dentista",
+      "author": "Lola Navarro",
+      "year": 2013,
+      "point": [-449.2, 1985.1],
+      "height": 7.5,
+      "kind": "dentist",
+      "island": "gravel",
+      "plants": [
+        {
+          "species": "palm",
+          "height": 6,
+          "points": [
+            [-458.8, 1997.1],
+            [-455.3, 1999.1],
+            [-451.3, 2000.4],
+            [-447.6, 2000.4],
+            [-443.8, 1999.4],
+            [-440.1, 1997.1],
+            [-437.3, 1995.1]
+          ]
+        }
+      ],
+      "source": "Muela de 5 m sobre peana de 2,5 m: prensa municipal (murcia.com, 09-03-2013). Punto: nodo OSM 14173875747 («monumento al diente de la paloma», mal nombrado); anillo OSM way 266845935 (+4), 57 m. Malla de acero inoxidable sobre tres pilares de corten oscuro (la prensa habla de cuatro; la foto de Commons de 2023 muestra tres) y peana redonda: dosier 17. Isleta: círculo pavimentado claro y grava gris (ortofoto PNOA). Palmeras: 7 en el arco sur, puntos de la ortofoto; número y altura aproximados."
+    },
+    {
+      "id": "tunido",
+      "name": "Túnido, «atún tuneado»",
+      "author": "Flyppy (Ismael Cerezo y Javier Borgoñós)",
+      "year": 2007,
+      "point": [-887.5, -1712.7],
+      "heading": 0.5,
+      "height": 9,
+      "kind": "tuna",
+      "island": "gravel",
+      "source": "Unos 9 m: folleto Murcia Museo Abierto y Wikidata. Punto: dosier 17 (37.999385, −1.143115); anillo OSM way 56015501 (+10), 49 m. Pez azul de contorno negro sobre mástil curvo negro y jardín de cactus: foto de Commons de 2023 (dosier 17). Disco azul de 16 m al pie: ortofoto PNOA. Orientación del pez y número de cactus: estimación. Isleta: grava clara."
+    },
+    {
+      "id": "isla-grosa",
+      "name": "Isla Grosa",
+      "author": "",
+      "year": 2010,
+      "point": [-2910.1, -4690.3],
+      "height": 6,
+      "kind": "islet",
+      "island": "gravel",
+      "source": "Montículo de tierra con la forma de la isla Grosa: OSM way 193786781 (tourism=artwork) y Wikidata Q123338114, sin autor. Contorno de 30 × 32 m calcado de la ortofoto PNOA; altura de unos 6 m y rótulo bajo: foto de Commons de 2023 (dosier 17), estimación. Anillo OSM way 104647699 (+8), 96 m. Isleta: árido claro."
+    },
+    {
+      "id": "rotonda-del-zumo",
+      "name": "Rotonda del zumo",
+      "author": "",
+      "year": null,
+      "point": [-2531, -4158],
+      "height": 11,
+      "kind": "juice",
+      "island": "gravel",
+      "source": "Sin autor ni fecha en las fuentes. Mástil blanco atirantado a ocho cilindros inclinados, gramíneas: foto de Commons (dosier 17). Punto del mástil, sitio de los ocho bolos y arcos de césped: ortofoto PNOA (el mástil está 13 m al N del centro del anillo OSM way 49340390, 91 m). Altura 11 m y medidas de los cilindros: estimación."
+    },
+    {
+      "id": "estructura-del-tiempo",
+      "name": "Estructura del tiempo",
+      "author": "",
+      "year": null,
+      "point": [-2944.4, -3109],
+      "height": 5,
+      "kind": "time",
+      "island": "gravel",
+      "parts": [
+        [-2960.4, -3105.9],
+        [-2955.6, -3105.3],
+        [-2948.7, -3108.3],
+        [-2942.8, -3110.9],
+        [-2936.0, -3113.3],
+        [-2928.8, -3115.9]
+      ],
+      "source": "Sin autor ni fecha en las fuentes. Seis marcos de corten con esferas plateadas, de 5 a 3 m: foto de Commons de 2023 (dosier 17), estimación. Sitio de cada marco: ortofoto PNOA; el más alto al O, según la foto (sin verificar). Anillo OSM way 65426619 (+4), 56 m. Isleta: grava blanca y césped."
+    },
+    {
+      "id": "infinito",
+      "name": "Infinito",
+      "author": "Juan Antonio Blanco",
+      "year": null,
+      "point": [851.3, -3144],
+      "height": 4.5,
+      "kind": "infinity",
+      "island": "lawn",
+      "source": "Autor: descripción de Wikidata; fecha sin fuente. Tubo de corten en lemniscata sobre postes de acero: foto de Commons de 2023 (dosier 17). Largo 24 m y alturas de 2,5 a 4,5 m: estimación (ortofoto y foto). Orientación (E–O): sin verificar. Anillo OSM way 129434269 (+3), 55 m. Isleta: césped con un óvalo de piedra rojiza (ortofoto)."
+    },
+    {
+      "id": "cubos-del-tiro",
+      "name": "Cubos del Tiro",
+      "author": "Juan Antonio Blanco",
+      "year": 2009,
+      "point": [-2841.7, -3551.8],
+      "height": 5.5,
+      "kind": "tiro",
+      "island": "gravel",
+      "source": "Autor y año: Wikidata Q123338683; nodo OSM 11327757123. Dos cubos de aristas de corten, uno sobre un vértice, entre varillas de acero de 2–3 m: foto de Commons de 2023 (dosier 17). Sitio de los cubos: ortofoto PNOA; tamaños y número de varillas (150), estimación. Punto: centro del anillo OSM way 49357869 (+5), 46 m. Isleta: grava blanca y rojiza con borde de césped."
+    },
+    {
+      "id": "caldera-estrella-de-levante",
+      "name": "Caldera de Estrella de Levante",
+      "author": "Estrella de Levante (donación)",
+      "year": 2011,
+      "point": [-2065.4, -3336.4],
+      "height": 8,
+      "kind": "boiler",
+      "island": "slab",
+      "source": "Caldera de cocción de 1963 donada por la fábrica: prensa municipal (Europa Press, 23-02-2011). Punto: dosier 17 (38.013971, −1.156540); anillo OSM way 146226724 (+6), 44 m. Tambor de ladrillo, caldera de cobre y chimenea: foto de Commons de 2023 (dosier 17); medidas, estimación. Isleta: losa con un murete de ladrillo al fondo (foto; el murete no se modela)."
+    },
+    {
+      "id": "torso-iberico",
+      "name": "Torso ibérico",
+      "author": "Alberto Corazón",
+      "year": 2006,
+      "point": [760.3, -1058.6],
+      "height": 3.1,
+      "kind": "torso",
+      "island": "lawn",
+      "source": "Torso de 1,8 m (Wikidata) y más de 1,5 t (folleto Murcia Museo Abierto), de bronce sobre un dado de piedra gris. Dado de 1,6 × 1,3 m: proporción de la foto de Commons de 2023 (dosier 17), estimación. Punto: ortofoto PNOA (6 m al O del centro del anillo OSM way 475711542, 44 m). Isleta: franjas de césped y grava entre las vías del tranvía."
+    },
+    {
+      "id": "homenaje-al-mediterraneo",
+      "name": "Homenaje al Mediterráneo",
+      "author": "Jean Miotte",
+      "year": 2007,
+      "point": [1374.5, -667],
+      "height": 12,
+      "kind": "sails",
+      "island": "brick",
+      "source": "Velas de acero blanco de 12 m y 6 m de ancho: Wikidata, sin referencia (sin verificar). Punto y zócalo: ortofoto PNOA (7 m al N del centro del anillo OSM way 23091042, 42 m), sobre la boca del túnel de Atalayas. Forma de las velas: foto de Commons de 2023 (dosier 17), estimación. Isleta: losa rosada."
+    },
+    {
+      "id": "fuente-del-surtidor",
+      "name": "Fuente del surtidor",
+      "author": "",
+      "year": null,
+      "point": [1521.8, -331.7],
+      "height": 3,
+      "kind": "jet",
+      "island": "brick",
+      "source": "Fuente circular con un surtidor en el centro: ortofoto PNOA (anillo OSM way 23090986, 32 m; punto en su centro, 37.98698, −1.115656). Vaso de unos 11 m: ortofoto; altura del chorro, estimación. Sin autor ni nombre en las fuentes: «Fuente del surtidor» es un nombre descriptivo. Isleta: losa rosada."
+    },
+    {
+      "id": "santa-catalina-columna",
+      "name": "Columna de Santa Catalina",
+      "author": "",
+      "year": null,
+      "point": [19.6, -113.5],
+      "height": 12,
+      "base": 0.75,
+      "source": "Sin modelo aquí: la dibuja render/landmarks.ts (dosier 20, «Columna»). Punto: nodo OSM 6989874485 (tourism=artwork, «Estatua de Santa Catalina»; 37.9850199, -1.1327768). Altura 12 m y basa de unos 1,5 m de diámetro: dosier 20. Solo para el coche: sin isleta, no quita los árboles de la plaza."
+    }
+  ]
+}

@@ -1,0 +1,3127 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "title": "Lugares reconocibles de Murcia para el juego",
+    "reviewedAt": "2026-11-22",
+    "osmTimestamp": "2026-11-22T08:12:15Z",
+    "mapOrigin": [
+      37.984,
+      -1.133
+    ],
+    "currentMapBboxSouthWestNorthEast": [
+      37.963,
+      -1.17,
+      38.018,
+      -1.098
+    ],
+    "coordinateLicense": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors",
+    "licenseUrl": "https://www.openstreetmap.org/copyright",
+    "positionMeaning": "Referencias para modelado; los centros de límites no representan accesos ni una medición de fachada. La cobertura se refiere al punto, no a todo el recinto.",
+    "coordinateSystem": "GeoJSON WGS84: longitud,latitud. worldXZ: metros este,sur desde el origen del mapa.",
+    "priorityMeaning": {
+      "0": "identidad visual",
+      "1": "recorridos y barrios principales",
+      "2": "detalle complementario o ampliaciones"
+    },
+    "modelMeaning": "Documentado no significa recreado. Solo existe una silueta aproximada de la Catedral; los demás hitos no tienen un modelo específico validado."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "catedral",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1286307,
+          37.9840741
+        ]
+      },
+      "properties": {
+        "id": "catedral",
+        "name": "Catedral de Santa María",
+        "category": "monumento",
+        "group": "Centro monumental",
+        "priority": 0,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/27865525",
+        "osmName": "Catedral de Murcia",
+        "worldXZ": [
+          383.36,
+          -8.25
+        ],
+        "modelStatus": "silueta-aproximada",
+        "visualTargets": [
+          "Imafronte barroco",
+          "portadas",
+          "capillas y cubiertas"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/catedral-de-murcia",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/27865525",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "catedral-torre",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1285545,
+          37.9843672
+        ]
+      },
+      "properties": {
+        "id": "catedral-torre",
+        "name": "Torre de la Catedral",
+        "category": "monumento",
+        "group": "Centro monumental",
+        "priority": 0,
+        "insideCurrentMap": true,
+        "positionStatus": "punto-osm",
+        "osmRef": "node/7391265244",
+        "osmName": "Torre de la Catedral",
+        "worldXZ": [
+          390.05,
+          -40.88
+        ],
+        "modelStatus": "silueta-aproximada",
+        "visualTargets": [
+          "Cinco cuerpos",
+          "campanario",
+          "coronación y silueta"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/subir-a-la-torre-de-la-catedral",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/node/7391265244",
+            "role": "posicion-y-denominacion"
+          }
+        ],
+        "modelNote": "La torre del juego es una silueta situada a partir del mínimo x/z de la huella +8 m; su anclaje no usa todavía este punto cartográfico."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "belluga",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1295414,
+          37.9838619
+        ]
+      },
+      "properties": {
+        "id": "belluga",
+        "name": "Plaza del Cardenal Belluga",
+        "category": "plaza",
+        "group": "Centro monumental",
+        "priority": 0,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/27865562",
+        "osmName": "Plaza del Cardenal Belluga",
+        "worldXZ": [
+          303.46,
+          15.37
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Vacío urbano",
+          "pavimento",
+          "relación entre fachadas"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/pasear-de-plaza-en-plaza",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/27865562",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "palacio-episcopal",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1295083,
+          37.9833481
+        ]
+      },
+      "properties": {
+        "id": "palacio-episcopal",
+        "name": "Palacio Episcopal",
+        "category": "monumento",
+        "group": "Centro monumental",
+        "priority": 0,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "relation/7907676",
+        "osmName": "Palacio Episcopal de Murcia",
+        "worldXZ": [
+          306.36,
+          72.57
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Balcones",
+          "portadas",
+          "continuidad con la Glorieta"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/monumentos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/relation/7907676",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ayuntamiento",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1302109,
+          37.9835391
+        ]
+      },
+      "properties": {
+        "id": "ayuntamiento",
+        "name": "Ayuntamiento de Murcia",
+        "category": "monumento",
+        "group": "Centro monumental",
+        "priority": 0,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "relation/7907674",
+        "osmName": "Ayuntamiento de Murcia",
+        "worldXZ": [
+          244.72,
+          51.31
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Frente institucional",
+          "balcón",
+          "ritmo de huecos"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/jardin-de-la-glorieta",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/relation/7907674",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "moneo",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1302185,
+          37.9838226
+        ]
+      },
+      "properties": {
+        "id": "moneo",
+        "name": "Edificio Moneo, anexo del Ayuntamiento",
+        "category": "monumento",
+        "group": "Centro monumental",
+        "priority": 0,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/553602057",
+        "osmName": "Ayuntamiento de Murcia - Edif.Anexo",
+        "worldXZ": [
+          244.05,
+          19.75
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Retícula",
+          "profundidad de vanos",
+          "proporciones"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/pasear-de-plaza-en-plaza",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/553602057",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "glorieta",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1303684,
+          37.9832116
+        ]
+      },
+      "properties": {
+        "id": "glorieta",
+        "name": "Glorieta de España",
+        "category": "plaza",
+        "group": "Centro monumental",
+        "priority": 0,
+        "insideCurrentMap": true,
+        "positionStatus": "punto-osm",
+        "osmRef": "node/11737820470",
+        "osmName": "Glorieta de España",
+        "worldXZ": [
+          230.9,
+          87.76
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Fuentes",
+          "jardines",
+          "palmeras y borde fluvial"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/jardin-de-la-glorieta",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/node/11737820470",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "flores",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1332305,
+          37.9846959
+        ]
+      },
+      "properties": {
+        "id": "flores",
+        "name": "Plaza de las Flores",
+        "category": "plaza",
+        "group": "Centro monumental",
+        "priority": 0,
+        "insideCurrentMap": true,
+        "positionStatus": "punto-osm",
+        "osmRef": "node/11737860469",
+        "osmName": "Plaza de las Flores",
+        "worldXZ": [
+          -20.22,
+          -77.47
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Fuente y Niña de las Flores",
+          "puestos",
+          "terrazas y fachadas"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/plaza-de-las-flores",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/node/11737860469",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "santa-catalina",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1327536,
+          37.9850126
+        ]
+      },
+      "properties": {
+        "id": "santa-catalina",
+        "name": "Plaza de Santa Catalina",
+        "category": "plaza",
+        "group": "Centro monumental",
+        "priority": 0,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/42766008",
+        "osmName": "Plaza Santa Catalina",
+        "worldXZ": [
+          21.62,
+          -112.72
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Escala peatonal",
+          "continuidad con Flores",
+          "esquinas"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/pasear-de-plaza-en-plaza",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/42766008",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "casino",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1287091,
+          37.9855034
+        ]
+      },
+      "properties": {
+        "id": "casino",
+        "name": "Real Casino de Murcia",
+        "category": "monumento",
+        "group": "Centro monumental",
+        "priority": 0,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/112046890",
+        "osmName": "Real Casino de Murcia",
+        "worldXZ": [
+          376.49,
+          -167.36
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Portada",
+          "ventanales",
+          "frente hacia Trapería"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/real-casino-de-murcia",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/112046890",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "traperia",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1294533,
+          37.9867843
+        ]
+      },
+      "properties": {
+        "id": "traperia",
+        "name": "Calle Trapería",
+        "category": "calle",
+        "group": "Centro monumental",
+        "priority": 0,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/23414383",
+        "osmName": "Calle Trapería",
+        "worldXZ": [
+          311.19,
+          -309.95
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Sección estrecha",
+          "frentes",
+          "perspectivas"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/que-ver-visitar",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/23414383",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "plateria",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.131698,
+          37.9855285
+        ]
+      },
+      "properties": {
+        "id": "plateria",
+        "name": "Calle Platería",
+        "category": "calle",
+        "group": "Centro monumental",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/28042906",
+        "osmName": "Calle Platería",
+        "worldXZ": [
+          114.24,
+          -170.15
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Ritmo comercial",
+          "pavimento",
+          "sección peatonal"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/que-ver-visitar",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/28042906",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "santo-domingo",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1289689,
+          37.9873481
+        ]
+      },
+      "properties": {
+        "id": "santo-domingo",
+        "name": "Plaza de Santo Domingo",
+        "category": "plaza",
+        "group": "Plazas y patrimonio",
+        "priority": 0,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "relation/1525621",
+        "osmName": "Plaza de Santo Domingo",
+        "worldXZ": [
+          353.69,
+          -372.71
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Ficus",
+          "arbolado",
+          "conexión con Alfonso X"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/pasear-de-plaza-en-plaza",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/relation/1525621",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "casa-cerda",
+      "geometry": null,
+      "properties": {
+        "id": "casa-cerda",
+        "name": "Casa Cerdá",
+        "category": "monumento",
+        "group": "Plazas y patrimonio",
+        "priority": 0,
+        "insideCurrentMap": true,
+        "positionStatus": "pendiente-anclaje",
+        "osmRef": null,
+        "osmName": null,
+        "worldXZ": null,
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Templete circular",
+          "columnas",
+          "tonos y coronación"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/casa-cerda",
+            "role": "contexto-institucional-y-referencia-visual"
+          }
+        ],
+        "locationNote": "Plaza de Santo Domingo, 2. Anclaje pendiente: el centro de una vista de Google Maps no es la posición del edificio."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arco-santo-domingo",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1296983,
+          37.986989
+        ]
+      },
+      "properties": {
+        "id": "arco-santo-domingo",
+        "name": "Arco de Santo Domingo",
+        "category": "monumento",
+        "group": "Plazas y patrimonio",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/1263556344",
+        "osmName": "Arco de Santo Domingo",
+        "worldXZ": [
+          289.69,
+          -332.74
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Arco entre edificios",
+          "perspectiva de ambas plazas"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/pasear-de-plaza-en-plaza",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/1263556344",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "iglesia-santo-domingo",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1298926,
+          37.987201
+        ]
+      },
+      "properties": {
+        "id": "iglesia-santo-domingo",
+        "name": "Iglesia de Santo Domingo",
+        "category": "monumento",
+        "group": "Plazas y patrimonio",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/178777291",
+        "osmName": "Iglesia Conventual de Santo Domingo",
+        "worldXZ": [
+          272.64,
+          -356.34
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Fachadas",
+          "acceso",
+          "relación con el arco"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/pasear-de-plaza-en-plaza",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/178777291",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "teatro-romea",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1306447,
+          37.9873391
+        ]
+      },
+      "properties": {
+        "id": "teatro-romea",
+        "name": "Teatro Romea",
+        "category": "equipamiento",
+        "group": "Plazas y patrimonio",
+        "priority": 0,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/27907763",
+        "osmName": "Teatro Romea",
+        "worldXZ": [
+          206.66,
+          -371.71
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Fachada",
+          "acceso frontal",
+          "relación con la plaza"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/que-ver-visitar",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/27907763",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "plaza-romea",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1305913,
+          37.9868836
+        ]
+      },
+      "properties": {
+        "id": "plaza-romea",
+        "name": "Plaza de Julián Romea",
+        "category": "plaza",
+        "group": "Plazas y patrimonio",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/1263556342",
+        "osmName": "Plaza de Julián Romea",
+        "worldXZ": [
+          211.34,
+          -321.0
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Perspectiva del teatro",
+          "terrazas",
+          "edificios de borde"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/pasear-de-plaza-en-plaza",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/1263556342",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "palacio-almodovar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1297007,
+          37.9868374
+        ]
+      },
+      "properties": {
+        "id": "palacio-almodovar",
+        "name": "Palacio Almodóvar",
+        "category": "monumento",
+        "group": "Plazas y patrimonio",
+        "priority": 2,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/688734896",
+        "osmName": "Palacio Almodóvar",
+        "worldXZ": [
+          289.48,
+          -315.86
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Esquina",
+          "portada",
+          "balcones"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/pasear-de-plaza-en-plaza",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/688734896",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "san-esteban",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1338773,
+          37.9880699
+        ]
+      },
+      "properties": {
+        "id": "san-esteban",
+        "name": "Palacio de San Esteban",
+        "category": "monumento",
+        "group": "Plazas y patrimonio",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "relation/10128715",
+        "osmName": "Palacio de San Esteban",
+        "worldXZ": [
+          -76.97,
+          -453.06
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Conjunto histórico",
+          "portadas",
+          "relación con el yacimiento"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/monumentos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/relation/10128715",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "san-esteban-yacimiento",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1336072,
+          37.9886897
+        ]
+      },
+      "properties": {
+        "id": "san-esteban-yacimiento",
+        "name": "Yacimiento arqueológico de San Esteban",
+        "category": "patrimonio",
+        "group": "Plazas y patrimonio",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "punto-osm",
+        "osmRef": "node/7012594265",
+        "osmName": "Yacimiento Arqueológico de San Esteban",
+        "worldXZ": [
+          -53.28,
+          -522.06
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Cota del recinto",
+          "trazado arqueológico",
+          "vallado"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/monumentos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/node/7012594265",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "santa-clara",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1303786,
+          37.9882233
+        ]
+      },
+      "properties": {
+        "id": "santa-clara",
+        "name": "Monasterio y Museo de Santa Clara",
+        "category": "museo",
+        "group": "Plazas y patrimonio",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/55142730",
+        "osmName": "Monasterio de Santa Clara la Real",
+        "worldXZ": [
+          230.0,
+          -470.14
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Conjunto",
+          "accesos",
+          "patio si resulta visible"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/museos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/55142730",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "merced",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1259387,
+          37.987758
+        ]
+      },
+      "properties": {
+        "id": "merced",
+        "name": "Campus de la Merced",
+        "category": "equipamiento",
+        "group": "Plazas y patrimonio",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/105665325",
+        "osmName": "Campus de la Merced",
+        "worldXZ": [
+          619.56,
+          -418.34
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Conjunto universitario",
+          "claustro",
+          "accesos"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/monumentos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/105665325",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "santa-isabel",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1325102,
+          37.9861236
+        ]
+      },
+      "properties": {
+        "id": "santa-isabel",
+        "name": "Jardín de Santa Isabel",
+        "category": "plaza",
+        "group": "Plazas y patrimonio",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "relation/16466299",
+        "osmName": "Jardín de Santa Isabel",
+        "worldXZ": [
+          42.98,
+          -236.4
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Jardín",
+          "escultura",
+          "transición hacia Gran Vía"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/pasear-de-plaza-en-plaza",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/relation/16466299",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "apostoles",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.127866,
+          37.9840134
+        ]
+      },
+      "properties": {
+        "id": "apostoles",
+        "name": "Plaza de los Apóstoles",
+        "category": "plaza",
+        "group": "Plazas y patrimonio",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "punto-osm",
+        "osmRef": "node/11739640198",
+        "osmName": "Plaza de los Apóstoles",
+        "worldXZ": [
+          450.46,
+          -1.49
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Lateral de la Catedral",
+          "portada",
+          "pavimento"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/pasear-de-plaza-en-plaza",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/node/11739640198",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camachos",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1309872,
+          37.9816942
+        ]
+      },
+      "properties": {
+        "id": "camachos",
+        "name": "Plaza Camachos",
+        "category": "plaza",
+        "group": "Plazas y patrimonio",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "relation/3399334",
+        "osmName": "Plaza Camachos",
+        "worldXZ": [
+          176.6,
+          256.68
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Entrada a El Carmen",
+          "frentes",
+          "perspectiva del puente"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/pasear-de-plaza-en-plaza",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/relation/3399334",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "casa-diaz-cassou",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1351601,
+          37.9869213
+        ]
+      },
+      "properties": {
+        "id": "casa-diaz-cassou",
+        "name": "Casa Díaz-Cassou",
+        "category": "monumento",
+        "group": "Plazas y patrimonio",
+        "priority": 2,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/548247365",
+        "osmName": "Casa Díaz Cassou",
+        "worldXZ": [
+          -189.53,
+          -325.2
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Fachada singular",
+          "miradores",
+          "cubierta"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/monumentos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/548247365",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fontes",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1296747,
+          37.9845435
+        ]
+      },
+      "properties": {
+        "id": "fontes",
+        "name": "Plaza Fontes",
+        "category": "plaza",
+        "group": "Plazas y patrimonio",
+        "priority": 2,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/112046892",
+        "osmName": "Plaza Fontes",
+        "worldXZ": [
+          291.76,
+          -60.5
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Vacío urbano",
+          "fachadas",
+          "escala del acceso"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/pasear-de-plaza-en-plaza",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/112046892",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "puente-peligros",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1315845,
+          37.9827668
+        ]
+      },
+      "properties": {
+        "id": "puente-peligros",
+        "name": "Puente Viejo o de los Peligros",
+        "category": "puente",
+        "group": "Río Segura y jardines",
+        "priority": 0,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/321048158",
+        "osmName": "Puente Viejo",
+        "worldXZ": [
+          124.2,
+          137.28
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Arcos de piedra",
+          "pretiles",
+          "encuentro de riberas"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/recorrer-el-rio-puente-a-puente",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/321048158",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pasarela-malecon",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1332392,
+          37.9824361
+        ]
+      },
+      "properties": {
+        "id": "pasarela-malecon",
+        "name": "Pasarela del Malecón o de Manterola",
+        "category": "puente",
+        "group": "Río Segura y jardines",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/54045278",
+        "osmName": "Pasarela del Malecón",
+        "worldXZ": [
+          -20.99,
+          174.09
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Mástil",
+          "cables",
+          "tablero curvo"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/recorrer-el-rio-puente-a-puente",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/54045278",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "puente-hierro",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1268463,
+          37.9812718
+        ]
+      },
+      "properties": {
+        "id": "puente-hierro",
+        "name": "Puente Nuevo o de Hierro",
+        "category": "puente",
+        "group": "Río Segura y jardines",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/45213905",
+        "osmName": "Puente Nuevo",
+        "worldXZ": [
+          539.93,
+          303.7
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Arcos y celosías metálicas",
+          "tablero peatonal"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/recorrer-el-rio-puente-a-puente",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/45213905",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "puente-hospital",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.12164,
+          37.9814663
+        ]
+      },
+      "properties": {
+        "id": "puente-hospital",
+        "name": "Puente del Hospital",
+        "category": "puente",
+        "group": "Río Segura y jardines",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "relation/14688405",
+        "osmName": "Puente del Hospital",
+        "worldXZ": [
+          996.73,
+          282.05
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Sección",
+          "estructura",
+          "pasos y accesos"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/recorrer-el-rio-puente-a-puente",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/relation/14688405",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pasarela-jorge-manrique",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1179583,
+          37.9820635
+        ]
+      },
+      "properties": {
+        "id": "pasarela-jorge-manrique",
+        "name": "Pasarela Jorge Manrique o de Vistabella",
+        "category": "puente",
+        "group": "Río Segura y jardines",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/97674252",
+        "osmName": "Puente de Vistabella",
+        "worldXZ": [
+          1319.77,
+          215.57
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Silueta estructural",
+          "tablero",
+          "conexión de riberas"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/recorrer-el-rio-puente-a-puente",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/97674252",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sardina",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.130671,
+          37.9826128
+        ]
+      },
+      "properties": {
+        "id": "sardina",
+        "name": "La Sardina del Segura",
+        "category": "escultura",
+        "group": "Río Segura y jardines",
+        "priority": 0,
+        "insideCurrentMap": true,
+        "positionStatus": "punto-osm",
+        "osmRef": "node/694641745",
+        "osmName": "La Sardina",
+        "worldXZ": [
+          204.35,
+          154.42
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Forma emergente",
+          "escala",
+          "relación con el agua"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/recorrer-el-rio-puente-a-puente",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/node/694641745",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "molinos",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.130183,
+          37.9822009
+        ]
+      },
+      "properties": {
+        "id": "molinos",
+        "name": "Museo Hidráulico Los Molinos del Río",
+        "category": "museo",
+        "group": "Río Segura y jardines",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "punto-osm",
+        "osmRef": "node/566682810",
+        "osmName": "Museo los Molinos del Río",
+        "worldXZ": [
+          247.16,
+          200.28
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Frente fluvial",
+          "muros",
+          "cota respecto al agua"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/museos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/node/566682810",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "malecon",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1449769,
+          37.9840961
+        ]
+      },
+      "properties": {
+        "id": "malecon",
+        "name": "Paseo del Malecón",
+        "category": "paisaje",
+        "group": "Río Segura y jardines",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/28531140",
+        "osmName": "Paseo del Malecón",
+        "worldXZ": [
+          -1050.86,
+          -10.7
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Sección elevada",
+          "pavimento",
+          "pretiles"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/que-ver-visitar",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/28531140",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "jardin-malecon",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1361546,
+          37.9825075
+        ]
+      },
+      "properties": {
+        "id": "jardin-malecon",
+        "name": "Jardín Botánico del Malecón",
+        "category": "paisaje",
+        "group": "Río Segura y jardines",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/55128893",
+        "osmName": "Jardín Botánico del Malecón",
+        "worldXZ": [
+          -276.79,
+          166.15
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Arbolado",
+          "caminos",
+          "sombras"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/que-ver-visitar",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/55128893",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "floridablanca",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1299037,
+          37.9805433
+        ]
+      },
+      "properties": {
+        "id": "floridablanca",
+        "name": "Jardín de Floridablanca",
+        "category": "paisaje",
+        "group": "Río Segura y jardines",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/23145629",
+        "osmName": "Jardín de Floridablanca",
+        "worldXZ": [
+          271.67,
+          384.8
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Arbolado de gran porte",
+          "monumentos",
+          "recorridos"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/que-ver-visitar",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/23145629",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "seda",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1405665,
+          37.9883836
+        ]
+      },
+      "properties": {
+        "id": "seda",
+        "name": "Jardín de la Seda",
+        "category": "paisaje",
+        "group": "Río Segura y jardines",
+        "priority": 2,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/23145632",
+        "osmName": "Jardín de la Seda",
+        "worldXZ": [
+          -663.89,
+          -487.98
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Recorridos",
+          "estanque",
+          "arbolado"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/que-ver-visitar",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/23145632",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "almudi",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1330122,
+          37.9835592
+        ]
+      },
+      "properties": {
+        "id": "almudi",
+        "name": "Palacio Almudí",
+        "category": "museo",
+        "group": "Cultura y equipamientos",
+        "priority": 0,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/307703068",
+        "osmName": "Centro de Arte Palacio Almudí",
+        "worldXZ": [
+          -1.07,
+          49.07
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Fachada de piedra",
+          "portada",
+          "huecos"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/monumentos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/307703068",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "veronicas-mercado",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1342603,
+          37.9837993
+        ]
+      },
+      "properties": {
+        "id": "veronicas-mercado",
+        "name": "Mercado de Verónicas",
+        "category": "equipamiento",
+        "group": "Cultura y equipamientos",
+        "priority": 0,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/626719603",
+        "osmName": "Mercado de Verónicas",
+        "worldXZ": [
+          -110.58,
+          22.34
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Fachada",
+          "huecos",
+          "accesos y bajos"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/que-ver-visitar",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/626719603",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "veronicas-muralla",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1337963,
+          37.9838311
+        ]
+      },
+      "properties": {
+        "id": "veronicas-muralla",
+        "name": "Muralla de Verónicas",
+        "category": "patrimonio",
+        "group": "Cultura y equipamientos",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/55131541",
+        "osmName": "Muralla de Verónicas",
+        "worldXZ": [
+          -69.87,
+          18.8
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Lienzos",
+          "cotas",
+          "encuentro con edificios"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/museos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/55131541",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "veronicas-sala",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1341524,
+          37.9839848
+        ]
+      },
+      "properties": {
+        "id": "veronicas-sala",
+        "name": "Sala de exposiciones de Verónicas",
+        "category": "equipamiento",
+        "group": "Cultura y equipamientos",
+        "priority": 2,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/275672287",
+        "osmName": "Sala de exposiciones Iglesia de Verónicas",
+        "worldXZ": [
+          -101.11,
+          1.69
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Volumen de iglesia",
+          "portada",
+          "acceso"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/museos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/275672287",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "salzillo",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1384503,
+          37.9866703
+        ]
+      },
+      "properties": {
+        "id": "salzillo",
+        "name": "Museo Salzillo",
+        "category": "museo",
+        "group": "Cultura y equipamientos",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/274929891",
+        "osmName": "Museo Salzillo",
+        "worldXZ": [
+          -478.21,
+          -297.26
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Envolvente",
+          "accesos",
+          "relación con iglesia de Jesús"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/museos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/274929891",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ramon-gaya",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1326356,
+          37.9852039
+        ]
+      },
+      "properties": {
+        "id": "ramon-gaya",
+        "name": "Museo Ramón Gaya",
+        "category": "museo",
+        "group": "Cultura y equipamientos",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "punto-osm",
+        "osmRef": "node/6463060085",
+        "osmName": "Museo Ramón Gaya",
+        "worldXZ": [
+          31.97,
+          -134.02
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Fachada amarilla",
+          "balcones",
+          "rejas y mirador"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/museo-ramon-gaya",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/node/6463060085",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arqueologico",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.130686,
+          37.9896679
+        ]
+      },
+      "properties": {
+        "id": "arqueologico",
+        "name": "Museo Arqueológico de Murcia",
+        "category": "museo",
+        "group": "Cultura y equipamientos",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "relation/7563312",
+        "osmName": "Museo Arqueológico de Murcia",
+        "worldXZ": [
+          203.03,
+          -630.95
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Frente hacia Alfonso X",
+          "acceso",
+          "cubierta"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/museos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/relation/7563312",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bellas-artes",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1238959,
+          37.9868236
+        ]
+      },
+      "properties": {
+        "id": "bellas-artes",
+        "name": "Museo de Bellas Artes de Murcia",
+        "category": "museo",
+        "group": "Cultura y equipamientos",
+        "priority": 2,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/724156031",
+        "osmName": "Museo de Bellas Artes de Murcia",
+        "worldXZ": [
+          798.8,
+          -314.32
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Accesos",
+          "fachada",
+          "edificios colindantes"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/museos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/724156031",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "museo-ciudad",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1375526,
+          37.9883953
+        ]
+      },
+      "properties": {
+        "id": "museo-ciudad",
+        "name": "Museo de la Ciudad de Murcia",
+        "category": "museo",
+        "group": "Cultura y equipamientos",
+        "priority": 2,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/274787040",
+        "osmName": "Museo de la Ciudad de Murcia",
+        "worldXZ": [
+          -399.45,
+          -489.28
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Fachada",
+          "esquina",
+          "entorno de San Andrés"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/museos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/274787040",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ciencia-agua",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1334202,
+          37.9804984
+        ]
+      },
+      "properties": {
+        "id": "ciencia-agua",
+        "name": "Museo de la Ciencia y el Agua",
+        "category": "museo",
+        "group": "Cultura y equipamientos",
+        "priority": 2,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/54736812",
+        "osmName": "Museo de la Ciencia y el Agua",
+        "worldXZ": [
+          -36.87,
+          389.8
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Volumen exterior",
+          "acceso",
+          "espacio inmediato"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/museos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/54736812",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "san-juan-dios",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1280571,
+          37.9831269
+        ]
+      },
+      "properties": {
+        "id": "san-juan-dios",
+        "name": "Conjunto monumental San Juan de Dios",
+        "category": "museo",
+        "group": "Cultura y equipamientos",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "punto-osm",
+        "osmRef": "node/11739640192",
+        "osmName": "Conjunto Monumental San Juan de Dios",
+        "worldXZ": [
+          433.69,
+          97.19
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Iglesia",
+          "portada",
+          "cúpula y acceso"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/museos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/node/11739640192",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cuartel",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1344609,
+          37.9785396
+        ]
+      },
+      "properties": {
+        "id": "cuartel",
+        "name": "Cuartel de Artillería",
+        "category": "equipamiento",
+        "group": "Cultura y equipamientos",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/334894553",
+        "osmName": "Cuartel de Artillería",
+        "worldXZ": [
+          -128.18,
+          607.85
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Pabellones",
+          "patio",
+          "accesos"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/museo-de-la-universidad",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/334894553",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "teatro-circo",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1281183,
+          37.9881021
+        ]
+      },
+      "properties": {
+        "id": "teatro-circo",
+        "name": "Teatro Circo Murcia",
+        "category": "equipamiento",
+        "group": "Cultura y equipamientos",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/748955736",
+        "osmName": "Teatro Circo",
+        "worldXZ": [
+          428.32,
+          -456.65
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Frente de calle",
+          "acceso",
+          "rótulo"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/museos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/748955736",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "biblioteca",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1376238,
+          37.9982918
+        ]
+      },
+      "properties": {
+        "id": "biblioteca",
+        "name": "Biblioteca Regional de Murcia",
+        "category": "equipamiento",
+        "group": "Cultura y equipamientos",
+        "priority": 2,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/54045700",
+        "osmName": "Biblioteca Regional",
+        "worldXZ": [
+          -405.69,
+          -1590.96
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Masa del edificio",
+          "fachada",
+          "acceso"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/museos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/54045700",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "auditorio",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1135884,
+          37.9835139
+        ]
+      },
+      "properties": {
+        "id": "auditorio",
+        "name": "Auditorio y Centro de Congresos Víctor Villegas",
+        "category": "equipamiento",
+        "group": "Cultura y equipamientos",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/39968530",
+        "osmName": "Auditorio y Centro de Congresos Víctor Villegas",
+        "worldXZ": [
+          1703.18,
+          54.11
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Volumen curvo",
+          "edificio complementario",
+          "acristalamientos"
+        ],
+        "sources": [
+          {
+            "url": "https://www.auditoriomurcia.org/centro-congresos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/39968530",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "circular",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1305375,
+          37.9922791
+        ]
+      },
+      "properties": {
+        "id": "circular",
+        "name": "Plaza Circular, La Redonda",
+        "category": "plaza",
+        "group": "Cultura y equipamientos",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "relation/568473",
+        "osmName": "Plaza Circular",
+        "worldXZ": [
+          216.06,
+          -921.63
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Fuente central",
+          "jardín",
+          "tranvía y calzadas"
+        ],
+        "sources": [
+          {
+            "url": "https://web.murcia.es/noticia/la-red-de-fuentes-de-murcia-se-digitaliza-logrando-mas-eficiencia-control-remoto-y-calidad",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/relation/568473",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "palacio-deportes",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1127436,
+          37.9939905
+        ]
+      },
+      "properties": {
+        "id": "palacio-deportes",
+        "name": "Palacio de los Deportes de Murcia",
+        "category": "equipamiento",
+        "group": "Cultura y equipamientos",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "punto-osm",
+        "osmRef": "node/313140002",
+        "osmName": "Palacio de los Deportes de Murcia",
+        "worldXZ": [
+          1777.31,
+          -1112.14
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Cubierta",
+          "volumen del pabellón",
+          "accesos"
+        ],
+        "sources": [
+          {
+            "url": "https://murciadeportes.com/web_murciadeportes/docs/avisos/PROTOCOLO_ANEXO_I_II.pdf",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/node/313140002",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "condomina",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1214047,
+          37.9861646
+        ]
+      },
+      "properties": {
+        "id": "condomina",
+        "name": "Estadio de La Condomina",
+        "category": "equipamiento",
+        "group": "Cultura y equipamientos",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/27865724",
+        "osmName": "Estadio de La Condomina",
+        "worldXZ": [
+          1017.38,
+          -240.96
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Gradas",
+          "cerramientos",
+          "iluminación"
+        ],
+        "sources": [
+          {
+            "url": "https://www.realmurcia.es/el-estadio-la-condomina-cumple-100-anos-de-historia/",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/27865724",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reina-sofia",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1209196,
+          37.9828273
+        ]
+      },
+      "properties": {
+        "id": "reina-sofia",
+        "name": "Hospital General Universitario Reina Sofía",
+        "category": "hospital",
+        "group": "Hospitales y centros sanitarios",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/28445597",
+        "osmName": "Hospital General Universitario Reina Sofía",
+        "worldXZ": [
+          1059.94,
+          130.54
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Bloques",
+          "entrada",
+          "frente de Intendente Jorge Palacios"
+        ],
+        "sources": [
+          {
+            "url": "https://www.murciasalud.es/seccion.php?idsec=77",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/28445597",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "morales-meseguer",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1295258,
+          37.9947594
+        ]
+      },
+      "properties": {
+        "id": "morales-meseguer",
+        "name": "Hospital General Universitario Morales Meseguer",
+        "category": "hospital",
+        "group": "Hospitales y centros sanitarios",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/749170591",
+        "osmName": "Hospital General Universitario Morales Meseguer",
+        "worldXZ": [
+          304.83,
+          -1197.74
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Bloques",
+          "retranqueos",
+          "frente de Marqués de los Vélez"
+        ],
+        "sources": [
+          {
+            "url": "https://www.murciasalud.es/seccion.php?idsec=367",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/749170591",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hla-vega",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1334248,
+          37.9928683
+        ]
+      },
+      "properties": {
+        "id": "hla-vega",
+        "name": "HLA Hospital La Vega",
+        "category": "hospital",
+        "group": "Hospitales y centros sanitarios",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/27894003",
+        "osmName": "Hospital HLA La Vega",
+        "worldXZ": [
+          -37.27,
+          -987.22
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Volumen urbano",
+          "frente de Román Alberca",
+          "acceso"
+        ],
+        "sources": [
+          {
+            "url": "https://www.grupohla.com/hlahospitallavega",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/27894003",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quiro-murcia",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1194244,
+          37.9779912
+        ]
+      },
+      "properties": {
+        "id": "quiro-murcia",
+        "name": "Hospital Quirónsalud Murcia",
+        "category": "hospital",
+        "group": "Hospitales y centros sanitarios",
+        "priority": 2,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/28445357",
+        "osmName": "Hospital Quirón Murcia",
+        "worldXZ": [
+          1191.13,
+          668.9
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Fachada",
+          "acceso",
+          "entorno de Miguel Hernández"
+        ],
+        "sources": [
+          {
+            "url": "https://www.quironsalud.com/hospital-murcia/es/pacientes-visitantes/ingresos/servicios",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/28445357",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "mesa-castillo",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.128068,
+          37.9693968
+        ]
+      },
+      "properties": {
+        "id": "mesa-castillo",
+        "name": "Hospital Mesa del Castillo",
+        "category": "hospital",
+        "group": "Hospitales y centros sanitarios",
+        "priority": 2,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/543171365",
+        "osmName": "Hospital Mesa del Castillo",
+        "worldXZ": [
+          432.74,
+          1625.63
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Conjunto",
+          "acceso",
+          "relación con Ronda Sur"
+        ],
+        "sources": [
+          {
+            "url": "https://www.mesadelcastillo.com/preguntas-frecuentes/",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/543171365",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "imed-fuensanta",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1406798,
+          38.0007399
+        ]
+      },
+      "properties": {
+        "id": "imed-fuensanta",
+        "name": "Hospital IMED Virgen de la Fuensanta",
+        "category": "hospital",
+        "group": "Hospitales y centros sanitarios",
+        "priority": 1,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/1157903031",
+        "osmName": "IMED Virgen de la Fuensanta",
+        "worldXZ": [
+          -673.83,
+          -1863.49
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Torre",
+          "basamento",
+          "acceso y retranqueos"
+        ],
+        "sources": [
+          {
+            "url": "https://www.imedhospitales.com/es/centros/hospital-imed-virgen-fuensanta/contacto",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/1157903031",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hla-belen",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1304758,
+          37.9987449
+        ]
+      },
+      "properties": {
+        "id": "hla-belen",
+        "name": "HLA Residencia Belén",
+        "category": "centro-sanitario",
+        "group": "Hospitales y centros sanitarios",
+        "priority": 2,
+        "insideCurrentMap": true,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/28514786",
+        "osmName": "Clinica HLA Belén",
+        "worldXZ": [
+          221.47,
+          -1641.4
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Edificio",
+          "frente",
+          "revisar denominación antes de rotular"
+        ],
+        "sources": [
+          {
+            "url": "https://www.grupohla.com/hospitales-clinicas",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/28514786",
+            "role": "posicion-y-denominacion"
+          }
+        ],
+        "identityNote": "El proveedor lo denomina HLA Residencia Belén. OSM conserva Clínica HLA Belén y etiqueta hospital; no se toma esa etiqueta como verificación de actividad hospitalaria actual."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arrixaca",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.162796,
+          37.9329297
+        ]
+      },
+      "properties": {
+        "id": "arrixaca",
+        "name": "Hospital Clínico Universitario Virgen de la Arrixaca",
+        "category": "hospital",
+        "group": "Ampliaciones del mapa",
+        "priority": 1,
+        "insideCurrentMap": false,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/28456494",
+        "osmName": "Hospital Clínico Universitario Virgen de la Arrixaca",
+        "worldXZ": [
+          -2614.32,
+          5685.15
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Pabellones",
+          "viales internos",
+          "accesos y aparcamientos"
+        ],
+        "sources": [
+          {
+            "url": "https://www.murciasalud.es/seccion.php?idsec=347",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/28456494",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "roman-alberca",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1672759,
+          37.9426771
+        ]
+      },
+      "properties": {
+        "id": "roman-alberca",
+        "name": "Hospital Psiquiátrico Román Alberca",
+        "category": "hospital",
+        "group": "Ampliaciones del mapa",
+        "priority": 2,
+        "insideCurrentMap": false,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/136325797",
+        "osmName": "Hospital Román Alberca",
+        "worldXZ": [
+          -3007.38,
+          4600.07
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Recinto",
+          "pabellones",
+          "relación con calle Lorca"
+        ],
+        "sources": [
+          {
+            "url": "https://www.murciasalud.es/pagina.php?id=543160",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/136325797",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fuensanta",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1182252,
+          37.9375232
+        ]
+      },
+      "properties": {
+        "id": "fuensanta",
+        "name": "Santuario de Nuestra Señora de la Fuensanta",
+        "category": "monumento",
+        "group": "Ampliaciones del mapa",
+        "priority": 0,
+        "insideCurrentMap": false,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/55846465",
+        "osmName": "Santuario de Nuestra Señora de la Fuensanta",
+        "worldXZ": [
+          1296.35,
+          5173.8
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Fachada",
+          "escalinata",
+          "explanada y topografía"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/que-ver-visitar",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/55846465",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "monteagudo",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0976336,
+          38.0203977
+        ]
+      },
+      "properties": {
+        "id": "monteagudo",
+        "name": "Castillo de Monteagudo",
+        "category": "monumento",
+        "group": "Ampliaciones del mapa",
+        "priority": 0,
+        "insideCurrentMap": false,
+        "positionStatus": "punto-osm",
+        "osmRef": "node/314392489",
+        "osmName": "Castillo de Monteagudo",
+        "worldXZ": [
+          3103.07,
+          -4051.79
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Peña",
+          "murallas",
+          "coronación"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/que-ver-visitar",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/node/314392489",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cristo-monteagudo",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0977255,
+          38.0201423
+        ]
+      },
+      "properties": {
+        "id": "cristo-monteagudo",
+        "name": "Cristo de Monteagudo",
+        "category": "escultura",
+        "group": "Ampliaciones del mapa",
+        "priority": 0,
+        "insideCurrentMap": false,
+        "positionStatus": "punto-osm",
+        "osmRef": "node/7383560225",
+        "osmName": "Cristo de Monteagudo",
+        "worldXZ": [
+          3095.0,
+          -4023.36
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Silueta",
+          "pedestal",
+          "escala respecto al castillo"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/que-ver-visitar",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/node/7383560225",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "castillejo",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.10158,
+          38.0231881
+        ]
+      },
+      "properties": {
+        "id": "castillejo",
+        "name": "Castillejo de Monteagudo",
+        "category": "patrimonio",
+        "group": "Ampliaciones del mapa",
+        "priority": 2,
+        "insideCurrentMap": false,
+        "positionStatus": "punto-osm",
+        "osmRef": "node/7383560479",
+        "osmName": "Castillejo de Monteagudo",
+        "worldXZ": [
+          2756.81,
+          -4362.42
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Plataforma",
+          "ruinas",
+          "topografía"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismodemurcia.es/es/monumentos",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/node/7383560479",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "jeronimos",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1857554,
+          37.9913904
+        ]
+      },
+      "properties": {
+        "id": "jeronimos",
+        "name": "Monasterio de los Jerónimos",
+        "category": "monumento",
+        "group": "Ampliaciones del mapa",
+        "priority": 1,
+        "insideCurrentMap": false,
+        "positionStatus": "punto-osm",
+        "osmRef": "node/2714238570",
+        "osmName": "Templo de los Jerónimos",
+        "worldXZ": [
+          -4628.78,
+          -822.7
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Fachada",
+          "torres",
+          "conjunto del campus"
+        ],
+        "sources": [
+          {
+            "url": "https://turismodemurcia.es/es/la-huerta-de-murcia",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/node/2714238570",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rueda-nora",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.193926,
+          37.9860245
+        ]
+      },
+      "properties": {
+        "id": "rueda-nora",
+        "name": "Rueda de La Ñora",
+        "category": "patrimonio",
+        "group": "Ampliaciones del mapa",
+        "priority": 2,
+        "insideCurrentMap": false,
+        "positionStatus": "punto-osm",
+        "osmRef": "node/2491000685",
+        "osmName": "Rueda de La Ñora",
+        "worldXZ": [
+          -5345.68,
+          -225.37
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Rueda",
+          "canal",
+          "soporte y acequia"
+        ],
+        "sources": [
+          {
+            "url": "https://turismodemurcia.es/es/la-huerta-de-murcia",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/node/2491000685",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "contraparada",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.218099,
+          37.9954106
+        ]
+      },
+      "properties": {
+        "id": "contraparada",
+        "name": "Azud de la Contraparada",
+        "category": "paisaje",
+        "group": "Ampliaciones del mapa",
+        "priority": 2,
+        "insideCurrentMap": false,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/129437280",
+        "osmName": "Contraparada",
+        "worldXZ": [
+          -7466.63,
+          -1270.23
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Azud",
+          "compuertas",
+          "acequias"
+        ],
+        "sources": [
+          {
+            "url": "https://www.turismoregiondemurcia.es/es/sendero?ficha=154",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/129437280",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "estadio-enrique-roca",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1447315,
+          38.0422514
+        ]
+      },
+      "properties": {
+        "id": "estadio-enrique-roca",
+        "name": "Estadio Enrique Roca, Nueva Condomina",
+        "category": "equipamiento",
+        "group": "Ampliaciones del mapa",
+        "priority": 1,
+        "insideCurrentMap": false,
+        "positionStatus": "centro-de-limites-osm",
+        "osmRef": "way/446872876",
+        "osmName": "Estadio Enrique Roca de Murcia",
+        "worldXZ": [
+          -1029.33,
+          -6484.55
+        ],
+        "modelStatus": "sin-modelo-especifico",
+        "visualTargets": [
+          "Anillo de gradas",
+          "cubierta",
+          "grandes accesos"
+        ],
+        "sources": [
+          {
+            "url": "https://www.realmurcia.es/estadio-enrique-roca/",
+            "role": "contexto-institucional-y-referencia-visual"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/446872876",
+            "role": "posicion-y-denominacion"
+          }
+        ]
+      }
+    }
+  ]
+}
